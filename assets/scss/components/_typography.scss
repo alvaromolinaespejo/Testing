@@ -1,0 +1,35 @@
+// > Typography
+body {
+	color: $color_text;
+	font: px(10) $font_text;
+	font-weight: $font_regular;
+	@media (min-width: $screen-sm-min){
+		font-size: rem($font_size);
+	}
+}
+.title-kandc{
+	text-transform: uppercase;
+	font-weight: $font_bold;
+	font-size: rem(20);
+	@media (min-width: $screen-sm-min){
+		font-size: rem(40);
+	}
+}
+.subtitle-kandc{
+	font-size: rem(14);
+	font-weight: $font_bold;
+	@media (min-width: $screen-sm-min){
+		font-size: rem(22);
+	}
+}
+.text-kandc{
+	font-size: px(11);
+	line-height: rem(16);
+	p{
+		margin: 0;
+	}
+	@media (min-width: $screen-sm-min){
+		font-size: px(18);
+		line-height: rem(24);
+	}
+}

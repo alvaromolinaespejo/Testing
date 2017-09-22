@@ -1,0 +1,25 @@
+// > RESET
+@import 'core/_normalize';
+
+// > DOCS
+@import "docs";
+
+// > IMPORTS
+@import 'core/variables';
+@import 'core/functions';
+@import 'core/mixins';
+@import 'core/fonts';
+@import 'core/class-cc';
+
+// > COMPONENTS
+@import 'components/typography';
+@import 'components/buttons';
+@import 'components/icons';
+@import 'components/form';
+@import 'components/header';
+@import 'components/nav';
+@import 'components/section__login-page';
+@import 'components/pre-footer';
+@import 'components/footer';
+
+// > INDEX: FIDA APP
