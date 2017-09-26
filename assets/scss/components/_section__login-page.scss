@@ -1,4 +1,32 @@
 //LOGIN PAGE
 #login-page{
-
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url("../images/img-bg-cloud.jpg");
+  //background: url("../images/img-bg.png") center;
+  background-size: cover;
+  .container{
+    z-index: 15;
+  }
+  .form{
+    margin-top: rem(20);
+  }
+  .box-login{
+    background: $color_white-transparent;
+    border-radius: rem(3);
+    padding: rem(30) rem(35);
+    -webkit-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.6);
+    box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.6);
+  }
+  .logo-fida{
+    margin-bottom: rem(35);
+    img{
+      height: rem(200);
+    }
+  }
+  button{
+    margin-top: rem(10);
+  }
 }

@@ -5,7 +5,6 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,500,400,700,800|Archivo+Narrow:400,700");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -8480,37 +8479,237 @@ th {
 html, body {
   font-size: 100%; }
 
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat/Montserrat-Light.ttf");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat/Montserrat-Semibold.ttf");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat/Montserrat-Bold.ttf");
+  font-weight: 700;
+  font-style: normal; }
 body {
-  color: #000000;
+  color: #3c3c3c;
   font: 10px "Montserrat", arial, sans-serif;
   font-weight: 400; }
   @media (min-width: 768px) {
     body {
       font-size: 1rem; } }
 
-.title-kandc {
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 0.625rem 1.5625rem;
+  font-size: 18px;
+  line-height: 1.428571429;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 0;
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 1.25rem; }
-  @media (min-width: 768px) {
-    .title-kandc {
-      font-size: 2.5rem; } }
+  font-weight: 500; }
 
-.subtitle-kandc {
-  font-size: 0.875rem;
-  font-weight: 700; }
-  @media (min-width: 768px) {
-    .subtitle-kandc {
-      font-size: 1.375rem; } }
+.btn-primary {
+  background: #223466;
+  color: #ffffff;
+  letter-spacing: 0.0625rem; }
 
-.text-kandc {
-  font-size: 11px;
-  line-height: 1rem; }
-  .text-kandc p {
-    margin: 0; }
-  @media (min-width: 768px) {
-    .text-kandc {
-      font-size: 18px;
-      line-height: 1.5rem; } }
+.float-label-control {
+  position: relative;
+  margin-bottom: 2.5rem; }
+  .float-label-control ::-webkit-input-placeholder {
+    color: transparent; }
+  .float-label-control :-moz-placeholder {
+    color: transparent; }
+  .float-label-control ::-moz-placeholder {
+    color: transparent; }
+  .float-label-control :-ms-input-placeholder {
+    color: transparent; }
+  .float-label-control input:-webkit-autofill, .float-label-control textarea:-webkit-autofill {
+    background-color: transparent !important;
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+    -moz-box-shadow: 0 0 0 1000px white inset !important;
+    box-shadow: 0 0 0 1000px white inset !important; }
+  .float-label-control input, .float-label-control textarea, .float-label-control label {
+    font-size: 1.3em;
+    box-shadow: none;
+    -webkit-box-shadow: none; }
+  .float-label-control input:focus, .float-label-control textarea:focus {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border-bottom-width: 2px;
+    padding-bottom: 0;
+    border-color: #1874ac; }
+  .float-label-control textarea:focus {
+    padding-bottom: 4px; }
+  .float-label-control input, .float-label-control textarea {
+    display: block;
+    width: 100%;
+    padding: 0.1em 0em 1px 0em;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid #aaa;
+    outline: none;
+    margin: 0px;
+    background: none; }
+  .float-label-control textarea {
+    padding: 0.1em 0em 5px 0em; }
+  .float-label-control label {
+    position: absolute;
+    font-weight: normal;
+    top: -1.0em;
+    left: 0.08em;
+    color: #787878;
+    cursor: unset;
+    font-size: 0.85em;
+    -moz-animation: float-labels 300ms none ease-out;
+    -webkit-animation: float-labels 300ms none ease-out;
+    -o-animation: float-labels 300ms none ease-out;
+    -ms-animation: float-labels 300ms none ease-out;
+    -khtml-animation: float-labels 300ms none ease-out;
+    animation: float-labels 300ms none ease-out;
+    /* There is a bug sometimes pausing the animation. This avoids that.*/
+    animation-play-state: running !important;
+    -webkit-animation-play-state: running !important; }
+  .float-label-control input.empty + label, .float-label-control textarea.empty + label {
+    top: 0.375rem;
+    font-size: 1.25rem;
+    animation: none;
+    -webkit-animation: none; }
+  .float-label-control input:not(.empty) + label, .float-label-control textarea:not(.empty) + label {
+    z-index: 1; }
+  .float-label-control input:not(.empty):focus + label, .float-label-control textarea:not(.empty):focus + label {
+    color: #1874ac; }
+  .float-label-control.label-bottom label {
+    -moz-animation: float-labels-bottom 300ms none ease-out;
+    -webkit-animation: float-labels-bottom 300ms none ease-out;
+    -o-animation: float-labels-bottom 300ms none ease-out;
+    -ms-animation: float-labels-bottom 300ms none ease-out;
+    -khtml-animation: float-labels-bottom 300ms none ease-out;
+    animation: float-labels-bottom 300ms none ease-out; }
+  .float-label-control.label-bottom input:not(.empty) + label, .float-label-control.label-bottom textarea:not(.empty) + label {
+    top: 3em; }
+
+@keyframes float-labels {
+  0% {
+    opacity: 1;
+    color: #aaa;
+    top: 0.1em;
+    font-size: 1.5em; }
+  20% {
+    font-size: 1.5em;
+    opacity: 0; }
+  30% {
+    top: 0.1em; }
+  50% {
+    opacity: 0;
+    font-size: 0.85em; }
+  100% {
+    top: -1em;
+    opacity: 1; } }
+@-webkit-keyframes float-labels {
+  0% {
+    opacity: 1;
+    color: #aaa;
+    top: 0.1em;
+    font-size: 1.5em; }
+  20% {
+    font-size: 1.5em;
+    opacity: 0; }
+  30% {
+    top: 0.1em; }
+  50% {
+    opacity: 0;
+    font-size: 0.85em; }
+  100% {
+    top: -1em;
+    opacity: 1; } }
+@keyframes float-labels-bottom {
+  0% {
+    opacity: 1;
+    color: #aaa;
+    top: 0.1em;
+    font-size: 1.5em; }
+  20% {
+    font-size: 1.5em;
+    opacity: 0; }
+  30% {
+    top: 0.1em; }
+  50% {
+    opacity: 0;
+    font-size: 0.85em; }
+  100% {
+    top: 3em;
+    opacity: 1; } }
+@-webkit-keyframes float-labels-bottom {
+  0% {
+    opacity: 1;
+    color: #aaa;
+    top: 0.1em;
+    font-size: 1.5em; }
+  20% {
+    font-size: 1.5em;
+    opacity: 0; }
+  30% {
+    top: 0.1em; }
+  50% {
+    opacity: 0;
+    font-size: 0.85em; }
+  100% {
+    top: 3em;
+    opacity: 1; } }
+#login-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url("../images/img-bg-cloud.jpg");
+  background-size: cover; }
+  #login-page .container {
+    z-index: 15; }
+  #login-page .form {
+    margin-top: 1.25rem; }
+  #login-page .box-login {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 0.1875rem;
+    padding: 1.875rem 2.1875rem;
+    -webkit-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.6); }
+  #login-page .logo-fida {
+    margin-bottom: 2.1875rem; }
+    #login-page .logo-fida img {
+      height: 12.5rem; }
+  #login-page button {
+    margin-top: 0.625rem; }
+
+#footer-version {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #000000;
+  color: #ffffff;
+  opacity: 0.6; }
+  #footer-version p {
+    margin: 0.3125rem 0;
+    font-size: 14px; }
 
 /*# sourceMappingURL=style.css.map */

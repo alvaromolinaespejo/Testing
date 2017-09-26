@@ -1,0 +1,12 @@
+#footer-version{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: $color_black;
+  color: $color_white;
+  opacity: 0.6;
+  p{
+    margin: rem(5) 0;
+    font-size: px(14);
+  }
+}

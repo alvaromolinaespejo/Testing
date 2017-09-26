@@ -1,15 +1,19 @@
 // Colors
-$color_blue:    #223466;
-$color_green:   #94bf9f;
-$color_magenta: #ba3969;
-$color_cyan:    #1874ac;
-$color_black:   #000000;
+$color_blue:        #223466;
+$color_green:       #94bf9f;
+$color_magenta:     #ba3969;
+$color_cyan:        #1874ac;
+$color_black:       #000000;
+$color_white:       #ffffff;
+$color_gray_dark-1: #3c3c3c;
+$color_gray_dark-2: #787878;
 
 
-$color-text: $color_black;
+$color-text: $color_gray_dark-1;
 $color_primary: $color_blue;
 
 $color_blue-transparent: rgba(34,52,102,0.83);
+$color_white-transparent: rgba(255,255,255,0.6);
 
 // dimensions
 $dim_sitewidth: 1120;
@@ -26,8 +30,6 @@ $dim_button_height: 48;
 $font_fallback: arial, sans-serif;
 $font_text: 'Montserrat', $font_fallback;
 $font_title: 'Montserrat', $font_fallback;
-$font_button: 'Archivo Narrow', $font_fallback;
-$font_price: 'Archivo Narrow', $font_fallback;
 $font_size: 16;
 $font_line_height: 130%;
 $font_thin: 100;
