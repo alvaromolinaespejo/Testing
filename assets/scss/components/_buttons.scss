@@ -8,14 +8,14 @@
   background-image: none;
   border: 1px solid transparent;
   white-space: nowrap;
-  padding: rem(10) rem(25);
+  padding: rem(10) rem(45);
   font-size: px(18);
   line-height: 1.428571429;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  border-radius: 0;
+  border-radius: rem(24);
   text-transform: uppercase;
   font-weight: $font_medium;
 }

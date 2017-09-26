@@ -5,8 +5,14 @@
   background: $color_black;
   color: $color_white;
   opacity: 0.6;
+  height: rem(35);
   p{
     margin: rem(5) 0;
-    font-size: px(14);
+    font-size: px(12);
+    line-height: rem(25);
+  }
+  img{
+    height: rem(25);
+    margin: rem(5) rem(0);
   }
 }

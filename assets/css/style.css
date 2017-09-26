@@ -8517,14 +8517,14 @@ body {
   background-image: none;
   border: 1px solid transparent;
   white-space: nowrap;
-  padding: 0.625rem 1.5625rem;
+  padding: 0.625rem 2.8125rem;
   font-size: 18px;
   line-height: 1.428571429;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  border-radius: 0;
+  border-radius: 1.5rem;
   text-transform: uppercase;
   font-weight: 500; }
 
@@ -8694,10 +8694,10 @@ body {
     -webkit-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.6);
     -moz-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.6);
     box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.6); }
-  #login-page .logo-fida {
-    margin-bottom: 2.1875rem; }
-    #login-page .logo-fida img {
-      height: 12.5rem; }
+  #login-page .logo-fida img {
+    height: 12.5rem; }
+  #login-page .title-fida {
+    margin-bottom: 3.125rem; }
   #login-page button {
     margin-top: 0.625rem; }
 
@@ -8707,9 +8707,14 @@ body {
   width: 100%;
   background: #000000;
   color: #ffffff;
-  opacity: 0.6; }
+  opacity: 0.6;
+  height: 2.1875rem; }
   #footer-version p {
     margin: 0.3125rem 0;
-    font-size: 14px; }
+    font-size: 12px;
+    line-height: 1.5625rem; }
+  #footer-version img {
+    height: 1.5625rem;
+    margin: 0.3125rem 0rem; }
 
 /*# sourceMappingURL=style.css.map */
