@@ -96,7 +96,10 @@ a {
  */
 
 a:active,
-a:hover {
+a:hover,
+a:focus{
+  cursor: pointer;
+  text-decoration: none;
   outline: 0;
 }
 
@@ -422,3 +425,6 @@ td,
 th {
   padding: 0;
 }
+//p{
+//  margin-bottom: 0;
+//}

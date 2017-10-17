@@ -1,6 +1,5 @@
-.btn{
+.btn-cc{
   display: inline-block;
-  margin-bottom: 0;
   text-align: center;
   vertical-align: middle;
   touch-action: manipulation;
@@ -8,22 +7,39 @@
   background-image: none;
   border: 1px solid transparent;
   white-space: nowrap;
-  padding: rem(10) rem(45);
-  font-size: px(18);
+  padding: rem(10);
+  font-size: px(14);
   line-height: 1.428571429;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  border-radius: rem(24);
+  border-radius: rem(6);
   text-transform: uppercase;
   font-weight: $font_medium;
+  margin-bottom: rem(10);
+  width: 100%;
 }
-.btn-primary{
+
+.btn-login{
+  border-radius: rem(24);
   background: $color_primary;
   color: $color_white;
   letter-spacing: rem(1);
+  width: auto;
+  padding: rem(10) rem(45);
+  font-size: px(18);
   &:focus,
   &:hover{
+    background: $color_cyan;
+    color: $color_white;
   }
+}
+
+.btn{
+  letter-spacing: rem(1);
+  text-transform: uppercase;
+  font-weight: $font_bold;
+  @include transition(0.3s);
+  min-height: rem(42);
 }

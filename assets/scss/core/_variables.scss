@@ -1,19 +1,86 @@
-// Colors
+// > Colors
 $color_blue:        #223466;
 $color_green:       #94bf9f;
 $color_magenta:     #ba3969;
 $color_cyan:        #1874ac;
+$color_cyan_2:        #12aaeb;
+$color_cyan_3:        #3b6897;
+$color_cyan_4:        #92acb6;
+$color_cyan_5:        #129fdd;
 $color_black:       #000000;
 $color_white:       #ffffff;
 $color_gray_dark-1: #3c3c3c;
 $color_gray_dark-2: #787878;
+$color_gray_dark-3: #b0acac;
+$color_gray_light-2:#d5d5d5;
+$color_gray_light-1: #e5e5e5;
 
 
 $color-text: $color_gray_dark-1;
 $color_primary: $color_blue;
+$color-text-fida: $color_cyan_4;
+
+//---------------------------------------------------------
+
+// >> Colors elements
+
+$color-bg-light: $color_white;
+
+
+// >>> Button
+
+$color_button_dark:   #2f5c8c;
+$color_button_light:  #129fdd;
+
+// >>> Background
+
+$color_background_light: $color_gray_light-1;
+$color_background_dark: #1b456d;
+
+// >>> Box
+
+$color_box_dark:  #2f5c8c;
+$color_box_light: #ffffff;
+
+// >>> Footer
+
+$color_footer_dark:  #2f5c8c;
+$color_footer_light: #ffffff;
+
+// >>> Border
+
+$color_border_dark: #1c4971;
+
+// >>> Label
+
+$color_label_dark: #bfccd5;
+$color_label_light: #597a96;
+
+// >>> Input
+
+$color_input_dark:  #5682b2;
+$color_input_light: #e7edf2;
+
+// >>> Title
+
+$color_title_light: #12aaeb;
+$color_title_dark: #597a96;
+
+// >>> Subtitle
+
+$color_subtitle_light: #12aaeb;
+$color_subtitle_dark: #12aaeb;
+
+// >>> Box
 
 $color_blue-transparent: rgba(34,52,102,0.83);
 $color_white-transparent: rgba(255,255,255,0.6);
+
+// >>> Nav Pill
+
+$color_bg_nav_light: $color_gray_light-2;
+
+//---------------------------------------------------------
 
 // dimensions
 $dim_sitewidth: 1120;

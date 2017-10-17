@@ -72,4 +72,44 @@
     $(function () {
         $('.float-label-control').floatLabels();
     });
+
 })(jQuery);
+
+$(document).ready(function() {
+
+    new Chart(document.getElementById("doughnut-chart"), {
+        type: 'doughnut',
+        data: {
+            labels: [
+                "Value Number One",
+                "Value Number Two",
+                "Value Number Three"
+            ],
+            datasets: [
+                {
+                    label: "Number",
+                    backgroundColor: [
+                        "#e8c3b9",
+                        "#8e5ea2",
+                        "#3cba9f"
+                    ],
+                    data: [
+                        2478,
+                        5267,
+                        734
+                    ]
+                }
+            ]
+        },
+        options: {
+            title: {
+                display: true,
+                text: 'Chart title'
+            },
+            legend: {
+                position: 'bottom'
+            }
+        }
+    });
+
+});

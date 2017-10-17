@@ -1,0 +1,25 @@
+//DASH BOARD PAGE
+#dash-board{
+  .btn-line{
+    display: flex;
+    .btn-dashboard{
+      min-height: rem(60);
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: $color_button_dark;
+      border: 2px solid $color_border_dark;
+      color: $color_white;
+      text-transform: uppercase;
+      font-size: px(14);
+      font-weight: 500;
+      box-shadow: inset #a0b751 0px -5px 0px 0;
+      &:focus,
+      &:hover{
+        background: #1b456d;
+      }
+    }
+  }
+}

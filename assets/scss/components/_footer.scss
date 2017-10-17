@@ -1,6 +1,4 @@
 #footer-version{
-  position: absolute;
-  bottom: 0;
   width: 100%;
   background: $color_black;
   color: $color_white;
@@ -14,5 +12,9 @@
   img{
     height: rem(25);
     margin: rem(5) rem(0);
+  }
+  &.footer-static{
+    position: absolute;
+    bottom: 0;
   }
 }
