@@ -155,10 +155,9 @@ $sides: (top, bottom, left, right);
   }
 }
 
-
-
-
-
+.bg-light{
+  background: $color_background_light;
+}
 
 #components{
 
@@ -173,9 +172,6 @@ $sides: (top, bottom, left, right);
     font-size: px(14);
     text-transform: uppercase;
     line-height: normal;
-  }
-  &.bg-light{
-    background: $color_background_light;
   }
   label{
     font-weight: $font_semibold;
