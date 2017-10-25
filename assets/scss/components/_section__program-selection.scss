@@ -1,0 +1,24 @@
+// Program Selection
+#program-selection{
+  .header{
+    padding: rem(20);
+  }
+  .body-dark{
+  }
+  .col-select{
+    padding: rem(5) rem(15);
+    .box-dark{
+      border-radius: rem(10);
+      border: 2px solid $color_border_dark;
+      box-shadow: none;
+      display: block;
+      &:hover,
+      &:focus{
+        background: #1b456d;
+      }
+      img{
+        margin-bottom: rem(10);
+      }
+    }
+  }
+}

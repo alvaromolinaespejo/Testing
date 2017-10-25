@@ -1,127 +1,137 @@
-.float-label-control {
-  position: relative;
-  margin-bottom: rem(40);
-  & ::-webkit-input-placeholder {
-    color: transparent;
+#form-login{
+  .float-label-control {
+    position: relative;
+    margin-bottom: rem(40);
+    & ::-webkit-input-placeholder {
+      color: transparent;
+    }
+    & :-moz-placeholder {
+      color: transparent;
+    }
+    & ::-moz-placeholder {
+      color: transparent;
+    }
+    & :-ms-input-placeholder {
+      color: transparent;
+    }
+    & input:-webkit-autofill,
+    & textarea:-webkit-autofill {
+      background-color: transparent !important;
+      -webkit-box-shadow: 0 0 0 1000px white inset !important;
+      -moz-box-shadow: 0 0 0 1000px white inset !important;
+      box-shadow: 0 0 0 1000px white inset !important;
+    }
+    & input, & textarea, & label {
+      font-size: 1.3em; box-shadow: none;
+      -webkit-box-shadow: none;
+    }
+    & input:focus,
+    & textarea:focus {
+      box-shadow: none;
+      -webkit-box-shadow: none;
+      border-bottom-width: 2px;
+      padding-bottom: 0;
+      border-color: $color_cyan;
+    }
+    & textarea:focus {
+      padding-bottom: 4px;
+    }
+    & input, & textarea {
+      display: block;
+      width: 100%;
+      padding: 0.1em 0em 1px 0em;
+      border: none;
+      border-radius: 0px;
+      border-bottom: 1px solid #aaa;
+      outline: none; margin: 0px;
+      background: none;
+    }
+    & textarea {
+      padding: 0.1em 0em 5px 0em;
+    }
+    & label {
+      position: absolute;
+      font-weight: normal;
+      top: -1.0em;
+      left: 0.08em;
+      color: $color_gray_dark-2;
+      //z-index: -1;
+      cursor: unset;
+      font-size: 0.85em;
+      -moz-animation: float-labels 300ms none ease-out;
+      -webkit-animation: float-labels 300ms none ease-out;
+      -o-animation: float-labels 300ms none ease-out;
+      -ms-animation: float-labels 300ms none ease-out;
+      -khtml-animation: float-labels 300ms none ease-out;
+      animation: float-labels 300ms none ease-out; /* There is a bug sometimes pausing the animation. This avoids that.*/
+      animation-play-state: running !important;
+      -webkit-animation-play-state: running !important;
+    }
+    & input.empty + label,
+    & textarea.empty + label {
+      top: rem(6);
+      font-size: rem(20);
+      animation: none;
+      -webkit-animation: none;
+    }
+    & input:not(.empty) + label,
+    & textarea:not(.empty) + label {
+      z-index: 1;
+    }
+    & input:not(.empty):focus + label,
+    & textarea:not(.empty):focus + label {
+      color: $color_cyan;
+    }
+    &.label-bottom label {
+      -moz-animation: float-labels-bottom 300ms none ease-out;
+      -webkit-animation: float-labels-bottom 300ms none ease-out;
+      -o-animation: float-labels-bottom 300ms none ease-out;
+      -ms-animation: float-labels-bottom 300ms none ease-out;
+      -khtml-animation: float-labels-bottom 300ms none ease-out;
+      animation: float-labels-bottom 300ms none ease-out; }
+    &.label-bottom input:not(.empty) + label,
+    &.label-bottom textarea:not(.empty) + label {
+      top: 3em;
+    }
   }
-  & :-moz-placeholder {
-    color: transparent;
+
+  @keyframes float-labels {
+    0% { opacity: 1; color: #aaa; top: 0.1em; font-size: 1.5em; }
+    20% { font-size: 1.5em; opacity: 0; }
+    30% { top: 0.1em; }
+    50% { opacity: 0; font-size: 0.85em; }
+    100% { top: -1em; opacity: 1; }
   }
-  & ::-moz-placeholder {
-    color: transparent;
+
+  @-webkit-keyframes float-labels {
+    0% { opacity: 1; color: #aaa; top: 0.1em; font-size: 1.5em; }
+    20% { font-size: 1.5em; opacity: 0; }
+    30% { top: 0.1em; }
+    50% { opacity: 0; font-size: 0.85em; }
+    100% { top: -1em; opacity: 1; }
   }
-  & :-ms-input-placeholder {
-    color: transparent;
+
+  @keyframes float-labels-bottom {
+    0% { opacity: 1; color: #aaa; top: 0.1em; font-size: 1.5em; }
+    20% { font-size: 1.5em; opacity: 0; }
+    30% { top: 0.1em; }
+    50% { opacity: 0; font-size: 0.85em; }
+    100% { top: 3em; opacity: 1; }
   }
-  & input:-webkit-autofill,
-  & textarea:-webkit-autofill {
-    background-color: transparent !important;
-    -webkit-box-shadow: 0 0 0 1000px white inset !important;
-    -moz-box-shadow: 0 0 0 1000px white inset !important;
-    box-shadow: 0 0 0 1000px white inset !important;
-  }
-  & input, & textarea, & label {
-    font-size: 1.3em; box-shadow: none;
-    -webkit-box-shadow: none;
-  }
-  & input:focus,
-  & textarea:focus {
-    box-shadow: none;
-    -webkit-box-shadow: none;
-    border-bottom-width: 2px;
-    padding-bottom: 0;
-    border-color: $color_cyan;
-  }
-  & textarea:focus {
-    padding-bottom: 4px;
-  }
-  & input, & textarea {
-    display: block;
-    width: 100%;
-    padding: 0.1em 0em 1px 0em;
-    border: none;
-    border-radius: 0px;
-    border-bottom: 1px solid #aaa;
-    outline: none; margin: 0px;
-    background: none;
-  }
-  & textarea {
-    padding: 0.1em 0em 5px 0em;
-  }
-  & label {
-    position: absolute;
-    font-weight: normal;
-    top: -1.0em;
-    left: 0.08em;
-    color: $color_gray_dark-2;
-    //z-index: -1;
-    cursor: unset;
-    font-size: 0.85em;
-    -moz-animation: float-labels 300ms none ease-out;
-    -webkit-animation: float-labels 300ms none ease-out;
-    -o-animation: float-labels 300ms none ease-out;
-    -ms-animation: float-labels 300ms none ease-out;
-    -khtml-animation: float-labels 300ms none ease-out;
-    animation: float-labels 300ms none ease-out; /* There is a bug sometimes pausing the animation. This avoids that.*/
-    animation-play-state: running !important;
-    -webkit-animation-play-state: running !important;
-  }
-  & input.empty + label,
-  & textarea.empty + label {
-    top: rem(6);
-    font-size: rem(20);
-    animation: none;
-    -webkit-animation: none;
-  }
-  & input:not(.empty) + label,
-  & textarea:not(.empty) + label {
-    z-index: 1;
-  }
-  & input:not(.empty):focus + label,
-  & textarea:not(.empty):focus + label {
-    color: $color_cyan;
-  }
-  &.label-bottom label {
-    -moz-animation: float-labels-bottom 300ms none ease-out;
-    -webkit-animation: float-labels-bottom 300ms none ease-out;
-    -o-animation: float-labels-bottom 300ms none ease-out;
-    -ms-animation: float-labels-bottom 300ms none ease-out;
-    -khtml-animation: float-labels-bottom 300ms none ease-out;
-    animation: float-labels-bottom 300ms none ease-out; }
-  &.label-bottom input:not(.empty) + label,
-  &.label-bottom textarea:not(.empty) + label {
-    top: 3em;
+
+  @-webkit-keyframes float-labels-bottom {
+    0% { opacity: 1; color: #aaa; top: 0.1em; font-size: 1.5em; }
+    20% { font-size: 1.5em; opacity: 0; }
+    30% { top: 0.1em; }
+    50% { opacity: 0; font-size: 0.85em; }
+    100% { top: 3em; opacity: 1; }
   }
 }
 
-@keyframes float-labels {
-  0% { opacity: 1; color: #aaa; top: 0.1em; font-size: 1.5em; }
-  20% { font-size: 1.5em; opacity: 0; }
-  30% { top: 0.1em; }
-  50% { opacity: 0; font-size: 0.85em; }
-  100% { top: -1em; opacity: 1; }
-}
+//Datetimepicker
 
-@-webkit-keyframes float-labels {
-  0% { opacity: 1; color: #aaa; top: 0.1em; font-size: 1.5em; }
-  20% { font-size: 1.5em; opacity: 0; }
-  30% { top: 0.1em; }
-  50% { opacity: 0; font-size: 0.85em; }
-  100% { top: -1em; opacity: 1; }
-}
-
-@keyframes float-labels-bottom {
-  0% { opacity: 1; color: #aaa; top: 0.1em; font-size: 1.5em; }
-  20% { font-size: 1.5em; opacity: 0; }
-  30% { top: 0.1em; }
-  50% { opacity: 0; font-size: 0.85em; }
-  100% { top: 3em; opacity: 1; }
-}
-
-@-webkit-keyframes float-labels-bottom {
-  0% { opacity: 1; color: #aaa; top: 0.1em; font-size: 1.5em; }
-  20% { font-size: 1.5em; opacity: 0; }
-  30% { top: 0.1em; }
-  50% { opacity: 0; font-size: 0.85em; }
-  100% { top: 3em; opacity: 1; }
+span.add-on{
+  position: absolute;
+  top: rem(41);
+  right: rem(24);
 }

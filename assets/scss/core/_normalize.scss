@@ -96,7 +96,10 @@ a {
  */
 
 a:active,
-a:hover {
+a:hover,
+a:focus{
+  cursor: pointer;
+  text-decoration: none;
   outline: 0;
 }
 
@@ -421,4 +424,15 @@ table {
 td,
 th {
   padding: 0;
+}
+//p{
+//  margin-bottom: 0;
+//}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+  margin: 0;
 }
