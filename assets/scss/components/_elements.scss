@@ -573,3 +573,99 @@ $sides: (top, bottom, left, right);
     }
   }
 }
+
+// > Breadcrumb
+
+.breadcrumb-arrow {
+  height: 36px;
+  padding: 0;
+  line-height: 36px;
+  list-style: none;
+  background-color: $color_white;
+  li{
+    i{
+      margin-right: rem(5);
+    }
+    &,
+    & a,
+    & span{
+      display: inline-block;
+      vertical-align: top;
+    }
+    &:first-child a {
+      border-radius: 4px 0 0 4px;
+      -webkit-border-radius: 4px 0 0 4px;
+      -moz-border-radius: 4px 0 0 4px;
+    }
+    &:not(:first-child){
+      margin-left: -5px;
+    }
+    & + li:before{
+      padding: 0;
+      content: "";
+    }
+    span {
+      padding: 0 10px;
+    }
+    a,
+    &:not(:first-child) span {
+      height: 36px;
+      padding: 0 10px 0 25px;
+      line-height: 36px;
+    }
+    &:first-child a {
+      padding: 0 10px;
+    }
+    a{
+      position: relative;
+      color: #fff;
+      text-decoration: none;
+      background-color: $color_primary;
+      border: 1px solid $color_primary;
+      font-weight: $font_semibold;
+      &:after,
+      &:before{
+        position: absolute;
+        top: -1px;
+        width: 0;
+        height: 0;
+        content: '';
+        border-top: 18px solid transparent;
+        border-bottom: 18px solid transparent;
+      }
+      &:before{
+        right: -10px;
+        z-index: 3;
+        border-left-color: $color_primary;
+        border-left-style: solid;
+        border-left-width: 11px;
+      }
+      &:after{
+        right: -11px;
+        z-index: 2;
+        border-left: 11px solid $color_cyan_3;
+      }
+      &:focus,
+      &:hover{
+        background-color: #4fc1e9;
+        border: 1px solid #4fc1e9;
+      }
+      &:focus:before,
+      &:hover:before{
+        border-left-color: #4fc1e9;
+      }
+      &:active{
+        background-color: $color_cyan_3;
+        border: 1px solid $color_cyan_3;
+      }
+      &:active:after,
+      &:active:before{
+        border-left-color: $color_cyan_3;
+      }
+    }
+    span {
+      color: $color_primary;
+      font-weight: $font_semibold;
+    }
+  }
+}

@@ -20,36 +20,43 @@
 <body class="">
 
     <nav id="header" canvas="" class="" style="">
-        <div class="container">
-            <div class="row m-t-15">
-                <div class="col-xs-12 text-center">
-                    <div class="pull-left">
-                        <div class="hamburger" id="burger">
-                            <span class="line"></span>
-                            <span class="line"></span>
-                            <span class="line"></span>
-                        </div>
+    <div class="container">
+        <div class="row m-t-15">
+            <div class="col-xs-12 text-center">
+                <div class="pull-left">
+                    <div class="hamburger" id="burger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
                     </div>
-
-                    <div class="pull-right">
-                        <select class="form-control" id="">
-                            <option>-- Select --</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                        </select>
-                    </div>
-
-                    <div class="logo-img"><img id="logo" src="assets/images/logo-fida.svg" alt="FIDA"></div>
                 </div>
+
+                <div class="pull-right">
+                    <select class="form-control" id="">
+                        <option>-- Select --</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+
+                <div class="logo-img"><img id="logo" src="assets/images/logo-blue.svg" alt="FIDA"></div>
             </div>
         </div>
-    </nav>
+    </div>
+</nav>
 
     <div canvas="container">
         <section class="bg-light components">
             <div class="container">
                 <div class="row m-t-15">
+                    <div class="col-xs-12">
+                        <ol class="breadcrumb breadcrumb-arrow">
+                            <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+                            <li><a href="#">Dashboard</a></li>
+                            <li class="active"><span>Requeriments Acceptance</span></li>
+                        </ol>
+                    </div>
                     <div class="col-xs-12">
                         <div class="panel mod-light">
                             <div class="panel-heading">
@@ -208,15 +215,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12">
+                    <div class="col-xs-12 col-md-9">
                         <div class="panel mod-light">
                             <div class="panel-heading">
-                                <h2 class="title-fida">Save changes</h2>
+                                <h2 class="title-fida">Actions</h2>
                             </div>
                             <div class="panel-body">
                                 <div class="form-group">
-                                    <button type="button" class="btn btn-warning width-full m-t-10 m-b-5">Cancel Changes</button>
-                                    <button type="button" class="btn btn-success width-full m-t-5 m-b-25">Save Changes</button>
+                                    <button type="button" class="btn btn-warning">Cancel Changes</button>
+                                    <button type="button" class="btn btn-success">Save Changes</button>
                                 </div>
                             </div>
                         </div>

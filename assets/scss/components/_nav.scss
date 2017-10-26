@@ -1,8 +1,9 @@
 nav{
+  background: $color_primary;
   // LOGO
   .logo-img{
     position: relative;
-    top: -1.125rem;
+    top: rem(-14);
     pointer-events: none;
     height: rem(50);
   }
@@ -15,7 +16,7 @@ nav{
   .hamburger .line{
     width: 35px;
     height: 3px;
-    background-color: $color_primary;
+    background-color: $color_white;
     display: block;
     margin: 6px auto;
     -webkit-transition: all 0.4s ease-in-out;
@@ -59,7 +60,7 @@ nav{
   }
 
   #burger.is-active:before{
-    border: 3px solid $color_primary;
+    border: 3px solid $color_white;
   }
 
   #burger.is-active .line{
