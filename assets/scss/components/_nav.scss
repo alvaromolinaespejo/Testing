@@ -88,13 +88,189 @@ nav{
 }
 
 [off-canvas]{
-  background-color: $color_green;
-  .profile{
-    padding: rem(15) 0;
+  background-color: $color-menu;
+  @include box-shadow(2px 0 10px black);
+  .menu-header{
+    height: rem(65);
+    font-size: px(35);
+    text-transform: uppercase;
+    color: $color_white;
     text-align: center;
+    font-weight: $font_bold;
+    padding-top: rem(11);
+  }
+  .profile{
+    padding: rem(30) 0;
+    text-align: center;
+    background: url("../images/bg-profile.png");
+    position: relative;
     img{
       border: rem(5) solid white;
       border-radius: 100%;
+      width: rem(125);
+      @include box-shadow(3px 3px 4px black);
+    }
+    .badge{
+      &.msg-alert{
+        padding: 5px 10px;
+        background: red;
+        border-radius: rem(10);
+        border: rem(3) solid $color_white;
+        position: absolute;
+        top: rem(42);
+        left: rem(170);
+        @include box-shadow(1px 1px 4px black);
+        cursor: pointer;
+        @include transition(0.35s);
+        &:hover,
+        &:focus{
+          background: darkred;
+        }
+        i{
+          margin-right: rem(5);
+        }
+      }
+      &.config{
+        padding: rem(5) rem(6);
+        background: $color_black;
+        border-radius: 100%;
+        border: rem(3) solid $color_white;
+        position: absolute;
+        top: rem(120);
+        left: rem(172);
+        @include box-shadow(1px 1px 4px black);
+        @include transition(0.35s);
+        cursor: pointer;
+        &:hover,
+        &:focus{
+          background: green;
+        }
+      }
+      &.name-profile{
+        display: block;
+        margin: rem(20) auto 0;
+        width: rem(160);
+        background: $color_white;
+        color: $color_menu;
+        font-size: px(16);
+        padding: rem(8) rem(7) rem(5);
+        white-space: normal;
+        @include box-shadow(inset 1px 1px 3px black);
+      }
+    }
+    .badge-2{
+      display: inline-block;
+      padding: 5px 6px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      line-height: 1;
+      vertical-align: middle;
+      white-space: nowrap;
+      text-align: center;
+      background-color: black;
+      border-radius: 100%;
+      border: 3px solid white;
+      position: absolute;
+      top: 183px;
+      left: 180px;
+      box-shadow: 1px 1px 4px black;
+    }
+  }
+  .panel{
+    margin: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+    @include box-shadow(none);
+  }
+  .list-group{
+    margin: 0;
+  }
+  .menu-item{
+    display: block;
+    padding: rem(10) rem(15);
+    border-bottom: rem(1.5) solid $color-menu;
+    border-top: rem(1.5) solid $color-menu;
+    color: $color_white;
+    text-transform: uppercase;
+    font-size: px(18);
+    &:focus,
+    &:hover{
+      i{
+        margin: 0 rem(20) 0 rem(15);
+      }
+    }
+    i{
+      margin-right: rem(5);
+      @include transition(0.5s);
+    }
+  }
+  li{
+    font-weight: $font_light;
+    text-transform: uppercase;
+    display: block;
+    border-bottom: rem(1) solid $color-menu;
+    border-top: rem(1) solid $color-menu;
+    color: $color_white;
+    a{
+      color: $color_white;
+      font-size: px(14);
+      display: block;
+      padding: rem(10) rem(30);
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      span {
+        position: relative;
+        z-index: 15;
+      }
+      &:before, &:after {
+        content:'';
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+      }
+      &:before {
+        transform: translate3d(-100%, 0, 0);
+        background-color: $color_white-transparent;
+        transition: transform 300ms;
+      }
+
+      &:after {
+        background-color: teal;
+        transform: translate3d(100%, 0, 0);
+        transition: transform 300ms 300ms cubic-bezier(.16,.73,.58,.62);
+      }
+      &:hover,
+      &:focus{
+        &:before {
+          transform: translate3d(0,0,0);
+        }
+
+        &:after {
+          transform: translate3d(0,0,0);
+        }
+      }
+    }
+    &.btn-req{
+      background: url("../images/btn-req.png");
+      background-size: cover ;
+    }
+    &.btn-def{
+      background: url("../images/btn-def.png");
+      background-size: cover ;
+    }
+    &.btn-conf{
+      background: url("../images/btn-conf.png");
+      background-size: cover ;
+    }
+    &.btn-exe{
+      background: url("../images/btn-exe.png");
+      background-size: cover ;
     }
   }
 }

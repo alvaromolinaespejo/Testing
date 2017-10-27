@@ -592,10 +592,12 @@ $sides: (top, bottom, left, right);
       display: inline-block;
       vertical-align: top;
     }
-    &:first-child a {
-      border-radius: 4px 0 0 4px;
-      -webkit-border-radius: 4px 0 0 4px;
-      -moz-border-radius: 4px 0 0 4px;
+    &:first-child{
+      a {
+        border-radius: 4px 0 0 4px;
+        -webkit-border-radius: 4px 0 0 4px;
+        -moz-border-radius: 4px 0 0 4px;
+      }
     }
     &:not(:first-child){
       margin-left: -5px;

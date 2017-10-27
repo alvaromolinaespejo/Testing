@@ -9585,13 +9585,168 @@ nav {
     transform: translateY(-8px) rotate(90deg); }
 
 [off-canvas] {
-  background-color: #94bf9f; }
+  background-color: #00264c;
+  -webkit-box-shadow: 2px 0 10px black;
+  box-shadow: 2px 0 10px black; }
+  [off-canvas] .menu-header {
+    height: 4.0625rem;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 0.6875rem; }
   [off-canvas] .profile {
-    padding: 0.9375rem 0;
-    text-align: center; }
+    padding: 1.875rem 0;
+    text-align: center;
+    background: url("../images/bg-profile.png");
+    position: relative; }
     [off-canvas] .profile img {
       border: 0.3125rem solid white;
-      border-radius: 100%; }
+      border-radius: 100%;
+      width: 7.8125rem;
+      -webkit-box-shadow: 3px 3px 4px black;
+      box-shadow: 3px 3px 4px black; }
+    [off-canvas] .profile .badge.msg-alert {
+      padding: 5px 10px;
+      background: red;
+      border-radius: 0.625rem;
+      border: 0.1875rem solid #ffffff;
+      position: absolute;
+      top: 2.625rem;
+      left: 10.625rem;
+      -webkit-box-shadow: 1px 1px 4px black;
+      box-shadow: 1px 1px 4px black;
+      cursor: pointer;
+      -webkit-transition: 0.35s;
+      -moz-transition: 0.35s;
+      -ms-transition: 0.35s;
+      transition: 0.35s; }
+      [off-canvas] .profile .badge.msg-alert:hover, [off-canvas] .profile .badge.msg-alert:focus {
+        background: darkred; }
+      [off-canvas] .profile .badge.msg-alert i {
+        margin-right: 0.3125rem; }
+    [off-canvas] .profile .badge.config {
+      padding: 0.3125rem 0.375rem;
+      background: #000000;
+      border-radius: 100%;
+      border: 0.1875rem solid #ffffff;
+      position: absolute;
+      top: 7.5rem;
+      left: 10.75rem;
+      -webkit-box-shadow: 1px 1px 4px black;
+      box-shadow: 1px 1px 4px black;
+      -webkit-transition: 0.35s;
+      -moz-transition: 0.35s;
+      -ms-transition: 0.35s;
+      transition: 0.35s;
+      cursor: pointer; }
+      [off-canvas] .profile .badge.config:hover, [off-canvas] .profile .badge.config:focus {
+        background: green; }
+    [off-canvas] .profile .badge.name-profile {
+      display: block;
+      margin: 1.25rem auto 0;
+      width: 10rem;
+      background: #ffffff;
+      color: #00264c;
+      font-size: 16px;
+      padding: 0.5rem 0.4375rem 0.3125rem;
+      white-space: normal;
+      -webkit-box-shadow: inset 1px 1px 3px black;
+      box-shadow: inset 1px 1px 3px black; }
+    [off-canvas] .profile .badge-2 {
+      display: inline-block;
+      padding: 5px 6px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      line-height: 1;
+      vertical-align: middle;
+      white-space: nowrap;
+      text-align: center;
+      background-color: black;
+      border-radius: 100%;
+      border: 3px solid white;
+      position: absolute;
+      top: 183px;
+      left: 180px;
+      box-shadow: 1px 1px 4px black; }
+  [off-canvas] .panel {
+    margin: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+  [off-canvas] .list-group {
+    margin: 0; }
+  [off-canvas] .menu-item {
+    display: block;
+    padding: 0.625rem 0.9375rem;
+    border-bottom: 0.09375rem solid #00264c;
+    border-top: 0.09375rem solid #00264c;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 18px; }
+    [off-canvas] .menu-item:focus i, [off-canvas] .menu-item:hover i {
+      margin: 0 1.25rem 0 0.9375rem; }
+    [off-canvas] .menu-item i {
+      margin-right: 0.3125rem;
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      -ms-transition: 0.5s;
+      transition: 0.5s; }
+  [off-canvas] li {
+    font-weight: 300;
+    text-transform: uppercase;
+    display: block;
+    border-bottom: 0.0625rem solid #00264c;
+    border-top: 0.0625rem solid #00264c;
+    color: #ffffff; }
+    [off-canvas] li a {
+      color: #ffffff;
+      font-size: 14px;
+      display: block;
+      padding: 0.625rem 1.875rem;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer; }
+      [off-canvas] li a span {
+        position: relative;
+        z-index: 15; }
+      [off-canvas] li a:before, [off-canvas] li a:after {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0; }
+      [off-canvas] li a:before {
+        transform: translate3d(-100%, 0, 0);
+        background-color: rgba(255, 255, 255, 0.6);
+        transition: transform 300ms;
+        filter: blur(1px); }
+      [off-canvas] li a:after {
+        background-color: teal;
+        transform: translate3d(100%, 0, 0);
+        transition: transform 300ms 300ms cubic-bezier(0.16, 0.73, 0.58, 0.62); }
+      [off-canvas] li a:hover:before, [off-canvas] li a:focus:before {
+        transform: translate3d(0, 0, 0); }
+      [off-canvas] li a:hover:after, [off-canvas] li a:focus:after {
+        transform: translate3d(0, 0, 0); }
+    [off-canvas] li.btn-req {
+      background: url("../images/btn-req.png");
+      background-size: cover; }
+    [off-canvas] li.btn-def {
+      background: url("../images/btn-def.png");
+      background-size: cover; }
+    [off-canvas] li.btn-conf {
+      background: url("../images/btn-conf.png");
+      background-size: cover; }
+    [off-canvas] li.btn-exe {
+      background: url("../images/btn-exe.png");
+      background-size: cover; }
 
 #login-page {
   height: 100vh;
