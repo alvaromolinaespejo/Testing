@@ -81,6 +81,7 @@ $(document).ready(function() {
         $(this).toggleClass("is-active");
     });
 
+
     $(".form_datetime").datetimepicker({
         format: "dd MM yyyy - hh:ii",
         autoclose: true,
@@ -252,3 +253,16 @@ $(document).ready(function() {
     });
 
 });
+
+$(document).ready(function(){
+    resizeDiv();
+});
+
+window.onresize = function(event) {
+    resizeDiv();
+};
+
+function resizeDiv() {
+    var vph = $(window).height() -340;
+    $('#accordion').css({'height': vph + 'px'});
+}

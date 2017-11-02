@@ -132,55 +132,47 @@
                                     </div>
                                     <div class="panel-body">
                                         <ul class="nav nav-pills nav-justified">
-                                            <li class="active"><a href="#example_tab_1" data-toggle="tab">Requeriments</a></li>
-                                            <li><a href="#example_tab_2" data-toggle="tab">Zmods</a></li>
+                                            <li class="active"><a href="#example_tab_1" data-toggle="tab">Inputs</a></li>
+                                            <li><a href="#example_tab_2" data-toggle="tab">Measurements</a></li>
                                         </ul>
                                         <div class="tab-content">
                                             <div class="tab-pane active" id="example_tab_1">
                                                 <table id="example_table"
                                                        class="table table-striped table-bordered"
                                                        data-toggle="table"
-                                                       data-search="true"
-                                                       data-show-refresh="true"
-                                                       data-show-toggle="true"
-                                                       data-show-columns="true"
+                                                       data-click-to-select="true"
                                                        data-sort-name="code"
                                                        data-sort-order="desc">
                                                     <thead>
                                                         <tr>
-                                                            <th data-field="code" class="header headerSortDown" data-sortable="true">Code</th>
-                                                            <th data-field="status" data-sortable="true">Status</th>
-                                                            <th data-field="type">Type</th>
-                                                            <th data-field="target-date" data-sortable="true">Target Date</th>
-                                                            <th data-field="title" data-sortable="true">Title</th>
+                                                            <th data-field="name" class="header headerSortDown" data-sortable="true">Name</th>
+                                                            <th data-field="issue" data-sortable="true">Issue</th>
+                                                            <th data-field="remarks">Remarks</th>
+                                                            <th data-field="modified">Modified</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr>
                                                             <td>MSN056.MON.81</td>
                                                             <td>Accepted</td>
-                                                            <td></td>
                                                             <td>10/30/2015 12:00 AM</td>
                                                             <td>title</td>
                                                         </tr>
                                                         <tr>
                                                             <td>MSN056.MON.82</td>
                                                             <td>Accepted</td>
-                                                            <td></td>
                                                             <td>10/30/2015 12:00 AM</td>
                                                             <td>title</td>
                                                         </tr>
                                                         <tr>
                                                             <td>MSN056.MRT.86</td>
                                                             <td>Accepted</td>
-                                                            <td></td>
                                                             <td>10/27/2018 12:00 AM</td>
                                                             <td>requeriment87</td>
                                                         </tr>
                                                         <tr>
                                                             <td>MSN065.MRT.65</td>
                                                             <td>Accepted</td>
-                                                            <td></td>
                                                             <td>9/14/2017 1:330 PM</td>
                                                             <td>title</td>
                                                         </tr>
@@ -188,21 +180,215 @@
                                                             <td>MSN065.ICD.83</td>
                                                             <td>Definition</td>
                                                             <td></td>
-                                                            <td></td>
                                                             <td>title</td>
                                                         </tr>
                                                         <tr>
                                                             <td>MSN065.ARC.68</td>
                                                             <td>Definition</td>
-                                                            <td></td>
                                                             <td>9/14/2017 8:08 AM</td>
                                                             <td>title</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
+                                                <div class="form-group pull-right">
+                                                    <button type="button" class="btn btn-primary m-t-15"data-toggle="modal" data-target="#ftmr-list">Modal FTMR List</button>
+                                                </div>
                                             </div>
                                             <div class="tab-pane" id="example_tab_2">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="title-fida m-b-15">Params</div>
+                                                        <table id="example_table_3"
+                                                               class="table table-striped table-bordered"
+                                                               data-toggle="table"
+                                                               data-click-to-select="true"
+                                                               data-sort-name="code"
+                                                               data-sort-order="desc">
+                                                            <thead>
+                                                            <tr>
+                                                                <th data-field="code" class="header headerSortDown" data-sortable="true">Code</th>
+                                                                <th data-field="title" data-sortable="true">Title</th>
+                                                                <th data-field="type">Type</th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            <tr>
+                                                                <td>MSN056.MON.81</td>
+                                                                <td>Accepted</td>
+                                                                <td>10/30/2015 12:00 AM</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>MSN056.MON.82</td>
+                                                                <td>Accepted</td>
+                                                                <td>10/30/2015 12:00 AM</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>MSN056.MRT.86</td>
+                                                                <td>Accepted</td>
+                                                                <td>10/27/2018 12:00 AM</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>MSN065.MRT.65</td>
+                                                                <td>Accepted</td>
+                                                                <td>9/14/2017 1:330 PM</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>MSN065.ICD.83</td>
+                                                                <td>Definition</td>
+                                                                <td>title</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>MSN065.ARC.68</td>
+                                                                <td>Definition</td>
+                                                                <td>9/14/2017 8:08 AM</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <div class="form-group pull-right">
+                                                            <button type="button" class="btn btn-primary m-t-15"data-toggle="modal" data-target="#create-param">Create Param</button>
+                                                            <button type="button" class="btn btn-primary m-t-15"data-toggle="modal" data-target="#param-list">Param List</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="title-fida m-b-15">Buses</div>
+                                                        <table id="example_table_4"
+                                                               class="table table-striped table-bordered"
+                                                               data-toggle="table"
+                                                               data-click-to-select="true"
+                                                               data-sort-name="code"
+                                                               data-sort-order="desc">
+                                                            <thead>
+                                                            <tr>
+                                                                <th data-field="code" class="header headerSortDown" data-sortable="true">Code</th>
+                                                                <th data-field="name" data-sortable="true">Name</th>
+                                                                <th data-field="type">Type</th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            <tr>
+                                                                <td>MSN056.MON.81</td>
+                                                                <td>Accepted</td>
+                                                                <td>10/30/2015 12:00 AM</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>MSN056.MON.82</td>
+                                                                <td>Accepted</td>
+                                                                <td>10/30/2015 12:00 AM</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>MSN056.MRT.86</td>
+                                                                <td>Accepted</td>
+                                                                <td>10/27/2018 12:00 AM</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>MSN065.MRT.65</td>
+                                                                <td>Accepted</td>
+                                                                <td>9/14/2017 1:330 PM</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>MSN065.ICD.83</td>
+                                                                <td>Definition</td>
+                                                                <td>title</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>MSN065.ARC.68</td>
+                                                                <td>Definition</td>
+                                                                <td>9/14/2017 8:08 AM</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <div class="form-group pull-right">
+                                                            <button type="button" class="btn btn-primary m-t-15"data-toggle="modal" data-target="#create-buses">Create Buses</button>
+                                                            <button type="button" class="btn btn-primary m-t-15"data-toggle="modal" data-target="#buses-list">Buses List</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="panel mod-light">
+                                    <div class="panel-heading ">
+                                        <h3 class="subtitle-fida">
+                                            Subtitle
+                                        </h3>
+                                        <h2 class="title-fida">
+                                            Notes
+                                        </h2>
+                                    </div>
+                                    <div class="panel-body">
+                                        <table id="example_table8"
+                                               class="table table-striped table-bordered"
+                                               data-toggle="table"
+                                               data-sort-name="code"
+                                               data-sort-order="desc">
+                                            <thead>
+                                            <tr>
+                                                <th data-field="title" class="header headerSortDown" data-sortable="true">Title</th>
+                                                <th data-field="description" data-sortable="true">Description</th>
+                                                <th data-field="createdby">Created by</th>
+                                                <th data-field="creationdate" data-sortable="true">Creation date</th>
+                                                <th data-field="modifyby" data-sortable="true">Modify by</th>
+                                                <th data-field="modificationdate" data-sortable="true">Modification date</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>MSN056.MON.81</td>
+                                                <td>Accepted</td>
+                                                <td></td>
+                                                <td>10/30/2015 12:00 AM</td>
+                                                <td>title</td>
+                                                <td>Accepted</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MSN056.MON.82</td>
+                                                <td>Accepted</td>
+                                                <td></td>
+                                                <td>10/30/2015 12:00 AM</td>
+                                                <td>title</td>
+                                                <td>Accepted</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MSN056.MRT.86</td>
+                                                <td>Accepted</td>
+                                                <td></td>
+                                                <td>10/27/2018 12:00 AM</td>
+                                                <td>requeriment87</td>
+                                                <td>Accepted</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MSN065.MRT.65</td>
+                                                <td>Accepted</td>
+                                                <td></td>
+                                                <td>9/14/2017 1:330 PM</td>
+                                                <td>title</td>
+                                                <td>Accepted</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MSN065.ICD.83</td>
+                                                <td>Definition</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>title</td>
+                                                <td>Accepted</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MSN065.ARC.68</td>
+                                                <td>Definition</td>
+                                                <td></td>
+                                                <td>9/14/2017 8:08 AM</td>
+                                                <td>title</td>
+                                                <td>Accepted</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="form-group pull-right">
+                                            <button type="button" class="btn btn-primary m-t-15"data-toggle="modal" data-target="#new-note">New note</button>
                                         </div>
                                     </div>
                                 </div>
@@ -290,6 +476,7 @@
                 </div>
             </div>
         </section>
+
         <footer id="footer-version" class="mt-15">
             <div class="container">
                 <div class="row">
@@ -327,25 +514,131 @@
                         </a>
                         <div id="collapseOne" class="collapse in">
                             <ul class="list-group">
-                                <li class="btn-req">
-                                    <a href="#">
+                                <li>
+                                    <a class="btn-req" data-toggle="collapse" data-parent="#collapseOne" href="#subcollapseOne">
                                         <span>Requeriments</span>
                                     </a>
+                                    <div id="subcollapseOne" class="collapse">
+                                        <ul class="list-group">
+                                            <li>
+                                                <a href="">
+                                                    <span>FTMR-Management</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span>Requeriments</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span>Measurements</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span>Requirements Acceptance</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </li>
-                                <li class="btn-def">
-                                    <a href="#">
+                                <li>
+                                    <a class="btn-def" data-toggle="collapse" data-parent="#collapseOne" href="#subcollapseTwo">
                                         <span>FTI Definition</span>
                                     </a>
+                                    <div id="subcollapseTwo" class="collapse">
+                                        <ul class="list-group">
+                                            <li>
+                                                <a href="">
+                                                    <span>Desks</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span>Designer</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span>Measurement Chains</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </li>
-                                <li class="btn-conf">
-                                    <a href="#">
+                                <li>
+                                    <a class="btn-conf" data-toggle="collapse" data-parent="#collapseOne" href="#subcollapseThree">
                                         <span>FTI Configuration</span>
                                     </a>
+                                    <div id="subcollapseThree" class="collapse">
+                                        <ul class="list-group">
+                                            <li>
+                                                <a href="">
+                                                    <span>Configurations</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span>Monitoring</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span>Other Operations</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span>ICD Loading</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span>ICD Validation</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span>Desk Validation</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span>Programing</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span>MPL</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </li>
-                                <li class="btn-exe">
-                                    <a href="#">
+                                <li>
+                                    <a class="btn-exe" data-toggle="collapse" data-parent="#collapseOne" href="#subcollapseFour">
                                         <span>FTI Execution</span>
                                     </a>
+                                    <div id="subcollapseFour" class="collapse">
+                                        <ul class="list-group">
+                                            <li>
+                                                <a href="">
+                                                    <span>Flights</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span>Records</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span>Process</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -409,6 +702,496 @@
                                 </li>
                             </ul>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal FTMR List-->
+    <div class="components">
+        <div class="modal fade" id="ftmr-list" tabindex="-1" role="dialog" aria-labelledby="ftmrlistLabel">
+            <div class="modal-dialog modal-lg mod-light" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="ftmrlistLabel">FTMR List</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="example_title">Name:</label>
+                                    <input type="text" class="form-control" id="example_1" placeholder="Text Input">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="example_title">Issue:</label>
+                                    <input type="text" class="form-control" id="example_12" placeholder="Text Input">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="example_title">Remarks:</label>
+                                    <input type="text" class="form-control" id="example_13" placeholder="Text Input">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-primary width-full m-t-30">Search</button>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <table id="example_table_2"
+                                       class="table table-striped table-bordered"
+                                       data-toggle="table"
+                                       data-click-to-select="true"
+                                       data-sort-name="code"
+                                       data-sort-order="desc">
+                                    <thead>
+                                    <tr>
+                                        <th data-field="name" class="header headerSortDown" data-sortable="true">Name</th>
+                                        <th data-field="issue" data-sortable="true">Issue</th>
+                                        <th data-field="remarks">Remarks</th>
+                                        <th data-field="modified">Modified date</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>MSN056.MON.81</td>
+                                        <td>Accepted</td>
+                                        <td>10/30/2015 12:00 AM</td>
+                                        <td>title</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MSN056.MON.82</td>
+                                        <td>Accepted</td>
+                                        <td>10/30/2015 12:00 AM</td>
+                                        <td>title</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MSN056.MRT.86</td>
+                                        <td>Accepted</td>
+                                        <td>10/27/2018 12:00 AM</td>
+                                        <td>requeriment87</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MSN065.MRT.65</td>
+                                        <td>Accepted</td>
+                                        <td>9/14/2017 1:330 PM</td>
+                                        <td>title</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MSN065.ICD.83</td>
+                                        <td>Definition</td>
+                                        <td></td>
+                                        <td>title</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MSN065.ARC.68</td>
+                                        <td>Definition</td>
+                                        <td>9/14/2017 8:08 AM</td>
+                                        <td>title</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="row">
+                            <div class="col-md-offset-9 col-md-3">
+                                <button type="button" class="btn btn-success width-full" data-dismiss="modal">ok</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Creación Parametros // A definir //  -->
+    <div class="components">
+        <div class="modal fade" id="create-param" tabindex="-1" role="dialog" aria-labelledby="createparamLabel">
+            <div class="modal-dialog modal-lg mod-light" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="createparamLabel">FTMR List</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="example_title">Name:</label>
+                                    <input type="text" class="form-control" id="example_2" placeholder="Text Input">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="example_title">Issue:</label>
+                                    <input type="text" class="form-control" id="example_23" placeholder="Text Input">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="example_title">Remarks:</label>
+                                    <input type="text" class="form-control" id="example_24" placeholder="Text Input">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-primary width-full m-t-30">Search</button>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <table id="example_table_9"
+                                       class="table table-striped table-bordered"
+                                       data-toggle="table"
+                                       data-click-to-select="true"
+                                       data-sort-name="code"
+                                       data-sort-order="desc">
+                                    <thead>
+                                    <tr>
+                                        <th data-field="name" class="header headerSortDown" data-sortable="true">Name</th>
+                                        <th data-field="issue" data-sortable="true">Issue</th>
+                                        <th data-field="remarks">Remarks</th>
+                                        <th data-field="modified">Modified date</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>MSN056.MON.81</td>
+                                        <td>Accepted</td>
+                                        <td>10/30/2015 12:00 AM</td>
+                                        <td>title</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MSN056.MON.82</td>
+                                        <td>Accepted</td>
+                                        <td>10/30/2015 12:00 AM</td>
+                                        <td>title</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MSN056.MRT.86</td>
+                                        <td>Accepted</td>
+                                        <td>10/27/2018 12:00 AM</td>
+                                        <td>requeriment87</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MSN065.MRT.65</td>
+                                        <td>Accepted</td>
+                                        <td>9/14/2017 1:330 PM</td>
+                                        <td>title</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MSN065.ICD.83</td>
+                                        <td>Definition</td>
+                                        <td></td>
+                                        <td>title</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MSN065.ARC.68</td>
+                                        <td>Definition</td>
+                                        <td>9/14/2017 8:08 AM</td>
+                                        <td>title</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="row">
+                            <div class="col-md-offset-9 col-md-3">
+                                <button type="button" class="btn btn-success width-full" data-dismiss="modal">ok</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Param List-->
+    <div class="components">
+        <div class="modal fade" id="param-list" tabindex="-1" role="dialog" aria-labelledby="paramlistLabel">
+            <div class="modal-dialog modal-lg mod-light" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="paramlistlabel">Paramteters List</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="example_title">Code:</label>
+                                    <input type="text" class="form-control" id="example_6" placeholder="Text Input">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="example_title">Title:</label>
+                                    <input type="text" class="form-control" id="example_61" placeholder="Text Input">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-primary width-full m-t-30">Search</button>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <table id="example_table_6"
+                                       class="table table-striped table-bordered"
+                                       data-toggle="table"
+                                       data-click-to-select="true"
+                                       data-sort-name="code"
+                                       data-sort-order="desc">
+                                    <thead>
+                                    <tr>
+                                        <th data-field="name" class="header headerSortDown" data-sortable="true">Code</th>
+                                        <th data-field="issue" data-sortable="true">Title</th>
+                                        <th data-field="remarks">Type</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>MSN056.MON.81</td>
+                                        <td>Accepted</td>
+                                        <td>10/30/2015 12:00 AM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MSN056.MON.82</td>
+                                        <td>Accepted</td>
+                                        <td>10/30/2015 12:00 AM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MSN056.MRT.86</td>
+                                        <td>Accepted</td>
+                                        <td>10/27/2018 12:00 AM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MSN065.MRT.65</td>
+                                        <td>Accepted</td>
+                                        <td>9/14/2017 1:330 PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MSN065.ICD.83</td>
+                                        <td>Definition</td>
+                                        <td>title</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MSN065.ARC.68</td>
+                                        <td>Definition</td>
+                                        <td>9/14/2017 8:08 AM</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning">Cancel</button>
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Creación Buses-->
+    <div class="components">
+        <div class="modal fade" id="create-buses" tabindex="-1" role="dialog" aria-labelledby="createbusesLabel">
+            <div class="modal-dialog modal-lg mod-light" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="createbusesLabel">New Buses</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="example_title">Code:</label>
+                                    <input type="text" class="form-control" id="example_3" placeholder="Text Input">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <label for="example_title">Description:</label>
+                                    <input type="text" class="form-control" id="example_31" placeholder="Text Input">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <div class="form-group">
+                                    <label for="example_status">Type:</label>
+                                    <select class="form-control" id="example_5">
+                                        <option>Definition</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xs-3">
+                                <div class="form-group">
+                                    <label for="example_code">Identifier:</label>
+                                    <input type="text" class="form-control" id="example_code" placeholder="Text Input">
+                                </div>
+                            </div>
+                            <div class="col-xs-3">
+                                <div class="form-group">
+                                    <label for="example_title">Speed:</label>
+                                    <input type="text" class="form-control" id="example_51" placeholder="Text Input">
+                                </div>
+                            </div>
+                            <div class="col-xs-3">
+                                <div class="form-group">
+                                    <label for="example_title">Parity:</label>
+                                    <input type="text" class="form-control" id="example_52" placeholder="Text Input">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning">Cancel</button>
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Buses List-->
+    <div class="components">
+        <div class="modal fade" id="buses-list" tabindex="-1" role="dialog" aria-labelledby="buseslistLabel">
+            <div class="modal-dialog modal-lg mod-light" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="buseslistlabel">Buses List</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="example_title">Code:</label>
+                                    <input type="text" class="form-control" id="example_7" placeholder="Text Input">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="example_title">Description:</label>
+                                    <input type="text" class="form-control" id="example_71" placeholder="Text Input">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="example_status">Type:</label>
+                                    <select class="form-control" id="example_status1">
+                                        <option>Definition</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-primary width-full m-t-30">Search</button>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <table id="example_table_7"
+                                       class="table table-striped table-bordered"
+                                       data-toggle="table"
+                                       data-click-to-select="true"
+                                       data-sort-name="code"
+                                       data-sort-order="desc">
+                                    <thead>
+                                    <tr>
+                                        <th data-field="name" class="header headerSortDown" data-sortable="true">Code</th>
+                                        <th data-field="issue" data-sortable="true">Name</th>
+                                        <th data-field="remarks">Type</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>MSN056.MON.81</td>
+                                        <td>Accepted</td>
+                                        <td>10/30/2015 12:00 AM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MSN056.MON.82</td>
+                                        <td>Accepted</td>
+                                        <td>10/30/2015 12:00 AM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MSN056.MRT.86</td>
+                                        <td>Accepted</td>
+                                        <td>10/27/2018 12:00 AM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MSN065.MRT.65</td>
+                                        <td>Accepted</td>
+                                        <td>9/14/2017 1:330 PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MSN065.ICD.83</td>
+                                        <td>Definition</td>
+                                        <td>title</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MSN065.ARC.68</td>
+                                        <td>Definition</td>
+                                        <td>9/14/2017 8:08 AM</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning">Cancel</button>
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal New Note-->
+    <div class="components">
+        <div class="modal fade" id="new-note" tabindex="-1" role="dialog" aria-labelledby="newnoteLabel">
+            <div class="modal-dialog modal-lg mod-light" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="newnoteLabel">Buses List</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="form-group">
+                                    <label for="example_title">Title:</label>
+                                    <input type="text" class="form-control" id="example_8" placeholder="Text Input">
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="form-group">
+                                    <label for="example_title">Description:</label>
+                                    <input type="text" class="form-control" id="example_81" placeholder="Text Input">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning">Cancel</button>
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Save</button>
                     </div>
                 </div>
             </div>

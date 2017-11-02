@@ -90,6 +90,7 @@ nav{
 [off-canvas]{
   background-color: $color-menu;
   @include box-shadow(2px 0 10px black);
+  overflow-y: hidden;
   .menu-header{
     height: rem(65);
     font-size: px(35);
@@ -158,24 +159,16 @@ nav{
         @include box-shadow(inset 1px 1px 3px black);
       }
     }
-    .badge-2{
-      display: inline-block;
-      padding: 5px 6px;
-      font-size: 16px;
-      font-weight: bold;
-      color: #fff;
-      line-height: 1;
-      vertical-align: middle;
-      white-space: nowrap;
-      text-align: center;
-      background-color: black;
-      border-radius: 100%;
-      border: 3px solid white;
-      position: absolute;
-      top: 183px;
-      left: 180px;
-      box-shadow: 1px 1px 4px black;
-    }
+  }
+  #accordion{
+    overflow-y: auto;
+    scrollbar-face-color:$color_cyan_5;
+    scrollbar-arrow-color:#FFFFFF;
+    scrollbar-track-color:#C0B0B0;
+    scrollbar-shadow-color:rgb(0,0,0);
+    scrollbar-highlight-color:rgb(0,0,0);
+    scrollbar-3dlight-color:#808080;
+    scrollbar-darkshadow-Color:#202020;
   }
   .panel{
     margin: 0;
@@ -256,19 +249,19 @@ nav{
         }
       }
     }
-    &.btn-req{
+    .btn-req{
       background: url("../images/btn-req.png");
       background-size: cover ;
     }
-    &.btn-def{
+    .btn-def{
       background: url("../images/btn-def.png");
       background-size: cover ;
     }
-    &.btn-conf{
+    .btn-conf{
       background: url("../images/btn-conf.png");
       background-size: cover ;
     }
-    &.btn-exe{
+    .btn-exe{
       background: url("../images/btn-exe.png");
       background-size: cover ;
     }
