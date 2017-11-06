@@ -1,5 +1,14 @@
 //DASH BOARD PAGE
 #dash-board{
+  .title-db{
+    text-transform: uppercase;
+    font-size: px(30);
+    font-weight: $font_bold;
+    color: $color_menu;
+    border-top: 6px solid $color_menu;
+    display: inline-block;
+    margin-bottom: rem(15);
+  }
   .box-dashboard{
     border-top: rem(10) solid $color-menu;
     border-bottom: rem(10) solid $color-menu;

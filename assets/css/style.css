@@ -9794,6 +9794,14 @@ nav {
 #dash-board {
   /* COLLAPSE
 ------------------------------------------------------------ */ }
+  #dash-board .title-db {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    color: #00264c;
+    border-top: 6px solid #00264c;
+    display: inline-block;
+    margin-bottom: 0.9375rem; }
   #dash-board .box-dashboard {
     border-top: 0.625rem solid #00264c;
     border-bottom: 0.625rem solid #00264c;
