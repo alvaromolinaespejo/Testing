@@ -9825,8 +9825,8 @@ nav {
       border: none;
       margin: 0; }
       #dash-board .box-dashboard .panel ul {
-        -webkit-box-shadow: inset 0px 0px 15px black;
-        box-shadow: inset 0px 0px 15px black;
+        -webkit-box-shadow: inset 0px 0px 12px black;
+        box-shadow: inset 0px 0px 12px black;
         background: #7087bb; }
         #dash-board .box-dashboard .panel ul li a {
           background: none;

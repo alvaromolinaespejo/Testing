@@ -37,7 +37,7 @@
       border: none;
       margin: 0;
       ul{
-        @include box-shadow(inset 0px 0px 15px black);
+        @include box-shadow(inset 0px 0px 12px black);
         background: #7087bb;
         li{
           a{
