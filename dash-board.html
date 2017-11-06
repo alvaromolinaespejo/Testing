@@ -5,7 +5,8 @@
 	<title>FIDA App</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/js/Sliderbars/slidebars.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
 
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
@@ -16,77 +17,455 @@
     <script type="text/javascript" src="assets/js/app.js"></script>
 
 </head>
-<body class="bg-carbon">
-    <header>
+<body>
 
-    </header>
-    <br>
-    <br>
-    <section id="dash-board">
+    <nav id="header" canvas="" class="" style="">
         <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="title-ps">
-                        Program Selection
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-9">
-                    <div class="box-selection">
-                        <div class="box-one">
-                            <a class="item-ps">
-                                A400
-                            </a>
-                        </div>
-                        <div class="box-two">
-                            <a class="item-ps">
-                                A330 MRTT
-                            </a>
-                        </div>
-                        <div class="box-three">
-                            <a class="item-ps">
-                                C295
-                            </a>
-                        </div>
-                        <div class="box-four">
-                            <a class="item-ps">
-                                Eurofighter
-                            </a>
+            <div class="row m-t-15">
+                <div class="col-xs-12 text-center">
+                    <div class="pull-left">
+                        <div class="hamburger" id="burger">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
                         </div>
                     </div>
-                </div>
-                <div class="col-xs-12 col-md-3">
-                    <div class="title-oo">
-                        Other Operations
+
+                    <div class="pull-right">
+                        <select class="form-control" id="test12">
+                            <option>-- Select --</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
                     </div>
-                    <ul class="items-oo">
-                        <li>
-                            <a href="">Snags</a>
-                        </li>
-                        <li>
-                            <a href="">Laboratory</a>
-                        </li>
-                        <li>
-                            <a href="">GS Management</a>
-                        </li>
-                        <li>
-                            <a href="">Admin Panel</a>
-                        </li>
-                    </ul>
+
+                    <div class="logo-img"><img id="logo" src="assets/images/logo-blue.svg" alt="FIDA"></div>
                 </div>
             </div>
         </div>
-    </section>
-    <footer id="footer-version" class="mt-15">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-6">
-                    <p><i class="fa fa-copyright" aria-hidden="true"></i> 2017 Copyright TEAVM TL1 IT, SW & DB</p>
+    </nav>
+
+    <div canvas="container">
+        <section id="dash-board">
+            <div class="container">
+                <div class="row m-t-15">
+                    <div class="col-xs-12 col-md-3">
+                        <div class="box-dashboard">
+                            <div class="header-dashboard requeriments">
+                                <div class="title-dashboard">
+                                    Requeriments
+                                </div>
+                            </div>
+                            <ul class="list-group">
+                                <li>
+                                    <a href="">
+                                        FTMR Management
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Requeriments
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Measurements
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Requeriments Acceptance
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="box-dashboard">
+                            <div class="header-dashboard definition">
+                                <div class="title-dashboard">
+                                    FTI Definition
+                                </div>
+                            </div>
+                            <ul class="list-group">
+                                <li>
+                                    <a href="">
+                                        Desks
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Designer
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Measurements Chains
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="box-dashboard">
+                            <div class="header-dashboard configuration">
+                                <div class="title-dashboard">
+                                    FTI Configuration
+                                </div>
+                            </div>
+                            <div id="accordion_conf">
+                                <div class="panel">
+                                    <a data-toggle="collapse" data-parent="#accordion_conf" href="#collapseConf" class="">
+                                        Configurations
+                                    </a>
+                                    <div id="collapseConf" class="collapse">
+                                        <ul class="list-group">
+                                            <li>
+                                                <a class="" href="#">
+                                                    <span>ICD Loading</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="" href="#">
+                                                    <span>ICDS Validation</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="" href="#">
+                                                    <span>Desk Validation</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="" href="#">
+                                                    <span>Programing</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="" href="#">
+                                                    <span>MPL</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="panel">
+                                    <a data-toggle="collapse" data-parent="#accordion_conf" href="#collapseMon" class="">
+                                        Monitoring
+                                    </a>
+                                    <div id="collapseMon" class=" collapse">
+                                        <ul class="list-group">
+                                            <li>
+                                                <a href="#">
+                                                    <span>Monitoring</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span>Software</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="panel">
+                                    <a data-toggle="collapse" data-parent="#accordion_conf" href="#collapseOther" class="">
+                                        Other Operations
+                                    </a>
+                                    <div id="collapseOther" class=" collapse">
+                                        <ul class="list-group">
+                                            <li>
+                                                <a href="#">
+                                                    <span>Elaborations</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span>Mnemonics</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="box-dashboard">
+                            <div class="header-dashboard execution">
+                                <div class="title-dashboard">
+                                    FTI Execution
+                                </div>
+                            </div>
+                            <ul class="list-group">
+                                <li>
+                                    <a href="">
+                                        Flights
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Records
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Process
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-xs-6 text-right">
-                    <img src="assets/images/airbus.png" alt="">
+            </div>
+        </section>
+
+        <footer id="footer-version" class="mt-15">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <p><i class="fa fa-copyright" aria-hidden="true"></i> 2017 Copyright TEAVM TL1 IT, SW & DB</p>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                        <img src="assets/images/airbus.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div off-canvas="menu-left left push">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="menu-header">
+                    <p>Title</p>
+                </div>
+                <div class="profile">
+                    <img src="assets/images/user-bill.png" alt="">
+                    <div class="badge msg-alert"><i class="fa fa-bell" aria-hidden="true"></i>12</div>
+                    <div class="badge config"><i class="fa fa-gear" aria-hidden="true"></i></div>
+                    <div class="badge name-profile">
+                        <span>William Henry Gates III</span>
+                    </div>
+                </div>
+                <div id="accordion">
+                    <div class="panel">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="menu-item">
+                            <i class="fa fa-dashboard"></i>
+                            Dashboard
+                        </a>
+                        <div id="collapseOne" class="collapse in">
+                            <ul class="list-group">
+                                <li>
+                                    <a class="btn-req" data-toggle="collapse" data-parent="#collapseOne" href="#subcollapseOne">
+                                        <span>Requeriments</span>
+                                    </a>
+                                    <div id="subcollapseOne" class="collapse">
+                                        <ul class="list-group">
+                                            <li>
+                                                <a href="">
+                                                    <span>FTMR-Management</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span>Requeriments</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span>Measurements</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span>Requirements Acceptance</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="btn-def" data-toggle="collapse" data-parent="#collapseOne" href="#subcollapseTwo">
+                                        <span>FTI Definition</span>
+                                    </a>
+                                    <div id="subcollapseTwo" class="collapse">
+                                        <ul class="list-group">
+                                            <li>
+                                                <a href="">
+                                                    <span>Desks</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span>Designer</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span>Measurement Chains</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="btn-conf" data-toggle="collapse" data-parent="#collapseOne" href="#subcollapseThree">
+                                        <span>FTI Configuration</span>
+                                    </a>
+                                    <div id="subcollapseThree" class="collapse">
+                                        <ul class="list-group">
+                                            <li>
+                                                <a href="">
+                                                    <span>Configurations</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span>Monitoring</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span>Other Operations</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span>ICD Loading</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span>ICD Validation</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span>Desk Validation</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span>Programing</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span>MPL</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="btn-exe" data-toggle="collapse" data-parent="#collapseOne" href="#subcollapseFour">
+                                        <span>FTI Execution</span>
+                                    </a>
+                                    <div id="subcollapseFour" class="collapse">
+                                        <ul class="list-group">
+                                            <li>
+                                                <a href="">
+                                                    <span>Flights</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span>Records</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span>Process</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="menu-item">
+                            <i class="fa fa-cogs"></i>
+                            Settings
+                        </a>
+                        <div id="collapseTwo" class=" collapse">
+                            <ul class="list-group">
+                                <li>
+                                    <a href="#">
+                                        <span>Example 1</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Example 2</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Example 3</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Example 4</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="menu-item">
+                            <i class="fa fa-envelope"></i>
+                            Messages
+                        </a>
+                        <div id="collapseThree" class=" collapse">
+                            <ul class="list-group">
+                                <li>
+                                    <a href="#">
+                                        <span>Example 1</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Example 2</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Example 3</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Example 4</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
+
+    <script>
+        ( function ( $ ) {
+            // Initialize Slidebars
+            var controller = new slidebars();
+            controller.init();
+
+            // Toggle Slidebars
+            $( '#burger' ).on( 'click', function ( event ) {
+                // Stop default action and bubbling
+                event.stopPropagation();
+                event.preventDefault();
+
+                // Toggle the Slidebar with id 'id-2'
+                controller.toggle( 'menu-left' );
+            } );
+        } ) ( jQuery );
+    </script>
 </body>
 </html>

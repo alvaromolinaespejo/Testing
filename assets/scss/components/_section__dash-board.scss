@@ -1,5 +1,106 @@
 //DASH BOARD PAGE
 #dash-board{
-
-
+  .box-dashboard{
+    border-top: rem(10) solid $color-menu;
+    border-bottom: rem(10) solid $color-menu;
+    @include box-shadow(1px 1px 1px black);
+    .header-dashboard{
+      background-size: cover;
+      min-height: rem(140);
+      &.requeriments{
+        background: url("../images/db-req.png");
+      }
+      &.definition{
+        background: url("../images/db-def.png");
+      }
+      &.configuration{
+        background: url("../images/db-conf.png");
+      }
+      &.execution{
+        background: url("../images/db-exe.png");
+      }
+      .title-dashboard{
+        font-size: px(20);
+        text-transform: uppercase;
+        font-weight: $font_semibold;
+        background: rgba(0,0,0,.4);
+        display: block;
+        padding: rem(15) rem(10);
+        color: $color_white;
+      }
+    }
+    ul{
+      list-style: none;
+      margin: 0;
+    }
+    .panel{
+      border: none;
+      margin: 0;
+      ul{
+        @include box-shadow(inset 0px 0px 15px black);
+        background: #7087bb;
+        li{
+          a{
+            background: none;
+            border: none;
+            padding: rem(10) rem(10) 0;
+            span{
+              font-size: px(14);
+              display: block;
+              border-bottom: 1px solid rgba(255,255,255,0.5);
+              padding-bottom: rem(10);
+            }
+            &:focus,
+            &:hover{
+              background: $color_cyan_5;
+              @include box-shadow(inset 0px 0px 8px black);
+            }
+          }
+          &:last-child{
+            a{
+              span{
+                border-bottom: none;
+              }
+            }
+          }
+        }
+      }
+    }
+    a{
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
+      color: $color_white;
+      padding: rem(15) rem(10);
+      background: $color-menu;
+      display: block;
+      @include transition(0.35s);
+      &:focus,
+      &:hover{
+        background: $color_cyan;
+      }
+    }
+  }
+  /* COLLAPSE
+------------------------------------------------------------ */
+  [data-toggle="collapse"]{
+    display: flex;
+    align-items: baseline;
+    &:after{
+      content: "\e114";
+      font-family:'Glyphicons Halflings';
+      font-size: px(15);
+      margin-left: rem(15);
+      float: right;
+    }
+    &[aria-expanded="true"]{
+      &:after{
+        content: "\e113";
+      }
+    }
+    &[aria-expanded="false"]{
+      &:after{
+        content: "\e114";
+      }
+    }
+  }
 }

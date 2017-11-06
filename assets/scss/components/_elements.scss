@@ -407,6 +407,11 @@ $sides: (top, bottom, left, right);
         min-height: rem(42);
       }
     }
+    tr.selected{
+      td{
+        background: $color_green;
+      }
+    }
   }
 
   /* TAGS
@@ -446,7 +451,7 @@ $sides: (top, bottom, left, right);
     }
   }
 
-  /* CHECKBOX
+  /* COLLAPSE
 ------------------------------------------------------------ */
   [data-toggle="collapse"]{
     display: flex;

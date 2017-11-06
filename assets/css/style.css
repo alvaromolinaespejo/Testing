@@ -7,7 +7,6 @@
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 @import url(../js/bootstrap-table/bootstrap-table.css);
 @import url(../js/datetimepicker/bootstrap-datetimepicker.css);
-@import url(../js/bootstrap-fileinput/fileinput.css);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -9015,7 +9014,7 @@ section {
   --------------------------------------------------------- */
   /* PAGINATION
   --------------------------------------------------------- */
-  /* CHECKBOX
+  /* COLLAPSE
 ------------------------------------------------------------ */ }
   .components .title-fida {
     font-weight: 700;
@@ -9189,6 +9188,9 @@ section {
       .components table input.form-control,
       .components .bootstrap-table input.form-control {
         min-height: 2.625rem; }
+    .components table tr.selected td,
+    .components .bootstrap-table tr.selected td {
+      background: #94bf9f; }
   .components .tag-primary {
     border-radius: 1.4375rem;
     min-height: 1.875rem;
@@ -9788,6 +9790,85 @@ nav {
       background: #1b456d; }
     #program-selection .col-select .box-dark img {
       margin-bottom: 0.625rem; }
+
+#dash-board {
+  /* COLLAPSE
+------------------------------------------------------------ */ }
+  #dash-board .box-dashboard {
+    border-top: 0.625rem solid #00264c;
+    border-bottom: 0.625rem solid #00264c;
+    -webkit-box-shadow: 1px 1px 1px black;
+    box-shadow: 1px 1px 1px black; }
+    #dash-board .box-dashboard .header-dashboard {
+      background-size: cover;
+      min-height: 8.75rem; }
+      #dash-board .box-dashboard .header-dashboard.requeriments {
+        background: url("../images/db-req.png"); }
+      #dash-board .box-dashboard .header-dashboard.definition {
+        background: url("../images/db-def.png"); }
+      #dash-board .box-dashboard .header-dashboard.configuration {
+        background: url("../images/db-conf.png"); }
+      #dash-board .box-dashboard .header-dashboard.execution {
+        background: url("../images/db-exe.png"); }
+      #dash-board .box-dashboard .header-dashboard .title-dashboard {
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 600;
+        background: rgba(0, 0, 0, 0.4);
+        display: block;
+        padding: 0.9375rem 0.625rem;
+        color: #ffffff; }
+    #dash-board .box-dashboard ul {
+      list-style: none;
+      margin: 0; }
+    #dash-board .box-dashboard .panel {
+      border: none;
+      margin: 0; }
+      #dash-board .box-dashboard .panel ul {
+        -webkit-box-shadow: inset 0px 0px 15px black;
+        box-shadow: inset 0px 0px 15px black;
+        background: #7087bb; }
+        #dash-board .box-dashboard .panel ul li a {
+          background: none;
+          border: none;
+          padding: 0.625rem 0.625rem 0; }
+          #dash-board .box-dashboard .panel ul li a span {
+            font-size: 14px;
+            display: block;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            padding-bottom: 0.625rem; }
+          #dash-board .box-dashboard .panel ul li a:focus, #dash-board .box-dashboard .panel ul li a:hover {
+            background: #129fdd;
+            -webkit-box-shadow: inset 0px 0px 8px black;
+            box-shadow: inset 0px 0px 8px black; }
+        #dash-board .box-dashboard .panel ul li:last-child a span {
+          border-bottom: none; }
+    #dash-board .box-dashboard a {
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
+      color: #ffffff;
+      padding: 0.9375rem 0.625rem;
+      background: #00264c;
+      display: block;
+      -webkit-transition: 0.35s;
+      -moz-transition: 0.35s;
+      -ms-transition: 0.35s;
+      transition: 0.35s; }
+      #dash-board .box-dashboard a:focus, #dash-board .box-dashboard a:hover {
+        background: #1874ac; }
+  #dash-board [data-toggle="collapse"] {
+    display: flex;
+    align-items: baseline; }
+    #dash-board [data-toggle="collapse"]:after {
+      content: "\e114";
+      font-family: 'Glyphicons Halflings';
+      font-size: 15px;
+      margin-left: 0.9375rem;
+      float: right; }
+    #dash-board [data-toggle="collapse"][aria-expanded="true"]:after {
+      content: "\e113"; }
+    #dash-board [data-toggle="collapse"][aria-expanded="false"]:after {
+      content: "\e114"; }
 
 #footer-version {
   width: 100%;
