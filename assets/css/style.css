@@ -8574,6 +8574,13 @@ body {
     position: relative;
     top: -0.0625rem; }
 
+.btn-success {
+  background: teal;
+  border-color: teal; }
+
+.btn-warning {
+  background: coral; }
+
 section {
   min-height: 100%;
   padding-bottom: 6.25rem; }
@@ -9271,7 +9278,7 @@ section {
       .components .mod-light select.file-upload-input,
       .components .mod-light textarea.file-upload-input {
         display: inline-block;
-        width: auto;
+        width: 8.75rem;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0; }
     .components .mod-light textarea {
@@ -9536,16 +9543,16 @@ span.add-on {
   top: 2.5625rem;
   right: 1.5rem; }
 
-nav {
+nav#header {
   background: #223466; }
-  nav .logo-img {
+  nav#header .logo-img {
     position: relative;
     top: -0.875rem;
     pointer-events: none;
     height: 3.125rem; }
-  nav #logo {
+  nav#header #logo {
     width: 4.6875rem; }
-  nav .hamburger .line {
+  nav#header .hamburger .line {
     width: 35px;
     height: 3px;
     background-color: #ffffff;
@@ -9554,19 +9561,19 @@ nav {
     -webkit-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out; }
-  nav .hamburger:hover {
+  nav#header .hamburger:hover {
     cursor: pointer; }
-  nav #burger {
+  nav#header #burger {
     position: relative;
     -webkit-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out; }
-  nav #burger.is-active {
+  nav#header #burger.is-active {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg); }
-  nav #burger:before {
+  nav#header #burger:before {
     content: "";
     position: absolute;
     -webkit-box-sizing: border-box;
@@ -9581,18 +9588,18 @@ nav {
     -webkit-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out; }
-  nav #burger.is-active:before {
+  nav#header #burger.is-active:before {
     border: 3px solid #ffffff; }
-  nav #burger.is-active .line {
+  nav#header #burger.is-active .line {
     width: 30px; }
-  nav #burger.is-active .line:nth-child(2) {
+  nav#header #burger.is-active .line:nth-child(2) {
     opacity: 0; }
-  nav #burger.is-active .line:nth-child(1) {
+  nav#header #burger.is-active .line:nth-child(1) {
     -webkit-transform: translateY(10px);
     -ms-transform: translateY(10px);
     -o-transform: translateY(10px);
     transform: translateY(10px); }
-  nav #burger.is-active .line:nth-child(3) {
+  nav#header #burger.is-active .line:nth-child(3) {
     -webkit-transform: translateY(-8px) rotate(90deg);
     -ms-transform: translateY(-8px) rotate(90deg);
     -o-transform: translateY(-8px) rotate(90deg);

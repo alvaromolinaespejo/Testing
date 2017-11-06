@@ -52,7 +52,7 @@
                 <div class="row m-t-15">
                     <div class="col-xs-12">
                         <ol class="breadcrumb breadcrumb-arrow">
-                            <li><a href="#"><i class="fa fa-plane" aria-hidden="true"></i>Home</a></li>
+                            <li><a href="#"><i class="fa fa-plane" aria-hidden="true"></i>A400M</a></li>
                             <li><a href="#">Dashboard</a></li>
                             <li><a href="#">Requeriments</a></li>
                             <li class="active"><span> New Requeriment</span></li>
@@ -65,7 +65,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-md-8">
+                    <div class="col-xs-12 col-md-9">
                         <div class="row">
                             <div class="col-xs-12">
                                 <div class="panel mod-light">
@@ -198,8 +198,8 @@
                                                     </tbody>
                                                 </table>
                                                 <div class="form-group pull-right">
-                                                    <button type="button" class="btn btn-primary m-t-15" data-toggle="modal" data-target="#ftmr-list">
-                                                        <span class="glyphicon glyphicon-open" aria-hidden="true"></span>
+                                                    <button type="button" class="btn btn-success m-t-15" data-toggle="modal" data-target="#ftmr-list">
+                                                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
                                                     </button>
                                                     <button type="button" class="btn btn-warning m-t-15">
                                                         <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
@@ -362,6 +362,7 @@
                                                class="table table-striped table-bordered"
                                                data-toggle="table"
                                                data-sort-name="code"
+                                               data-click-to-select="true"
                                                data-sort-order="desc">
                                             <thead>
                                             <tr>
@@ -444,8 +445,21 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-md-4">
+                    <div class="col-xs-12 col-md-3">
                         <div class="row">
+                            <div class="col-xs-12">
+                                <div class="panel mod-light">
+                                    <div class="panel-heading">
+                                        <h2 class="title-fida">Save changes</h2>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="form-group">
+                                            <button type="button" class="btn width-full btn-warning">Cancel Changes</button>
+                                            <button type="button" class="btn width-full btn-success m-t-15">Save Changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="col-xs-12">
                                 <div class="panel mod-light">
                                     <div class="panel-heading">
@@ -466,6 +480,15 @@
                                         <h2 class="title-fida">Tags</h2>
                                     </div>
                                     <div class="panel-body">
+                                        <div class="form-group input-group">
+                                            <input type="text" class="form-control">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-primary" type="button">
+                                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                                    Add
+                                                </button>
+                                            </span>
+                                        </div>
                                         <div class="list-group">
                                             <div class="tag-primary">
                                                 chras hendrerit dui
@@ -505,19 +528,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-8">
-                        <div class="panel mod-light">
-                            <div class="panel-heading">
-                                <h2 class="title-fida">Save changes</h2>
-                            </div>
-                            <div class="panel-body">
-                                <div class="form-group">
-                                    <button type="button" class="btn btn-warning">Cancel Changes</button>
-                                    <button type="button" class="btn btn-success">Save Changes</button>
                                 </div>
                             </div>
                         </div>
@@ -799,6 +809,7 @@
                                        data-sort-order="desc">
                                     <thead>
                                     <tr>
+                                        <th data-field="state" data-checkbox="true"></th>
                                         <th data-field="name" class="header headerSortDown" data-sortable="true">Name</th>
                                         <th data-field="issue" data-sortable="true">Issue</th>
                                         <th data-field="remarks">Remarks</th>
@@ -807,36 +818,42 @@
                                     </thead>
                                     <tbody>
                                     <tr>
+                                        <td></td>
                                         <td>MSN056.MON.81</td>
                                         <td>Accepted</td>
                                         <td>10/30/2015 12:00 AM</td>
                                         <td>title</td>
                                     </tr>
                                     <tr>
+                                        <td></td>
                                         <td>MSN056.MON.82</td>
                                         <td>Accepted</td>
                                         <td>10/30/2015 12:00 AM</td>
                                         <td>title</td>
                                     </tr>
                                     <tr>
+                                        <td></td>
                                         <td>MSN056.MRT.86</td>
                                         <td>Accepted</td>
                                         <td>10/27/2018 12:00 AM</td>
                                         <td>requeriment87</td>
                                     </tr>
                                     <tr>
+                                        <td></td>
                                         <td>MSN065.MRT.65</td>
                                         <td>Accepted</td>
                                         <td>9/14/2017 1:330 PM</td>
                                         <td>title</td>
                                     </tr>
                                     <tr>
+                                        <td></td>
                                         <td>MSN065.ICD.83</td>
                                         <td>Definition</td>
                                         <td></td>
                                         <td>title</td>
                                     </tr>
                                     <tr>
+                                        <td></td>
                                         <td>MSN065.ARC.68</td>
                                         <td>Definition</td>
                                         <td>9/14/2017 8:08 AM</td>
@@ -898,6 +915,7 @@
                                        class="table table-striped table-bordered"
                                        data-toggle="table"
                                        data-sort-name="code"
+                                       data-click-to-select="true"
                                        data-sort-order="desc">
                                     <thead>
                                     <tr>
@@ -953,6 +971,14 @@
                                     </tr>
                                     </tbody>
                                 </table>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-primary m-t-15" data-toggle="modal" data-target="#create-param">
+                                        <span class="glyphicon glyphicon-open" aria-hidden="true"></span>
+                                        Create Parameter
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1104,71 +1130,6 @@
         </div>
     </div>
 
-    <!-- Modal Creación Buses-->
-    <div class="components">
-        <div class="modal fade" id="create-buses" tabindex="-1" role="dialog" aria-labelledby="createbusesLabel">
-            <div class="modal-dialog modal-lg mod-light" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="createbusesLabel">New Buses</h4>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label for="example_title">Code:</label>
-                                    <input type="text" class="form-control" id="example_3" placeholder="Text Input">
-                                </div>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="form-group">
-                                    <label for="example_title">Description:</label>
-                                    <input type="text" class="form-control" id="example_31" placeholder="Text Input">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-3">
-                                <div class="form-group">
-                                    <label for="example_status">Type:</label>
-                                    <select class="form-control" id="example_5">
-                                        <option>Definition</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-xs-3">
-                                <div class="form-group">
-                                    <label for="example_code">Identifier:</label>
-                                    <input type="text" class="form-control" id="example_code" placeholder="Text Input">
-                                </div>
-                            </div>
-                            <div class="col-xs-3">
-                                <div class="form-group">
-                                    <label for="example_title">Speed:</label>
-                                    <input type="text" class="form-control" id="example_51" placeholder="Text Input">
-                                </div>
-                            </div>
-                            <div class="col-xs-3">
-                                <div class="form-group">
-                                    <label for="example_title">Parity:</label>
-                                    <input type="text" class="form-control" id="example_52" placeholder="Text Input">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-warning">Cancel</button>
-                        <button type="button" class="btn btn-success" data-dismiss="modal">Save</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Modal Buses List-->
     <div class="components">
         <div class="modal fade" id="buses-list" tabindex="-1" role="dialog" aria-labelledby="buseslistLabel">
@@ -1262,6 +1223,79 @@
                                     </tr>
                                     </tbody>
                                 </table>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-primary m-t-15" data-toggle="modal" data-target="#create-buses">
+                                        <span class="glyphicon glyphicon-open" aria-hidden="true"></span>
+                                        Create Buses
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning">Cancel</button>
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Creación Buses-->
+    <div class="components">
+        <div class="modal fade" id="create-buses" tabindex="-1" role="dialog" aria-labelledby="createbusesLabel">
+            <div class="modal-dialog modal-lg mod-light" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="createbusesLabel">New Buses</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="example_title">Code:</label>
+                                    <input type="text" class="form-control" id="example_3" placeholder="Text Input">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <label for="example_title">Description:</label>
+                                    <input type="text" class="form-control" id="example_31" placeholder="Text Input">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <div class="form-group">
+                                    <label for="example_status">Type:</label>
+                                    <select class="form-control" id="example_5">
+                                        <option>Definition</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xs-3">
+                                <div class="form-group">
+                                    <label for="example_code">Identifier:</label>
+                                    <input type="text" class="form-control" id="example_code" placeholder="Text Input">
+                                </div>
+                            </div>
+                            <div class="col-xs-3">
+                                <div class="form-group">
+                                    <label for="example_title">Speed:</label>
+                                    <input type="text" class="form-control" id="example_51" placeholder="Text Input">
+                                </div>
+                            </div>
+                            <div class="col-xs-3">
+                                <div class="form-group">
+                                    <label for="example_title">Parity:</label>
+                                    <input type="text" class="form-control" id="example_52" placeholder="Text Input">
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -507,7 +507,7 @@ $sides: (top, bottom, left, right);
       }
       &.file-upload-input{
         display: inline-block;
-        width: auto;
+        width: rem(140);
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
       }
