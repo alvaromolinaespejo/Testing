@@ -9805,6 +9805,7 @@ nav {
   #dash-board .box-dashboard {
     border-top: 0.625rem solid #00264c;
     border-bottom: 0.625rem solid #00264c;
+    margin-bottom: 0.9375rem;
     -webkit-box-shadow: 1px 1px 1px black;
     box-shadow: 1px 1px 1px black; }
     #dash-board .box-dashboard .header-dashboard {

@@ -12,6 +12,7 @@
   .box-dashboard{
     border-top: rem(10) solid $color-menu;
     border-bottom: rem(10) solid $color-menu;
+    margin-bottom: rem(15);
     @include box-shadow(1px 1px 1px black);
     .header-dashboard{
       background-size: cover;
