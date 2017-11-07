@@ -9784,19 +9784,121 @@ nav#header {
   #login-page .button-login {
     margin-top: 0.3125rem; }
 
-#program-selection .header {
-  padding: 1.25rem; }
-#program-selection .col-select {
-  padding: 0.3125rem 0.9375rem; }
-  #program-selection .col-select .box-dark {
-    border-radius: 0.625rem;
-    border: 2px solid #1c4971;
-    box-shadow: none;
-    display: block; }
-    #program-selection .col-select .box-dark:hover, #program-selection .col-select .box-dark:focus {
-      background: #1b456d; }
-    #program-selection .col-select .box-dark img {
-      margin-bottom: 0.625rem; }
+#program-selection {
+  padding: 0; }
+  #program-selection .title-ps {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    color: #00264c;
+    border-top: 6px solid #00264c;
+    display: inline-block;
+    margin-bottom: 1.875rem;
+    margin-top: 1.875rem; }
+  #program-selection .bg-programs {
+    background: #00264c;
+    padding: 1.875rem 0; }
+  #program-selection .bg-op {
+    padding: 1.875rem 0; }
+  #program-selection .programs {
+    display: flex;
+    flex-wrap: wrap; }
+    #program-selection .programs .box-program {
+      width: 25%;
+      height: 15.625rem;
+      position: relative;
+      text-align: center;
+      background: #ffffff;
+      border: 1px solid #e5e5e5; }
+      #program-selection .programs .box-program img {
+        margin-top: 4.375rem;
+        width: 9.375rem;
+        -webkit-transition: 0.45s ease;
+        -moz-transition: 0.45s ease;
+        -ms-transition: 0.45s ease;
+        transition: 0.45s ease; }
+      #program-selection .programs .box-program .title-program {
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #00264c;
+        font-weight: 600;
+        margin-top: 1.25rem; }
+      #program-selection .programs .box-program .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 100%;
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        -webkit-transition: 0.55s ease;
+        -moz-transition: 0.55s ease;
+        -ms-transition: 0.55s ease;
+        transition: 0.55s ease;
+        background-size: cover;
+        opacity: 0.2; }
+      #program-selection .programs .box-program.a400m .overlay {
+        background: url("../images/img-sky-4.png"); }
+      #program-selection .programs .box-program.c295 .overlay {
+        background: #00264c; }
+      #program-selection .programs .box-program.a330mrtt .overlay {
+        background: url("../images/img-sky-3.png"); }
+      #program-selection .programs .box-program.eurofighter .overlay {
+        background: url("../images/img-sky-1.png"); }
+      #program-selection .programs .box-program:hover img, #program-selection .programs .box-program:focus img {
+        transform: scale(1.6); }
+      #program-selection .programs .box-program:hover .title-program, #program-selection .programs .box-program:focus .title-program {
+        transform: scale(1); }
+      #program-selection .programs .box-program:hover .overlay, #program-selection .programs .box-program:focus .overlay {
+        bottom: 0;
+        height: 100%; }
+  #program-selection .title-op {
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: uppercase;
+    line-height: normal;
+    color: #00264c;
+    margin-bottom: 1.25rem; }
+  #program-selection .boxs-op {
+    display: flex; }
+    #program-selection .boxs-op .box-op {
+      background: #ffffff;
+      border: 1px solid #e5e5e5;
+      padding: 1.875rem 0;
+      text-align: center;
+      width: 100%;
+      height: 5rem;
+      position: relative; }
+      #program-selection .boxs-op .box-op .item-op {
+        color: #00264c;
+        font-weight: 600;
+        -webkit-transition: 0.45s ease;
+        -moz-transition: 0.45s ease;
+        -ms-transition: 0.45s ease;
+        transition: 0.45s ease; }
+      #program-selection .boxs-op .box-op .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 100%;
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        -webkit-transition: 0.55s ease;
+        -moz-transition: 0.55s ease;
+        -ms-transition: 0.55s ease;
+        transition: 0.55s ease;
+        background: #00264c; }
+      #program-selection .boxs-op .box-op:hover .item-op, #program-selection .boxs-op .box-op:focus .item-op {
+        color: #ffffff;
+        transform: scale(1); }
+      #program-selection .boxs-op .box-op:hover .overlay, #program-selection .boxs-op .box-op:focus .overlay {
+        bottom: 0;
+        height: 100%; }
+  #program-selection footer {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
 
 #dash-board {
   /* COLLAPSE
