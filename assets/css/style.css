@@ -9821,8 +9821,9 @@ nav#header {
         font-size: 20px;
         text-transform: uppercase;
         color: #00264c;
-        font-weight: 600;
-        margin-top: 1.25rem; }
+        font-weight: 700;
+        margin-top: 1.25rem;
+        text-shadow: 1px 1px 1px #ffffff; }
       #program-selection .programs .box-program .overlay {
         position: absolute;
         bottom: 0;
@@ -9836,13 +9837,13 @@ nav#header {
         -ms-transition: 0.55s ease;
         transition: 0.55s ease;
         background-size: cover;
-        opacity: 0.2; }
+        opacity: 0; }
       #program-selection .programs .box-program.a400m .overlay {
-        background: url("../images/img-sky-4.png"); }
+        background: url("../images/img-sky-1.png"); }
       #program-selection .programs .box-program.c295 .overlay {
-        background: #00264c; }
+        background: #d5d5d5; }
       #program-selection .programs .box-program.a330mrtt .overlay {
-        background: url("../images/img-sky-3.png"); }
+        background: url("../images/img-sky-1.png"); }
       #program-selection .programs .box-program.eurofighter .overlay {
         background: url("../images/img-sky-1.png"); }
       #program-selection .programs .box-program:hover img, #program-selection .programs .box-program:focus img {
@@ -9851,7 +9852,8 @@ nav#header {
         transform: scale(1); }
       #program-selection .programs .box-program:hover .overlay, #program-selection .programs .box-program:focus .overlay {
         bottom: 0;
-        height: 100%; }
+        height: 100%;
+        opacity: 0.6; }
   #program-selection .title-op {
     font-weight: 700;
     font-size: 25px;

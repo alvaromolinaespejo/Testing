@@ -37,8 +37,9 @@
         font-size: px(20);
         text-transform: uppercase;
         color: $color-menu;
-        font-weight: $font_semibold;
+        font-weight: $font_bold;
         margin-top: rem(20);
+        text-shadow: 1px 1px 1px $color_white;
       }
       .overlay{
         position: absolute;
@@ -50,21 +51,21 @@
         height: 0;
         @include transition(0.55s ease);
         background-size: cover;
-        opacity: 0.2;
+        opacity: 0;
       }
       &.a400m{
         .overlay{
-          background: url("../images/img-sky-4.png");
+          background: url("../images/img-sky-1.png");
         }
       }
       &.c295{
         .overlay{
-          background: $color-menu;
+          background: $color_gray_light-2;
         }
       }
       &.a330mrtt{
         .overlay{
-          background: url("../images/img-sky-3.png");
+          background: url("../images/img-sky-1.png");
         }
       }
       &.eurofighter{
@@ -83,6 +84,7 @@
         .overlay{
           bottom: 0;
           height: 100%;
+          opacity: 0.6;
         }
       }
     }
