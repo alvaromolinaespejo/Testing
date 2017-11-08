@@ -98,40 +98,61 @@
     margin-bottom: rem(20);
   }
   .boxs-op{
-    display: flex;
     .box-op{
-      background: $color_white;
-      border: 1px solid $color_gray_light-1;
-      padding: rem(30) 0;
-      text-align: center;
-      width: 100%;
-      height: rem(80);
-      position: relative;
       .item-op{
-        color: $color-menu;
+        padding: rem(30) rem(15);
+        display: block;
+        background: $color_white;
+        color: $color_menu;
         font-weight: $font_semibold;
-        @include transition(0.45s ease);
-      }
-      .overlay{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 100%;
-        overflow: hidden;
-        width: 100%;
-        height: 0;
-        @include transition(0.55s ease);
-        background: $color-menu;
-      }
-      &:hover,
-      &:focus{
-        .item-op{
+        @include transition(0.35s ease);
+        &:focus,
+        &:hover{
+          background: $color_menu;
           color: $color_white;
-          transform: scale(1);
         }
-        .overlay{
-          bottom: 0;
-          height: 100%;
+      }
+      ul{
+        background: $color_white;
+        list-style: none;
+        li{
+          a{
+            display: block;
+            padding: rem(15) rem(20);
+            color: $color_menu;
+            @include transition(0.35s ease);
+            &:focus,
+            &:hover{
+              background: $color_cyan;
+              color: $color_white;
+            }
+          }
+        }
+      }
+    }
+
+    [data-toggle="collapse"]{
+      display: flex;
+      align-items: baseline;
+      &:after{
+        content: "\e114";
+        font-family:'Glyphicons Halflings';
+        font-size: px(15);
+        margin-left: rem(15);
+        float: right;
+      }
+      &[aria-expanded="true"]{
+        background: $color_menu;
+        color: $color_white;
+        &:after{
+          content: "\e113";
+        }
+      }
+      &[aria-expanded="false"]{
+        background: $color_white;
+        color: $color_menu;
+        &:after{
+          content: "\e114";
         }
       }
     }

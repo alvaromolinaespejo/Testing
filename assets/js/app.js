@@ -85,9 +85,18 @@ $(document).ready(function() {
     $(".form_datetime").datetimepicker({
         format: "dd MM yyyy - hh:ii",
         autoclose: true,
-        todayBtn: true,
         pickerPosition: "bottom-left"
     });
+
+    $(".form_date").datetimepicker({
+        format: 'dd mm yyyy',
+        minView: 2,
+        maxView: 4,
+        autoclose: true,
+        pickerPosition: "bottom-left"
+    });
+
+    $('[rel="tooltip"]').tooltip();
 
     (function($) {
 
