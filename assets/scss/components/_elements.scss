@@ -1,14 +1,16 @@
 // Elements
 
 
-
+html{
+  overflow-y: scroll;
+  height: auto;
+}
 // > Section
 [canvas="container"]{
 
 }
 
 section{
-  min-height: 100%;
 }
 
 // > Logo FIDA

@@ -98,6 +98,20 @@ $(document).ready(function() {
 
     $('[rel="tooltip"]').tooltip();
 
+
+    function setHeight() {
+        windowHeight = $(window).innerHeight();
+        navHeight= $('nav').innerHeight();
+        footerHeight= $('footer').innerHeight();
+        sectionHeight= windowHeight - navHeight - footerHeight;
+        $('section').css('min-height', sectionHeight);
+    };
+    setHeight();
+
+    $(window).resize(function() {
+        setHeight();
+    });
+
     (function($) {
 
         // Browser supports HTML5 multiple file?

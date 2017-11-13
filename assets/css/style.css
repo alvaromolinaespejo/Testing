@@ -8581,8 +8581,9 @@ body {
 .btn-warning {
   background: coral; }
 
-section {
-  min-height: 100%; }
+html {
+  overflow-y: scroll;
+  height: auto; }
 
 .logo-fida img {
   height: 11.875rem; }
