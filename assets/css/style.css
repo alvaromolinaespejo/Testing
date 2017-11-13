@@ -8582,8 +8582,7 @@ body {
   background: coral; }
 
 section {
-  min-height: 100%;
-  padding-bottom: 6.25rem; }
+  min-height: 100%; }
 
 .logo-fida img {
   height: 11.875rem; }
@@ -10005,8 +10004,7 @@ nav#header {
   background: #000000;
   color: #ffffff;
   opacity: 0.6;
-  height: 2.1875rem;
-  margin-top: -100px; }
+  height: 2.1875rem; }
   #footer-version p {
     margin: 0.3125rem 0;
     font-size: 12px;
