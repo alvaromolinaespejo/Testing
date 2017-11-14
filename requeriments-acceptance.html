@@ -204,6 +204,18 @@
                         <div class="row">
                             <div class="col-xs-12">
                                 <div class="panel mod-light">
+                                    <div class="panel-body">
+                                        <div class="panel-body">
+                                            <div class="form-group">
+                                                <button type="button" class="btn btn-warning width-full">Cancel Changes</button>
+                                                <button type="button" class="btn btn-success width-full m-t-15">Save Changes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12">
+                                <div class="panel mod-light">
                                     <div class="panel-heading">
                                         <h2 class="title-fida">Main Title</h2>
                                         <h3 class="subtitle-fida">Subtitle</h3>
@@ -211,19 +223,6 @@
                                     <div class="panel-body">
                                         <canvas id="doughnut-chart" width="250" height="250"></canvas>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-9">
-                        <div class="panel mod-light">
-                            <div class="panel-heading">
-                                <h2 class="title-fida">Actions</h2>
-                            </div>
-                            <div class="panel-body">
-                                <div class="form-group">
-                                    <button type="button" class="btn btn-warning">Cancel Changes</button>
-                                    <button type="button" class="btn btn-success">Save Changes</button>
                                 </div>
                             </div>
                         </div>
@@ -357,6 +356,40 @@
     </div>
 
     <script>
+        new Chart(document.getElementById("doughnut-chart"), {
+            type: 'doughnut',
+            data: {
+                labels: [
+                    "Value Number One",
+                    "Value Number Two",
+                    "Value Number Three"
+                ],
+                datasets: [
+                    {
+                        label: "Number",
+                        backgroundColor: [
+                            "#e8c3b9",
+                            "#8e5ea2",
+                            "#3cba9f"
+                        ],
+                        data: [
+                            2478,
+                            5267,
+                            734
+                        ]
+                    }
+                ]
+            },
+            options: {
+                title: {
+                    display: true,
+                    text: 'Chart title'
+                },
+                legend: {
+                    position: 'bottom'
+                }
+            }
+        });
         ( function ( $ ) {
             // Initialize Slidebars
             var controller = new slidebars();
