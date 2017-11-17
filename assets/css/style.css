@@ -9761,6 +9761,104 @@ nav#header {
       background: url("../images/btn-exe.png");
       background-size: cover; }
 
+[off-canvas*=right] {
+  width: 25rem;
+  padding: 1.5625rem 0.9375rem; }
+  [off-canvas*=right] .close-notification {
+    color: #ffffff;
+    font-size: 25px;
+    position: absolute;
+    right: 1.25rem;
+    top: 0.9375rem;
+    border: 0.125rem solid #ffffff;
+    border-radius: 100%;
+    padding: 0.5rem; }
+  [off-canvas*=right] .title-notifications {
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 1.25rem; }
+  [off-canvas*=right] .notification {
+    display: flex;
+    height: 5rem;
+    background: #ffffff;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    margin-bottom: 0.3125rem; }
+    [off-canvas*=right] .notification:hover, [off-canvas*=right] .notification:focus {
+      opacity: 0.8; }
+    [off-canvas*=right] .notification.priority-0 .box-date {
+      background: red; }
+    [off-canvas*=right] .notification.priority-0 .box-msg {
+      color: red; }
+    [off-canvas*=right] .notification.priority-0:after {
+      background: red; }
+    [off-canvas*=right] .notification.priority-1 .box-date {
+      background: coral; }
+    [off-canvas*=right] .notification.priority-1 .box-msg {
+      color: coral; }
+    [off-canvas*=right] .notification.priority-1:after {
+      background: coral; }
+    [off-canvas*=right] .notification.priority-2 .box-date {
+      background: teal; }
+    [off-canvas*=right] .notification.priority-2 .box-msg {
+      color: teal; }
+    [off-canvas*=right] .notification.priority-2:after {
+      background: teal; }
+    [off-canvas*=right] .notification:after {
+      content: "";
+      position: relative;
+      right: 0;
+      width: 0.3125rem;
+      height: 100%;
+      background: coral; }
+    [off-canvas*=right] .notification .box-not {
+      display: flex; }
+    [off-canvas*=right] .notification .box-date {
+      color: #ffffff;
+      width: 5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      line-height: 1; }
+      [off-canvas*=right] .notification .box-date .day {
+        font-size: 35px;
+        font-weight: 700; }
+      [off-canvas*=right] .notification .box-date .month {
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 3px; }
+    [off-canvas*=right] .notification .box-msg {
+      width: 16.25rem;
+      padding: 0.3125rem 0.9375rem;
+      display: flex;
+      align-items: center; }
+    [off-canvas*=right] .notification .close {
+      width: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+
+.mod-not {
+  z-index: 1041; }
+  .mod-not.priority-0 .modal-header {
+    background: red !important; }
+  .mod-not.priority-1 .modal-header {
+    background: coral !important; }
+  .mod-not.priority-2 .modal-header {
+    background: teal !important; }
+  .mod-not .modal-dialog {
+    width: 32.5rem; }
+  .mod-not .modal-subtitle {
+    color: #ffffff; }
+
+.btn-notification.btn-warning {
+  min-height: auto; }
+
 #login-page {
   height: 100vh;
   display: flex;

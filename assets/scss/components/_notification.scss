@@ -1,0 +1,137 @@
+[off-canvas*=right] {
+  width: rem(400);
+  padding: rem(25) rem(15);
+  .close-notification{
+    color: $color_white;
+    font-size: px(25);
+    position: absolute;
+    right: rem(20);
+    top:rem(15);
+    border: rem(2) solid $color_white;
+    border-radius: 100%;
+    padding: rem(8);
+  }
+  .title-notifications{
+    font-size: px(25);
+    color: $color_white;
+    font-weight: $font_semibold;
+    text-transform: uppercase;
+    margin-bottom: rem(20);
+  }
+  .notification{
+    display: flex;
+    height: rem(80);
+    background: $color_white;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    margin-bottom: rem(5);
+    &:hover,
+    &:focus{
+      opacity: 0.8;
+    }
+    &.priority-0{
+      .box-date{
+        background: red;
+      }
+      .box-msg{
+        color: red;
+      }
+      &:after{
+        background: red;
+      }
+    }
+    &.priority-1{
+      .box-date{
+        background: coral;
+      }
+      .box-msg{
+        color: coral;
+      }
+      &:after{
+        background: coral;
+      }
+    }
+    &.priority-2{
+      .box-date{
+        background: $color_green_1;
+      }
+      .box-msg{
+        color: $color_green_1;
+      }
+      &:after{
+        background: $color_green_1;
+      }
+    }
+    &:after{
+      content: "";
+      position: relative;
+      right: 0;
+      width: rem(5);
+      height: 100%;
+      background: coral;
+    }
+    .box-not{
+      display: flex;
+    }
+    .box-date{
+      color: $color_white;
+      width: rem(80);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      line-height: 1;
+      .day{
+        font-size: px(35);
+        font-weight: $font_bold;
+      }
+      .month{
+        font-size: px(16);
+        font-weight: $font_regular;
+        letter-spacing: 3px;
+      }
+    }
+    .box-msg{
+      width: rem(260);
+      padding: rem(5) rem(15);
+      display: flex;
+      align-items: center;
+    }
+    .close{
+      width: rem(40);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+.mod-not{
+  z-index: 1041;
+
+  &.priority-0{
+    .modal-header{
+      background: red!important;
+    }
+  }
+  &.priority-1{
+    .modal-header{
+      background: coral!important;
+    }
+  }
+  &.priority-2{
+    .modal-header{
+      background: $color_green_1!important;
+    }
+  }
+  .modal-dialog{
+    width: rem(520);
+  }
+  .modal-subtitle{
+    color: $color_white;
+  }
+}
+.btn-notification.btn-warning{
+  min-height: auto;
+}
