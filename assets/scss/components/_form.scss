@@ -134,4 +134,14 @@ span.add-on{
   position: absolute;
   top: rem(41);
   right: rem(24);
+  pointer-events: none;
+}
+
+//Add symbol to Input
+
+.box-symbol{
+  position: relative;
+  float: right;
+  top:rem(-30);
+  right: rem(15);
 }

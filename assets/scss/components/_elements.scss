@@ -1,13 +1,18 @@
 // Elements
 
 
-html{
-  overflow-y: scroll;
-  height: auto;
-}
+//html{
+//  overflow-y: scroll;
+//  height: auto;
+//}
 // > Section
 [canvas="container"]{
-
+  height: -webkit-calc( 100% - 65px );
+  height: -moz-calc( 100% - 65px );
+  height: calc( 100% - 65px );
+  //width: 100%;
+  //height: 100vh;
+  //overflow: scroll;
 }
 
 section{
@@ -519,6 +524,10 @@ $sides: (top, bottom, left, right);
     .panel-heading{
       background: transparent;
       border-bottom: 0;
+      &.panel-search{
+        display: flex;
+        justify-content: space-between;
+      }
     }
     .nav-pills.nav-justified{
       background: $color_gray_light-2;

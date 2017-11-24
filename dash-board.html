@@ -13,40 +13,39 @@
     <script type="text/javascript" src="assets/js/Sliderbars/slidebars.min.js"></script>
     <script type="text/javascript" src="assets/js/chart/chart.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap-table/bootstrap-table.js"></script>
-    <script type="text/javascript" src="assets/js/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="assets/js/flatpickr/flatpickr.min.js"></script>
     <script type="text/javascript" src="assets/js/app.js"></script>
 
 </head>
 <body>
 
-
-    <div canvas="container">
-        <nav id="header" canvas="" class="" style="">
-            <div class="container">
-                <div class="row m-t-15">
-                    <div class="col-xs-12 text-center">
-                        <div class="pull-left">
-                            <div class="hamburger" id="burger">
-                                <span class="line"></span>
-                                <span class="line"></span>
-                                <span class="line"></span>
-                            </div>
-                        </div>
-
-                        <div class="pull-right">
-                            <select class="form-control" id="test12">
-                                <option>-- Select --</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                            </select>
-                        </div>
-
-                        <div class="logo-img"><img id="logo" src="assets/images/logo-blue.svg" alt="FIDA"></div>
+    <nav id="header" canvas="" class="" style="">
+    <div class="container">
+        <div class="row m-t-15">
+            <div class="col-xs-12 text-center">
+                <div class="pull-left">
+                    <div class="hamburger" id="burger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
                     </div>
                 </div>
+
+                <div class="pull-right">
+                    <select class="form-control" id="test12">
+                        <option>-- Select --</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+
+                <div class="logo-img"><img id="logo" src="assets/images/logo-blue.svg" alt="FIDA"></div>
             </div>
-        </nav>
+        </div>
+    </div>
+</nav>
+    <div canvas="container">
         <section id="dash-board">
             <div class="container">
                 <div class="row">
@@ -479,9 +478,14 @@
                     Actualización de Base de datos
                 </div>
             </div>
-            <a href="#" class="close" data-dismiss="alert" aria-label="close">
-                <i class="fa fa-times" aria-hidden="true"></i>
-            </a>
+            <div class="box-btn">
+                <div class="close" data-dismiss="alert" aria-label="close">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+                <div class="read">
+                    <i class="fa fa-eye" aria-hidden="true"></i>
+                </div>
+            </div>
         </div>
         <div class="alert notification fade in priority-0">
             <div class="box-not">
@@ -493,9 +497,14 @@
                     Actualización de Base de datos
                 </div>
             </div>
-            <a href="#" class="close" data-dismiss="alert" aria-label="close">
-                <i class="fa fa-times" aria-hidden="true"></i>
-            </a>
+            <div class="box-btn">
+                <div class="close" data-dismiss="alert" aria-label="close">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+                <div class="read">
+                    <i class="fa fa-eye" aria-hidden="true"></i>
+                </div>
+            </div>
         </div>
         <div class="alert notification fade in priority-1">
             <div class="box-not" data-toggle="modal" data-target="#modal-notification_1">
@@ -507,9 +516,14 @@
                     Actualización de Base de datos
                 </div>
             </div>
-            <a href="#" class="close" data-dismiss="alert" aria-label="close">
-                <i class="fa fa-times" aria-hidden="true"></i>
-            </a>
+            <div class="box-btn">
+                <div class="close" data-dismiss="alert" aria-label="close">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+                <div class="read">
+                    <i class="fa fa-eye" aria-hidden="true"></i>
+                </div>
+            </div>
         </div>
         <div class="alert notification fade in priority-1">
             <div class="box-not">
@@ -521,9 +535,14 @@
                     Actualización de Base de datos
                 </div>
             </div>
-            <a href="#" class="close" data-dismiss="alert" aria-label="close">
-                <i class="fa fa-times" aria-hidden="true"></i>
-            </a>
+            <div class="box-btn">
+                <div class="close" data-dismiss="alert" aria-label="close">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+                <div class="read">
+                    <i class="fa fa-eye" aria-hidden="true"></i>
+                </div>
+            </div>
         </div>
         <div class="alert notification fade in priority-2">
             <div class="box-not" data-toggle="modal" data-target="#modal-notification_2">
@@ -535,9 +554,14 @@
                     Actualización de Base de datos
                 </div>
             </div>
-            <a href="#" class="close" data-dismiss="alert" aria-label="close">
-                <i class="fa fa-times" aria-hidden="true"></i>
-            </a>
+            <div class="box-btn">
+                <div class="close" data-dismiss="alert" aria-label="close">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+                <div class="read">
+                    <i class="fa fa-eye" aria-hidden="true"></i>
+                </div>
+            </div>
         </div>
         <div class="alert notification fade in priority-2">
             <div class="box-not">
@@ -549,9 +573,14 @@
                     Actualización de Base de datos
                 </div>
             </div>
-            <a href="#" class="close" data-dismiss="alert" aria-label="close">
-                <i class="fa fa-times" aria-hidden="true"></i>
-            </a>
+            <div class="box-btn">
+                <div class="close" data-dismiss="alert" aria-label="close">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+                <div class="read">
+                    <i class="fa fa-eye" aria-hidden="true"></i>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -665,6 +694,14 @@
                 // Toggle the Slidebar with id 'id-4'
                 controller.toggle( 'menu-notications' );
             } );
+
+            $('.box-not').click(function () {
+                $(this).siblings('.box-btn').find('.read').addClass('switch-read');
+            });
+
+            $('.read').click(function(){
+                $(this).toggleClass('switch-read');
+            });
 
         } ) ( jQuery );
     </script>

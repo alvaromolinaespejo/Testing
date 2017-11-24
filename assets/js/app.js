@@ -77,23 +77,13 @@
 
 $(document).ready(function() {
 
+
     $(".hamburger").click(function(){
         $(this).toggleClass("is-active");
     });
 
 
-    $(".form_datetime").datetimepicker({
-        format: "dd MM yyyy - hh:ii",
-        autoclose: true,
-        pickerPosition: "bottom-left"
-    });
-
-    $(".form_date").datetimepicker({
-        format: 'dd mm yyyy',
-        minView: 2,
-        maxView: 4,
-        autoclose: true,
-        pickerPosition: "bottom-left"
+    $(".datepicker").flatpickr({
     });
 
     $('[rel="tooltip"]').tooltip();
@@ -106,11 +96,19 @@ $(document).ready(function() {
         sectionHeight= windowHeight - navHeight - footerHeight;
         $('section').css('min-height', sectionHeight);
     };
+    
     setHeight();
 
     $(window).resize(function() {
         setHeight();
     });
+    
+    $(window).on('wheel', function(){
+        if ($('.flatpickr-calendar.open').length > 0){
+            $('.flatpickr-calendar').removeClass('open');
+        }
+    });
+
 
     (function($) {
 

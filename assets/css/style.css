@@ -6,7 +6,7 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 @import url(../js/bootstrap-table/bootstrap-table.css);
-@import url(../js/datetimepicker/bootstrap-datetimepicker.css);
+@import url(../js/flatpickr/flatpickr.min.css);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -8514,6 +8514,11 @@ html, body {
 .width-full {
   width: 100%; }
 
+.object-center {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+
 body {
   color: #3c3c3c;
   font: 10px "Montserrat", arial, sans-serif;
@@ -8581,9 +8586,27 @@ body {
 .btn-warning {
   background: coral; }
 
-html {
-  overflow-y: scroll;
-  height: auto; }
+.panel-body.mod-dark {
+  background: #223466; }
+  .panel-body.mod-dark .button-group {
+    display: flex;
+    justify-content: space-between; }
+    .panel-body.mod-dark .button-group.elem-eq {
+      justify-content: center; }
+      .panel-body.mod-dark .button-group.elem-eq .btn {
+        margin: 0 0.625rem; }
+    .panel-body.mod-dark .button-group .btn {
+      min-height: auto;
+      display: flex;
+      align-items: center;
+      border: 1px solid rgba(255, 255, 255, 0.5); }
+    .panel-body.mod-dark .button-group label span {
+      color: #ffffff; }
+
+[canvas="container"] {
+  height: -webkit-calc( 100% - 65px );
+  height: -moz-calc( 100% - 65px );
+  height: calc( 100% - 65px ); }
 
 .logo-fida img {
   height: 11.875rem; }
@@ -9286,6 +9309,9 @@ html {
     .components .mod-light .panel-heading {
       background: transparent;
       border-bottom: 0; }
+      .components .mod-light .panel-heading.panel-search {
+        display: flex;
+        justify-content: space-between; }
     .components .mod-light .nav-pills.nav-justified {
       background: #d5d5d5; }
       .components .mod-light .nav-pills.nav-justified li.active {
@@ -9541,7 +9567,28 @@ html {
 span.add-on {
   position: absolute;
   top: 2.5625rem;
-  right: 1.5rem; }
+  right: 1.5rem;
+  pointer-events: none; }
+
+.box-symbol {
+  position: relative;
+  float: right;
+  top: -1.875rem;
+  right: 0.9375rem; }
+
+.flatpickr-calendar {
+  border: 2px solid #223466;
+  -webkit-box-shadow: 2px 2px 2px #b0acac;
+  box-shadow: 2px 2px 2px #b0acac; }
+  .flatpickr-calendar .flatpickr-current-month {
+    color: #223466; }
+  .flatpickr-calendar.arrowTop:after, .flatpickr-calendar.arrowBottom:after {
+    border-width: 2px;
+    margin: 0px -2px; }
+  .flatpickr-calendar.arrowTop:before {
+    border-bottom-color: #223466; }
+  .flatpickr-calendar.arrowBottom:before {
+    border-top-color: #223466; }
 
 nav#header {
   background: #223466; }
@@ -9788,8 +9835,6 @@ nav#header {
     border-radius: 0;
     cursor: pointer;
     margin-bottom: 0.3125rem; }
-    [off-canvas*=right] .notification:hover, [off-canvas*=right] .notification:focus {
-      opacity: 0.8; }
     [off-canvas*=right] .notification.priority-0 .box-date {
       background: red; }
     [off-canvas*=right] .notification.priority-0 .box-msg {
@@ -9817,6 +9862,28 @@ nav#header {
       background: coral; }
     [off-canvas*=right] .notification .box-not {
       display: flex; }
+      [off-canvas*=right] .notification .box-not:hover .box-msg, [off-canvas*=right] .notification .box-not:focus .box-msg {
+        background: #ccd4db; }
+    [off-canvas*=right] .notification .box-btn {
+      width: 3.75rem;
+      display: flex;
+      flex-direction: column; }
+      [off-canvas*=right] .notification .box-btn div {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #787878; }
+        [off-canvas*=right] .notification .box-btn div:hover, [off-canvas*=right] .notification .box-btn div:focus {
+          background: #ccd4db; }
+      [off-canvas*=right] .notification .box-btn .close {
+        opacity: 0.6; }
+      [off-canvas*=right] .notification .box-btn .read {
+        opacity: 0.3;
+        font-size: 22px; }
+        [off-canvas*=right] .notification .box-btn .read.switch-read {
+          opacity: 1;
+          color: #3b6897; }
     [off-canvas*=right] .notification .box-date {
       color: #ffffff;
       width: 5rem;
@@ -9833,15 +9900,10 @@ nav#header {
         font-weight: 400;
         letter-spacing: 3px; }
     [off-canvas*=right] .notification .box-msg {
-      width: 16.25rem;
+      width: 15rem;
       padding: 0.3125rem 0.9375rem;
       display: flex;
       align-items: center; }
-    [off-canvas*=right] .notification .close {
-      width: 2.5rem;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
 
 .mod-not {
   z-index: 1041; }

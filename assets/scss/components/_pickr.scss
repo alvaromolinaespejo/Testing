@@ -1,0 +1,24 @@
+.flatpickr-calendar{
+  border: 2px solid $color_primary;
+  @include box-shadow(2px 2px 2px $color_gray_dark-3);
+  .flatpickr-current-month{
+    color: $color_primary;
+  }
+  &.arrowTop,
+  &.arrowBottom{
+    &:after{
+      border-width: 2px;
+      margin: 0px -2px;
+    }
+  }
+  &.arrowTop{
+    &:before{
+      border-bottom-color: $color_primary;
+    }
+  }
+  &.arrowBottom{
+    &:before{
+      border-top-color: $color_primary;
+    }
+  }
+}

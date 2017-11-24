@@ -57,3 +57,27 @@
 .btn-warning{
   background: coral;
 }
+.panel-body.mod-dark{
+  background: $color_primary;
+  .button-group{
+    display: flex;
+    justify-content: space-between;
+    &.elem-eq{
+      justify-content: center;
+      .btn{
+        margin: 0 rem(10);
+      }
+    }
+    .btn{
+      min-height: auto;
+      display: flex;
+      align-items: center;
+      border: 1px solid rgba(255,255,255,0.5);
+    }
+    label{
+      span{
+        color: $color_white;
+      }
+    }
+  }
+}

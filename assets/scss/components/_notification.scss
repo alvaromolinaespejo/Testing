@@ -27,10 +27,6 @@
     border-radius: 0;
     cursor: pointer;
     margin-bottom: rem(5);
-    &:hover,
-    &:focus{
-      opacity: 0.8;
-    }
     &.priority-0{
       .box-date{
         background: red;
@@ -74,6 +70,39 @@
     }
     .box-not{
       display: flex;
+      &:hover,
+      &:focus{
+        .box-msg{
+          background: #ccd4db;
+        }
+      }
+    }
+    .box-btn{
+      width: rem(60);
+      display: flex;
+      flex-direction: column;
+      div{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $color_gray_dark-2;
+        &:hover,
+        &:focus{
+          background: #ccd4db;
+        }
+      }
+      .close{
+        opacity: 0.6;
+      }
+      .read{
+        opacity: 0.3;
+        font-size: px(22);
+        &.switch-read{
+          opacity: 1;
+          color: $color_cyan_3;
+        }
+      }
     }
     .box-date{
       color: $color_white;
@@ -94,16 +123,10 @@
       }
     }
     .box-msg{
-      width: rem(260);
+      width: rem(240);
       padding: rem(5) rem(15);
       display: flex;
       align-items: center;
-    }
-    .close{
-      width: rem(40);
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
   }
 }

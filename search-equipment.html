@@ -13,38 +13,38 @@
     <script type="text/javascript" src="assets/js/Sliderbars/slidebars.min.js"></script>
     <script type="text/javascript" src="assets/js/chart/chart.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap-table/bootstrap-table.js"></script>
-    <script type="text/javascript" src="assets/js/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="assets/js/flatpickr/flatpickr.min.js"></script>
     <script type="text/javascript" src="assets/js/app.js"></script>
 
 </head>
 <body>
-    <div canvas="container">
-        <nav id="header" canvas="" class="" style="">
-            <div class="container">
-                <div class="row m-t-15">
-                    <div class="col-xs-12 text-center">
-                        <div class="pull-left">
-                            <div class="hamburger" id="burger">
-                                <span class="line"></span>
-                                <span class="line"></span>
-                                <span class="line"></span>
-                            </div>
-                        </div>
-
-                        <div class="pull-right">
-                            <select class="form-control" id="test12">
-                                <option>-- Select --</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                            </select>
-                        </div>
-
-                        <div class="logo-img"><img id="logo" src="assets/images/logo-blue.svg" alt="FIDA"></div>
+    <nav id="header" canvas="" class="" style="">
+    <div class="container">
+        <div class="row m-t-15">
+            <div class="col-xs-12 text-center">
+                <div class="pull-left">
+                    <div class="hamburger" id="burger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
                     </div>
                 </div>
+
+                <div class="pull-right">
+                    <select class="form-control" id="test12">
+                        <option>-- Select --</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+
+                <div class="logo-img"><img id="logo" src="assets/images/logo-blue.svg" alt="FIDA"></div>
             </div>
-        </nav>
+        </div>
+    </div>
+</nav>
+    <div canvas="container" id="full-content-div">
         <section id="inventoriable-equipment" class="bg-light components">
             <div class="container">
                 <div class="row">
@@ -57,11 +57,11 @@
                     <div class="col-xs-12">
                         <div class="panel mod-light">
                             <div class="panel-heading">
-                                <h1 class="title-fida">Inventoriable Equipment</h1>
+                                <h1 class="title-fida">Gestión de Elementos</h1>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-9">
+                    <div class="col-xs-12">
                         <div class="row">
                             <div class="col-xs-12">
                                 <div class="panel mod-light">
@@ -70,19 +70,19 @@
                                             <div class="col-xs-12">
                                                 <a data-toggle="collapse" href="#example_collapse">
                                                     <h2 class="subtitle-fida">
-                                                        Nombre caja 1
+                                                        Criterios de Búsqueda 1
                                                     </h2>
                                                 </a>
                                                 <div id="example_collapse" class="panel-collapse collapse in">
                                                     <div class="panel-body">
                                                         <div class="row">
-                                                            <div class="col-sm-6">
+                                                            <div class="col-sm-3">
                                                                 <div class="form-group">
                                                                     <label for="example_01">Código:</label>
                                                                     <input type="text" class="form-control" id="example_01" placeholder="Text Input">
                                                                 </div>
                                                             </div>
-                                                            <div class="col-sm-6">
+                                                            <div class="col-sm-3">
                                                                 <div class="form-group">
                                                                     <label for="example_sit">Situación:</label>
                                                                     <select class="form-control" id="example_sit">
@@ -96,34 +96,36 @@
                                                             <div class="col-sm-3">
                                                                 <div class="form-group">
                                                                     <label for="">Fecha Sit. Desde:</label>
-                                                                    <div class="input-append date form_date">
-                                                                        <input id="" class="form-control" size="16" type="text" value="" readonly>
-                                                                        <span class="add-on"><i class="glyphicon glyphicon-th"></i></span>
-                                                                    </div>
+                                                                    <input id="asad" class="datepicker form-control" size="16" type="text" value="" readonly>
+                                                                    <span class="add-on"><i class="glyphicon glyphicon-th"></i></span>
                                                                 </div>
                                                             </div>
                                                             <div class="col-sm-3">
                                                                 <div class="form-group">
                                                                     <label for="">Fecha Sit. Hasta:</label>
-                                                                    <div class="input-append date form_date">
-                                                                        <input id="" class="form-control" size="16" type="text" value="" readonly>
-                                                                        <span class="add-on"><i class="glyphicon glyphicon-th"></i></span>
-                                                                    </div>
+                                                                    <input id="asad" class="datepicker form-control" size="16" type="text" value="" readonly>
+                                                                    <span class="add-on"><i class="glyphicon glyphicon-th"></i></span>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-sm-6">
+                                                            <div class="col-sm-3">
+                                                                <div class="form-group">
+                                                                    <label for="example_02">Nº de Identificación:</label>
+                                                                    <input type="text" class="form-control" id="example_02" placeholder="Text Input">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3">
                                                                 <div class="form-group">
                                                                     <label for="example_02">Número de Serie:</label>
                                                                     <input type="text" class="form-control" id="example_02" placeholder="Text Input">
                                                                 </div>
                                                             </div>
-                                                            <div class="col-sm-6">
+                                                            <div class="col-sm-3">
                                                                 <div class="form-group">
                                                                     <label for="example_03">Modelo:</label>
                                                                     <input type="text" class="form-control" id="example_03" placeholder="Text Input">
                                                                 </div>
                                                             </div>
-                                                            <div class="col-sm-6">
+                                                            <div class="col-sm-3">
                                                                 <div class="form-group">
                                                                     <label for="example_04">Fabricante:</label>
                                                                     <input type="text" class="form-control" id="example_04" placeholder="Text Input">
@@ -132,37 +134,29 @@
                                                             <div class="col-sm-3">
                                                                 <div class="form-group">
                                                                     <label for="">Fecha Calib. Desde:</label>
-                                                                    <div class="input-append date form_date">
-                                                                        <input id="" class="form-control" size="16" type="text" value="" readonly>
-                                                                        <span class="add-on"><i class="glyphicon glyphicon-th"></i></span>
-                                                                    </div>
+                                                                    <input id="asad" class="datepicker form-control" size="16" type="text" value="" readonly>
+                                                                    <span class="add-on"><i class="glyphicon glyphicon-th"></i></span>
                                                                 </div>
                                                             </div>
                                                             <div class="col-sm-3">
                                                                 <div class="form-group">
                                                                     <label for="">Fecha Calib. Hasta:</label>
-                                                                    <div class="input-append date form_date">
-                                                                        <input id="" class="form-control" size="16" type="text" value="" readonly>
-                                                                        <span class="add-on"><i class="glyphicon glyphicon-th"></i></span>
-                                                                    </div>
+                                                                    <input id="asad" class="datepicker form-control" size="16" type="text" value="" readonly>
+                                                                    <span class="add-on"><i class="glyphicon glyphicon-th"></i></span>
                                                                 </div>
                                                             </div>
                                                             <div class="col-sm-3">
                                                                 <div class="form-group">
                                                                     <label for="">Fecha Caduc. Desde:</label>
-                                                                    <div class="input-append date form_date">
-                                                                        <input id="" class="form-control" size="16" type="text" value="" readonly>
-                                                                        <span class="add-on"><i class="glyphicon glyphicon-th"></i></span>
-                                                                    </div>
+                                                                    <input id="asad" class="datepicker form-control" size="16" type="text" value="" readonly>
+                                                                    <span class="add-on"><i class="glyphicon glyphicon-th"></i></span>
                                                                 </div>
                                                             </div>
                                                             <div class="col-sm-3">
                                                                 <div class="form-group">
                                                                     <label for="">Fecha Caduc. Hasta:</label>
-                                                                    <div class="input-append date form_date">
-                                                                        <input id="" class="form-control" size="16" type="text" value="" readonly>
-                                                                        <span class="add-on"><i class="glyphicon glyphicon-th"></i></span>
-                                                                    </div>
+                                                                    <input id="asad" class="datepicker form-control" size="16" type="text" value="" readonly>
+                                                                    <span class="add-on"><i class="glyphicon glyphicon-th"></i></span>
                                                                 </div>
                                                             </div>
                                                             <div class="col-sm-12">
@@ -184,12 +178,12 @@
                                     <div class="panel-body">
                                         <div class="row">
                                             <div class="col-xs-12">
-                                                <a data-toggle="collapse" href="#example_collapse3">
+                                                <a data-toggle="collapse" href="#example_collapse2">
                                                     <h2 class="subtitle-fida">
-                                                        Nombre caja 2
+                                                        Criterios de Búsqueda 2
                                                     </h2>
                                                 </a>
-                                                <div id="example_collapse3" class="panel-collapse collapse">
+                                                <div id="example_collapse2" class="panel-collapse collapse">
                                                     <div class="panel-body">
                                                         <div class="row">
                                                             <div class="col-sm-6">
@@ -260,18 +254,18 @@
                                     <div class="panel-body">
                                         <div class="row">
                                             <div class="col-xs-12">
-                                                <a data-toggle="collapse" href="#example_collapse1">
+                                                <a data-toggle="collapse" href="#example_collapse3">
                                                     <h2 class="subtitle-fida">
-                                                        Nombre caja 3
+                                                        Criterios de Búsqueda 3
                                                     </h2>
                                                 </a>
-                                                <div id="example_collapse1" class="panel-collapse collapse">
+                                                <div id="example_collapse3" class="panel-collapse collapse">
                                                     <div class="panel-body">
                                                         <div class="row">
                                                             <div class="col-sm-4">
                                                                 <div class="form-group">
                                                                     <label for="example_sit">Código de Usuario:</label>
-                                                                    <select class="form-control" id="example_18">
+                                                                    <select class="form-control" id="example_12">
                                                                         <option>Example</option>
                                                                         <option>1</option>
                                                                         <option>2</option>
@@ -281,8 +275,8 @@
                                                             </div>
                                                             <div class="col-sm-8">
                                                                 <div class="form-group">
-                                                                    <label for="example_sit">Nombre Usuario:</label>
-                                                                    <select class="form-control" id="example_19">
+                                                                    <label for="example_sit">Nombre de Usuario:</label>
+                                                                    <select class="form-control" id="example_13">
                                                                         <option>Example</option>
                                                                         <option>1</option>
                                                                         <option>2</option>
@@ -293,7 +287,7 @@
                                                             <div class="col-sm-4">
                                                                 <div class="form-group">
                                                                     <label for="example_sit">Sección:</label>
-                                                                    <select class="form-control" id="example_21">
+                                                                    <select class="form-control" id="example_14">
                                                                         <option>Example</option>
                                                                         <option>1</option>
                                                                         <option>2</option>
@@ -304,7 +298,7 @@
                                                             <div class="col-sm-8">
                                                                 <div class="form-group">
                                                                     <label for="example_sit">Responsable:</label>
-                                                                    <select class="form-control" id="example_20">
+                                                                    <select class="form-control" id="example_15">
                                                                         <option>Example</option>
                                                                         <option>1</option>
                                                                         <option>2</option>
@@ -314,8 +308,8 @@
                                                             </div>
                                                             <div class="col-sm-3">
                                                                 <div class="form-group">
-                                                                    <label for="example_sit">Laboratorio Calib:</label>
-                                                                    <select class="form-control" id="example_22">
+                                                                    <label for="example_sit">Laboratorio Calib.:</label>
+                                                                    <select class="form-control" id="example_16">
                                                                         <option>Example</option>
                                                                         <option>1</option>
                                                                         <option>2</option>
@@ -326,7 +320,7 @@
                                                             <div class="col-sm-3">
                                                                 <div class="form-group">
                                                                     <label for="example_sit">Calib. In Situ:</label>
-                                                                    <select class="form-control" id="example_23">
+                                                                    <select class="form-control" id="example_16">
                                                                         <option>Example</option>
                                                                         <option>1</option>
                                                                         <option>2</option>
@@ -336,14 +330,14 @@
                                                             </div>
                                                             <div class="col-sm-3">
                                                                 <div class="form-group">
-                                                                    <label for="example_03">Intervalo Calibración:</label>
-                                                                    <input type="text" class="form-control" id="example_24" placeholder="Text Input">
+                                                                    <label for="example_05">Intervalo Calibración:</label>
+                                                                    <input type="text" class="form-control" id="example_05" placeholder="Text Input">
                                                                 </div>
                                                             </div>
                                                             <div class="col-sm-3">
                                                                 <div class="form-group">
-                                                                    <label for="example_03">Part Number:</label>
-                                                                    <input type="text" class="form-control" id="example_24" placeholder="Text Input">
+                                                                    <label for="example_05">Part Number:</label>
+                                                                    <input type="text" class="form-control" id="example_05" placeholder="Text Input">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -356,18 +350,32 @@
                             </div>
                             <div class="col-xs-12">
                                 <div class="panel mod-light">
-                                    <div class="panel-heading ">
+                                    <div class="panel-heading panel-search">
+                                        <div class="object-center m-t-10">
+                                            <button type="button" class="btn btn-success m-r-15" >
+                                                Buscar
+                                            </button>
+                                            <button type="button" class="btn btn-warning" >
+                                                Limpiar criterios
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
                                         <h2 class="title-fida">
                                             Resultado de busqueda
                                         </h2>
-                                    </div>
-                                    <div class="panel-body">
                                         <table id="example_table8"
                                                class="table table-striped table-bordered"
                                                data-toggle="table"
                                                data-sort-name="code"
                                                data-click-to-select="true"
-                                               data-sort-order="desc">
+                                               data-sort-order="desc"
+                                               data-search="true"
+                                               data-show-refresh="true"
+                                               data-show-toggle="true"
+                                               data-show-columns="true"
+                                               data-pagination="true"
+                                               data-height="510">
                                             <thead>
                                             <tr>
                                                 <th data-field="state" data-checkbox="true"></th>
@@ -434,41 +442,154 @@
                                                 <td>title</td>
                                                 <td>Accepted</td>
                                             </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>MSN065.ARC.68</td>
+                                                <td>Definition</td>
+                                                <td></td>
+                                                <td>9/14/2017 8:08 AM</td>
+                                                <td>title</td>
+                                                <td>Accepted</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>MSN065.ARC.68</td>
+                                                <td>Definition</td>
+                                                <td></td>
+                                                <td>9/14/2017 8:08 AM</td>
+                                                <td>title</td>
+                                                <td>Accepted</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>MSN065.ARC.68</td>
+                                                <td>Definition</td>
+                                                <td></td>
+                                                <td>9/14/2017 8:08 AM</td>
+                                                <td>title</td>
+                                                <td>Accepted</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>MSN065.ARC.68</td>
+                                                <td>Definition</td>
+                                                <td></td>
+                                                <td>9/14/2017 8:08 AM</td>
+                                                <td>title</td>
+                                                <td>Accepted</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>MSN065.ARC.68</td>
+                                                <td>Definition</td>
+                                                <td></td>
+                                                <td>9/14/2017 8:08 AM</td>
+                                                <td>title</td>
+                                                <td>Accepted</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>MSN065.ARC.68</td>
+                                                <td>Definition</td>
+                                                <td></td>
+                                                <td>9/14/2017 8:08 AM</td>
+                                                <td>title</td>
+                                                <td>Accepted</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>MSN065.ARC.68</td>
+                                                <td>Definition</td>
+                                                <td></td>
+                                                <td>9/14/2017 8:08 AM</td>
+                                                <td>title</td>
+                                                <td>Accepted</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>MSN065.ARC.68</td>
+                                                <td>Definition</td>
+                                                <td></td>
+                                                <td>9/14/2017 8:08 AM</td>
+                                                <td>title</td>
+                                                <td>Accepted</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>MSN065.ARC.68</td>
+                                                <td>Definition</td>
+                                                <td></td>
+                                                <td>9/14/2017 8:08 AM</td>
+                                                <td>title</td>
+                                                <td>Accepted</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>MSN065.ARC.68</td>
+                                                <td>Definition</td>
+                                                <td></td>
+                                                <td>9/14/2017 8:08 AM</td>
+                                                <td>title</td>
+                                                <td>Accepted</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>MSN065.ARC.68</td>
+                                                <td>Definition</td>
+                                                <td></td>
+                                                <td>9/14/2017 8:08 AM</td>
+                                                <td>title</td>
+                                                <td>Accepted</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>MSN065.ARC.68</td>
+                                                <td>Definition</td>
+                                                <td></td>
+                                                <td>9/14/2017 8:08 AM</td>
+                                                <td>title</td>
+                                                <td>Accepted</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>MSN065.ARC.68</td>
+                                                <td>Definition</td>
+                                                <td></td>
+                                                <td>9/14/2017 8:08 AM</td>
+                                                <td>title</td>
+                                                <td>Accepted</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>MSN065.ARC.68</td>
+                                                <td>Definition</td>
+                                                <td></td>
+                                                <td>9/14/2017 8:08 AM</td>
+                                                <td>title</td>
+                                                <td>Accepted</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>MSN065.ARC.68</td>
+                                                <td>Definition</td>
+                                                <td></td>
+                                                <td>9/14/2017 8:08 AM</td>
+                                                <td>title</td>
+                                                <td>Accepted</td>
+                                            </tr>
                                             </tbody>
                                         </table>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-3">
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <div class="panel mod-light">
-                                    <div class="panel-body">
-                                        <div class="form-group">
-                                            <button type="button" class="btn width-full btn-success" >
-                                                Buscar
-                                            </button>
-                                            <button type="button" class="btn width-full btn-warning m-t-15" >
-                                                Limpiar criterios
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-12">
-                                <div class="panel mod-light">
-                                    <div class="panel-body">
-                                        <div class="form-group">
-                                            <button type="button" class="btn width-full btn-primary m-t-15">Crear Elemento</button>
-                                            <button type="button" class="btn width-full btn-primary m-t-15">Consultar</button>
-                                            <button type="button" class="btn width-full btn-primary m-t-15">Modificar</button>
-                                            <button type="button" class="btn width-full btn-primary m-t-15">Modificación Masiva</button>
-                                            <button type="button" class="btn width-full btn-primary m-t-15">Borrar</button>
-                                            <button type="button" class="btn width-full btn-primary m-t-15">Imprimir</button>
-                                            <button type="button" class="btn width-full btn-primary m-t-15">Excel</button>
-                                            <div class="checkbox m-t-15">
+                                    <div class="panel-body mod-dark">
+                                        <div class="button-group">
+                                            <div type="button" class="btn btn-primary" data-toggle="modal" data-target="#create-element">Crear Elemento</div>
+                                            <div type="button" class="btn btn-primary">Consultar</div>
+                                            <div type="button" class="btn btn-primary">Modificar</div>
+                                            <div type="button" class="btn btn-primary">Modificación Masiva</div>
+                                            <div type="button" class="btn btn-primary">Borrar</div>
+                                            <div type="button" class="btn btn-primary">Imprimir</div>
+                                            <div type="button" class="btn btn-primary">Excel</div>
+                                            <div class="checkbox m-t-5 m-b-5">
                                                 <input type="checkbox" name="" id="checkbox_1" value="" title="" data-original-title>
                                                 <label for="checkbox_1" class="form-label">
                                                     <span data-toggle="tooltip" title="" style="height:auto;">Calibraciones</span>
@@ -714,7 +835,214 @@
         </div>
     </div>
 
+    <!-- Modal Create Element-->
+    <div class="components">
+        <div class="modal fade" id="create-element" tabindex="-1" role="dialog" aria-labelledby="create-elementLabel">
+            <div class="modal-dialog modal-md mod-light" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="create-elementLabel">Selección del tipo de Elemento</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <div class="form-group">
+                                    <div class="radio-option">
+                                        <input type="radio" id="option-calibrable" name="radio-group">
+                                        <label for="option-calibrable" >Calibrable</label>
+                                    </div>
+                                    <div class="radio-option">
+                                        <input type="radio" id="option-inventoriable" name="radio-group">
+                                        <label for="option-inventoriable">Inventariable</label>
+                                    </div>
+                                    <div class="radio-option">
+                                        <input type="radio" id="option-model" name="radio-group">
+                                        <label for="option-model">Desde modelo:</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-8">
+                                <div id="param-calibrable">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <label for="example_sit">Tipo Metrología:</label>
+                                                <select class="form-control" id="example_21">
+                                                    <option>Example</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <label for="example_sit">Grupo:</label>
+                                                <select class="form-control" id="example_21">
+                                                    <option>Example</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <label for="example_sit">Familia:</label>
+                                                <select class="form-control" id="example_21">
+                                                    <option>Example</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <label for="example_sit">Subfamilia:</label>
+                                                <select class="form-control" id="example_21">
+                                                    <option>Example</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <label for="example_sit">Tipo de Subfamilia:</label>
+                                                <select class="form-control" id="example_21">
+                                                    <option>Example</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="param-inventoriable">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <label for="example_sit">Laboratorio:</label>
+                                                <select class="form-control" id="example_21">
+                                                    <option>Example</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <label for="example_sit">Usuario:</label>
+                                                <select class="form-control" id="example_21">
+                                                    <option>Example</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <label for="example_sit">Grupo:</label>
+                                                <select class="form-control" id="example_21">
+                                                    <option>Example</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <label for="example_sit">Tipo:</label>
+                                                <select class="form-control" id="example_21">
+                                                    <option>Example</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="param-model">
+                                    <label for="example_sit">Modelo:</label>
+                                    <select class="form-control">
+                                        <option>Example</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning">Cancel</button>
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Create</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
+        //Modal Creación de elemento
+        $(document).ready(function ()
+        {
+            $("#param-inventoriable").hide();
+            $("#param-calibrable").hide();
+            $("#param-model").hide();
+
+            $("#option-calibrable").click(function()
+            {
+                $("#param-calibrable:hidden").show('slow');
+                $("#param-inventoriable").hide();
+                $("#param-model").hide();
+            });
+            $("#option-calibrable").click(function()
+            {
+                if($('option-calibrable').prop('checked')===false)
+                {
+                    $('#param-calibrable').hide();
+                }
+            });
+
+            $("#option-inventoriable").click(function()
+            {
+                $("#param-inventoriable:hidden").show('slow');
+                $("#param-calibrable").hide();
+                $("#param-model").hide();
+            });
+            $("#option-inventoriable").click(function()
+            {
+                if($('param-calibrable').prop('checked')===false)
+                {
+                    $('#param-inventoriable').hide();
+                }
+            });
+
+            $("#option-model").click(function()
+            {
+                $("#param-model:hidden").show('slow');
+                $("#param-calibrable").hide();
+                $("#param-inventoriable").hide();
+            });
+            $("#option-model").click(function()
+            {
+                if($('param-model').prop('checked')===false)
+                {
+                    $('#param-model').hide();
+                }
+            });
+
+        });
+
         ( function ( $ ) {
             // Initialize Slidebars
             var controller = new slidebars();
@@ -729,7 +1057,11 @@
                 // Toggle the Slidebar with id 'id-2'
                 controller.toggle( 'menu-left' );
             } );
+
+
+
         } ) ( jQuery );
+
     </script>
 </body>
 </html>

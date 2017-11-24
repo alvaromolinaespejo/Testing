@@ -16,40 +16,40 @@
     <script type="text/javascript" src="assets/js/Sliderbars/slidebars.min.js"></script>
     <script type="text/javascript" src="assets/js/chart/chart.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap-table/bootstrap-table.js"></script>
-    <script type="text/javascript" src="assets/js/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="assets/js/flatpickr/flatpickr.min.js"></script>
     <script type="text/javascript" src="assets/js/app.js"></script>
 
 </head>
 <body class="">
 
 
-    <div canvas="container">
-        <nav id="header" canvas="" class="" style="">
-            <div class="container">
-                <div class="row m-t-15">
-                    <div class="col-xs-12 text-center">
-                        <div class="pull-left">
-                            <div class="hamburger" id="burger">
-                                <span class="line"></span>
-                                <span class="line"></span>
-                                <span class="line"></span>
-                            </div>
-                        </div>
-
-                        <div class="pull-right">
-                            <select class="form-control" id="test12">
-                                <option>-- Select --</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                            </select>
-                        </div>
-
-                        <div class="logo-img"><img id="logo" src="assets/images/logo-blue.svg" alt="FIDA"></div>
+    <nav id="header" canvas="" class="" style="">
+    <div class="container">
+        <div class="row m-t-15">
+            <div class="col-xs-12 text-center">
+                <div class="pull-left">
+                    <div class="hamburger" id="burger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
                     </div>
                 </div>
+
+                <div class="pull-right">
+                    <select class="form-control" id="test12">
+                        <option>-- Select --</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+
+                <div class="logo-img"><img id="logo" src="assets/images/logo-blue.svg" alt="FIDA"></div>
             </div>
-        </nav>
+        </div>
+    </div>
+</nav>
+    <div canvas="container">
         <section class="bg-light components">
             <div class="container">
                 <div class="row m-t-15">
@@ -123,10 +123,8 @@
                                             <div class="col-xs-4">
                                                 <div class="form-group">
                                                     <label for="example_remarks">Due Date:</label>
-                                                    <div class="input-append date form_datetime">
-                                                        <input class="form-control" size="16" type="text" value="" readonly>
-                                                        <span class="add-on"><i class="glyphicon glyphicon-th"></i></span>
-                                                    </div>
+                                                    <input id="asad" class="datepicker form-control" size="16" type="text" value="" readonly>
+                                                    <span class="add-on"><i class="glyphicon glyphicon-th"></i></span>
                                                 </div>
                                             </div>
                                         </div>

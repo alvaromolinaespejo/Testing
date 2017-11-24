@@ -12,7 +12,7 @@
     <script type="text/javascript" src="assets/js/Sliderbars/slidebars.min.js"></script>
     <script type="text/javascript" src="assets/js/chart/chart.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap-table/bootstrap-table.js"></script>
-    <script type="text/javascript" src="assets/js/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="assets/js/flatpickr/flatpickr.min.js"></script>
     <script type="text/javascript" src="assets/js/app.js"></script>
 
 </head>
@@ -94,12 +94,17 @@
                                             <ul class="list-group">
                                                 <li>
                                                     <a class="" href="#">
-                                                        <span>Inventoriable equipment</span>
+                                                        <span>Consult inventoriable equipment</span>
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a class="" href="#">
-                                                        <span>Calibrated equipment</span>
+                                                        <span>Consult calibrated equipment</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="" href="#" data-toggle="modal" data-target="#create-element">
+                                                        <span>Create element</span>
                                                     </a>
                                                 </li>
                                             </ul>
@@ -140,5 +145,223 @@
             </div>
         </div>
     </footer>
+    <!-- Modal Create Element-->
+    <div class="components">
+        <div class="modal fade" id="create-element" tabindex="-1" role="dialog" aria-labelledby="create-elementLabel">
+            <div class="modal-dialog modal-md mod-light" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="create-elementLabel">Selección del tipo de Elemento</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <div class="form-group">
+                                    <div class="radio-option">
+                                        <input type="radio" id="option-calibrable" name="radio-group">
+                                        <label for="option-calibrable" >Calibrable</label>
+                                    </div>
+                                    <div class="radio-option">
+                                        <input type="radio" id="option-inventoriable" name="radio-group">
+                                        <label for="option-inventoriable">Inventariable</label>
+                                    </div>
+                                    <div class="radio-option">
+                                        <input type="radio" id="option-model" name="radio-group">
+                                        <label for="option-model">Desde modelo:</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-8">
+                                <div id="param-calibrable">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <label for="example_sit">Tipo Metrología:</label>
+                                                <select class="form-control" id="example_21">
+                                                    <option>Example</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <label for="example_sit">Grupo:</label>
+                                                <select class="form-control" id="example_21">
+                                                    <option>Example</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <label for="example_sit">Familia:</label>
+                                                <select class="form-control" id="example_21">
+                                                    <option>Example</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <label for="example_sit">Subfamilia:</label>
+                                                <select class="form-control" id="example_21">
+                                                    <option>Example</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <label for="example_sit">Tipo de Subfamilia:</label>
+                                                <select class="form-control" id="example_21">
+                                                    <option>Example</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="param-inventoriable">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <label for="example_sit">Laboratorio:</label>
+                                                <select class="form-control" id="example_21">
+                                                    <option>Example</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <label for="example_sit">Usuario:</label>
+                                                <select class="form-control" id="example_21">
+                                                    <option>Example</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <label for="example_sit">Grupo:</label>
+                                                <select class="form-control" id="example_21">
+                                                    <option>Example</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <label for="example_sit">Tipo:</label>
+                                                <select class="form-control" id="example_21">
+                                                    <option>Example</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="param-model">
+                                    <label for="example_sit">Modelo:</label>
+                                    <select class="form-control">
+                                        <option>Example</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning">Cancel</button>
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Create</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function setHeight() {
+            windowHeight = $(window).innerHeight();
+            footerHeight= $('footer').innerHeight();
+            sectionHeight= windowHeight - footerHeight;
+            $('section').css('min-height', sectionHeight);
+        };
+        setHeight();
+
+        $(window).resize(function() {
+            setHeight();
+        });
+        //Modal Creación de elemento
+        $(document).ready(function ()
+        {
+            $("#param-inventoriable").hide();
+            $("#param-calibrable").hide();
+            $("#param-model").hide();
+
+            $("#option-calibrable").click(function()
+            {
+                $("#param-calibrable:hidden").show('slow');
+                $("#param-inventoriable").hide();
+                $("#param-model").hide();
+            });
+            $("#option-calibrable").click(function()
+            {
+                if($('option-calibrable').prop('checked')===false)
+                {
+                    $('#param-calibrable').hide();
+                }
+            });
+
+            $("#option-inventoriable").click(function()
+            {
+                $("#param-inventoriable:hidden").show('slow');
+                $("#param-calibrable").hide();
+                $("#param-model").hide();
+            });
+            $("#option-inventoriable").click(function()
+            {
+                if($('param-calibrable').prop('checked')===false)
+                {
+                    $('#param-inventoriable').hide();
+                }
+            });
+
+            $("#option-model").click(function()
+            {
+                $("#param-model:hidden").show('slow');
+                $("#param-calibrable").hide();
+                $("#param-inventoriable").hide();
+            });
+            $("#option-model").click(function()
+            {
+                if($('param-model').prop('checked')===false)
+                {
+                    $('#param-model').hide();
+                }
+            });
+
+        });
+    </script>
 </body>
 </html>
