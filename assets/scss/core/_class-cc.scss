@@ -8,3 +8,14 @@
   display: flex;
   justify-content: center;
 }
+//Disabled
+.disabled{
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+//Space Between
+.space-between{
+  display: flex;
+  justify-content: space-between;
+}

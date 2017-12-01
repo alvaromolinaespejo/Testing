@@ -227,7 +227,7 @@ $sides: (top, bottom, left, right);
   }
   .nav-pills.nav-justified{
     width: auto;
-    margin: 0 rem(-15) rem(15);
+    margin: 0 rem(0) rem(15);
     padding: rem(10) rem(15) 0;
     li{
       &+li{
@@ -521,9 +521,13 @@ $sides: (top, bottom, left, right);
     textarea{
       resize: vertical;
     }
+    .panel-body{
+      padding: rem(15) rem(25);
+    }
     .panel-heading{
       background: transparent;
       border-bottom: 0;
+      padding: rem(15) rem(25);
       &.panel-search{
         display: flex;
         justify-content: space-between;
@@ -651,6 +655,12 @@ $sides: (top, bottom, left, right);
     }
     &:first-child a {
       padding: 0 10px;
+    }
+    &:last-child{
+      span{
+        font-size: px(22);
+        text-transform: uppercase;
+      }
     }
     a{
       position: relative;

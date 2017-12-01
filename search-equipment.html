@@ -19,31 +19,31 @@
 </head>
 <body>
     <nav id="header" canvas="" class="" style="">
-    <div class="container">
-        <div class="row m-t-15">
-            <div class="col-xs-12 text-center">
-                <div class="pull-left">
-                    <div class="hamburger" id="burger">
-                        <span class="line"></span>
-                        <span class="line"></span>
-                        <span class="line"></span>
+        <div class="container">
+            <div class="row m-t-15">
+                <div class="col-xs-12 text-center">
+                    <div class="pull-left">
+                        <div class="hamburger" id="burger">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </div>
                     </div>
-                </div>
 
-                <div class="pull-right">
-                    <select class="form-control" id="test12">
-                        <option>-- Select --</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                    </select>
-                </div>
+                    <div class="pull-right">
+                        <select class="form-control" id="test12">
+                            <option>-- Select --</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
 
-                <div class="logo-img"><img id="logo" src="assets/images/logo-blue.svg" alt="FIDA"></div>
+                    <div class="logo-img"><img id="logo" src="assets/images/logo-blue.svg" alt="FIDA"></div>
+                </div>
             </div>
         </div>
-    </div>
-</nav>
+    </nav>
     <div canvas="container" id="full-content-div">
         <section id="inventoriable-equipment" class="bg-light components">
             <div class="container">
@@ -53,13 +53,6 @@
                             <li><a href="#"><i class="fa fa-plane" aria-hidden="true"></i>Other Operations</a></li>
                             <li class="active"><span> Inventoriable Equipment</span></li>
                         </ol>
-                    </div>
-                    <div class="col-xs-12">
-                        <div class="panel mod-light">
-                            <div class="panel-heading">
-                                <h1 class="title-fida">Gestión de Elementos</h1>
-                            </div>
-                        </div>
                     </div>
                     <div class="col-xs-12">
                         <div class="row">
@@ -76,13 +69,13 @@
                                                 <div id="example_collapse" class="panel-collapse collapse in">
                                                     <div class="panel-body">
                                                         <div class="row">
-                                                            <div class="col-sm-3">
+                                                            <div class="col-sm-4">
                                                                 <div class="form-group">
                                                                     <label for="example_01">Código:</label>
                                                                     <input type="text" class="form-control" id="example_01" placeholder="Text Input">
                                                                 </div>
                                                             </div>
-                                                            <div class="col-sm-3">
+                                                            <div class="col-sm-4">
                                                                 <div class="form-group">
                                                                     <label for="example_sit">Situación:</label>
                                                                     <select class="form-control" id="example_sit">
@@ -93,69 +86,48 @@
                                                                     </select>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-sm-3">
+                                                            <div class="col-sm-4">
                                                                 <div class="form-group">
-                                                                    <label for="">Fecha Sit. Desde:</label>
-                                                                    <input id="asad" class="datepicker form-control" size="16" type="text" value="" readonly>
+                                                                    <label for="">Rango Fecha de Sit.:</label>
+                                                                    <input id="asad" class="datepicker-range form-control" size="16" type="text" value="" readonly>
                                                                     <span class="add-on"><i class="glyphicon glyphicon-th"></i></span>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-sm-3">
-                                                                <div class="form-group">
-                                                                    <label for="">Fecha Sit. Hasta:</label>
-                                                                    <input id="asad" class="datepicker form-control" size="16" type="text" value="" readonly>
-                                                                    <span class="add-on"><i class="glyphicon glyphicon-th"></i></span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-3">
+                                                            <div class="col-sm-4">
                                                                 <div class="form-group">
                                                                     <label for="example_02">Nº de Identificación:</label>
                                                                     <input type="text" class="form-control" id="example_02" placeholder="Text Input">
                                                                 </div>
                                                             </div>
-                                                            <div class="col-sm-3">
+                                                            <div class="col-sm-4">
                                                                 <div class="form-group">
                                                                     <label for="example_02">Número de Serie:</label>
                                                                     <input type="text" class="form-control" id="example_02" placeholder="Text Input">
                                                                 </div>
                                                             </div>
-                                                            <div class="col-sm-3">
+                                                            <div class="col-sm-4">
                                                                 <div class="form-group">
                                                                     <label for="example_03">Modelo:</label>
                                                                     <input type="text" class="form-control" id="example_03" placeholder="Text Input">
                                                                 </div>
                                                             </div>
-                                                            <div class="col-sm-3">
+                                                            <div class="col-sm-4">
                                                                 <div class="form-group">
                                                                     <label for="example_04">Fabricante:</label>
                                                                     <input type="text" class="form-control" id="example_04" placeholder="Text Input">
                                                                 </div>
                                                             </div>
-                                                            <div class="col-sm-3">
+                                                            <div class="col-sm-4">
                                                                 <div class="form-group">
-                                                                    <label for="">Fecha Calib. Desde:</label>
-                                                                    <input id="asad" class="datepicker form-control" size="16" type="text" value="" readonly>
+                                                                    <label for=""> Rango Fecha de Calibración:</label>
+                                                                    <input id="asad" class="datepicker-range form-control" size="16" type="text" value="" readonly>
                                                                     <span class="add-on"><i class="glyphicon glyphicon-th"></i></span>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-sm-3">
+                                                            <div class="col-sm-4">
                                                                 <div class="form-group">
-                                                                    <label for="">Fecha Calib. Hasta:</label>
-                                                                    <input id="asad" class="datepicker form-control" size="16" type="text" value="" readonly>
-                                                                    <span class="add-on"><i class="glyphicon glyphicon-th"></i></span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-3">
-                                                                <div class="form-group">
-                                                                    <label for="">Fecha Caduc. Desde:</label>
-                                                                    <input id="asad" class="datepicker form-control" size="16" type="text" value="" readonly>
-                                                                    <span class="add-on"><i class="glyphicon glyphicon-th"></i></span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-3">
-                                                                <div class="form-group">
-                                                                    <label for="">Fecha Caduc. Hasta:</label>
-                                                                    <input id="asad" class="datepicker form-control" size="16" type="text" value="" readonly>
+                                                                    <label for="">Rango Fecha de Caducidad:</label>
+                                                                    <input id="asad" class="datepicker-range form-control" size="16" type="text" value="" readonly>
                                                                     <span class="add-on"><i class="glyphicon glyphicon-th"></i></span>
                                                                 </div>
                                                             </div>

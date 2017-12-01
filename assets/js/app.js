@@ -82,8 +82,11 @@ $(document).ready(function() {
         $(this).toggleClass("is-active");
     });
 
-
     $(".datepicker").flatpickr({
+    });
+
+    $(".datepicker-range").flatpickr({
+        mode: "range"
     });
 
     $('[rel="tooltip"]').tooltip();

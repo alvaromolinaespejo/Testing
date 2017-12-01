@@ -8519,6 +8519,14 @@ html, body {
   display: flex;
   justify-content: center; }
 
+.disabled {
+  pointer-events: none;
+  opacity: 0.7; }
+
+.space-between {
+  display: flex;
+  justify-content: space-between; }
+
 body {
   color: #3c3c3c;
   font: 10px "Montserrat", arial, sans-serif;
@@ -9069,7 +9077,7 @@ body {
       margin-left: 0.3125rem; }
   .components .nav-pills.nav-justified {
     width: auto;
-    margin: 0 -0.9375rem 0.9375rem;
+    margin: 0 0rem 0.9375rem;
     padding: 0.625rem 0.9375rem 0; }
     .components .nav-pills.nav-justified li {
       font-weight: 600;
@@ -9306,9 +9314,12 @@ body {
         border-bottom-right-radius: 0; }
     .components .mod-light textarea {
       resize: vertical; }
+    .components .mod-light .panel-body {
+      padding: 0.9375rem 1.5625rem; }
     .components .mod-light .panel-heading {
       background: transparent;
-      border-bottom: 0; }
+      border-bottom: 0;
+      padding: 0.9375rem 1.5625rem; }
       .components .mod-light .panel-heading.panel-search {
         display: flex;
         justify-content: space-between; }
@@ -9382,6 +9393,9 @@ body {
     line-height: 36px; }
   .breadcrumb-arrow li:first-child a {
     padding: 0 10px; }
+  .breadcrumb-arrow li:last-child span {
+    font-size: 22px;
+    text-transform: uppercase; }
   .breadcrumb-arrow li a {
     position: relative;
     color: #fff;
@@ -9575,6 +9589,65 @@ span.add-on {
   float: right;
   top: -1.875rem;
   right: 0.9375rem; }
+
+.has-error label {
+  color: #ff3d3d !important; }
+.has-error input,
+.has-error select,
+.has-error textarea {
+  border: #ff3d3d 1px solid !important; }
+.has-error .msg-error:after {
+  content: "\f06a";
+  font-family: FontAwesome;
+  color: #ff3d3d;
+  font-size: 20px;
+  position: absolute;
+  top: 42px;
+  right: -15px; }
+.has-error .tooltip-error {
+  display: inline-block; }
+
+.tooltip-error {
+  position: absolute;
+  display: none;
+  color: #ff3d3d;
+  bottom: 1.625rem;
+  right: -0.3125rem; }
+  .tooltip-error:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1; }
+  .tooltip-error .tooltip-text {
+    padding: 5px;
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -70px;
+    opacity: 0;
+    transition: opacity 1s; }
+    .tooltip-error .tooltip-text:after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #555 transparent transparent transparent; }
+
+.requerid label:after {
+  content: "\f069";
+  font-weight: 400;
+  font-family: FontAwesome;
+  position: relative;
+  color: #ff3d3d;
+  font-size: 12px;
+  right: -0.625rem; }
 
 .flatpickr-calendar {
   border: 2px solid #223466;

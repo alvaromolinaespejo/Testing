@@ -73,13 +73,6 @@
                             <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
                         </div>
                     </div>
-                    <div class="col-xs-12">
-                        <div class="panel mod-light">
-                            <div class="panel-heading">
-                                <h1 class="title-fida">New Requeriment</h1>
-                            </div>
-                        </div>
-                    </div>
                     <div class="col-xs-12 col-md-9">
                         <div class="row">
                             <div class="col-xs-12">
@@ -87,13 +80,17 @@
                                     <div class="panel-body">
                                         <div class="row">
                                             <div class="col-xs-4">
-                                                <div class="form-group">
+                                                <div class="form-group has-error">
                                                     <label for="example_title">Title:</label>
                                                     <input type="text" class="form-control" id="example_title" placeholder="Text Input">
+                                                    <div class="tooltip-error">
+                                                        <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                                                        <span class="tooltip-text">Mensaje de error correspondiente</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="col-xs-4">
-                                                <div class="form-group">
+                                                <div class="form-group requerid">
                                                     <label for="example_type">Type:</label>
                                                     <select class="form-control" id="example_type">
                                                         <option>Measurement</option>
@@ -101,10 +98,14 @@
                                                         <option>2</option>
                                                         <option>3</option>
                                                     </select>
+                                                    <div class="tooltip-error">
+                                                        <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                                                        <span class="tooltip-text">Mensaje de error correspondiente</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="col-xs-4">
-                                                <div class="form-group">
+                                                <div class="form-group has-error">
                                                     <label for="example_status">Status:</label>
                                                     <select class="form-control" id="example_status">
                                                         <option>Definition</option>
@@ -112,6 +113,10 @@
                                                         <option>2</option>
                                                         <option>3</option>
                                                     </select>
+                                                    <div class="tooltip-error">
+                                                        <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                                                        <span class="tooltip-text">Mensaje de error correspondiente</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="col-xs-8">
@@ -136,9 +141,6 @@
                             <div class="col-xs-12">
                                 <div class="panel mod-light">
                                     <div class="panel-heading ">
-                                        <h3 class="subtitle-fida">
-                                            Subtitle
-                                        </h3>
                                         <h2 class="title-fida">
                                             Search results
                                         </h2>
@@ -462,9 +464,6 @@
                         <div class="row">
                             <div class="col-xs-12">
                                 <div class="panel mod-light">
-                                    <div class="panel-heading">
-                                        <h2 class="title-fida">Save changes</h2>
-                                    </div>
                                     <div class="panel-body">
                                         <div class="form-group">
                                             <button type="button" class="btn width-full btn-warning">Cancel Changes</button>
@@ -473,18 +472,18 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xs-12">
-                                <div class="panel mod-light">
-                                    <div class="panel-heading">
-                                        <h2 class="title-fida">Attachments</h2>
-                                    </div>
-                                    <div class="panel-body">
+                            <!--<div class="col-xs-12">-->
+                                <!--<div class="panel mod-light">-->
+                                    <!--<div class="panel-heading">-->
+                                        <!--<h2 class="title-fida">Attachments</h2>-->
+                                    <!--</div>-->
+                                    <!--<div class="panel-body">-->
 
-                                        <input type="file" id="file" name="myfiles[]" multiple />
+                                        <!--<input type="file" id="file" name="myfiles[]" multiple />-->
 
-                                    </div>
-                                </div>
-                            </div>
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
                         </div>
                         <div class="row">
                             <div class="col-xs-12">
@@ -1374,6 +1373,7 @@
                 // Toggle the Slidebar with id 'id-2'
                 controller.toggle( 'menu-left' );
             } );
+
         } ) ( jQuery );
     </script>
 </body>

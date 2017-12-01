@@ -145,3 +145,82 @@ span.add-on{
   top:rem(-30);
   right: rem(15);
 }
+
+//Validation
+
+.has-error{
+  label{
+    color: $color_red!important;
+  }
+  input,
+  select,
+  textarea{
+    border: $color_red 1px solid!important;
+  }
+  .msg-error{
+    &:after{
+      content: "\f06a";
+      font-family: FontAwesome;
+      color: $color_red;
+      font-size: px(20);
+      position: absolute;
+      top: 42px;
+      right: -15px;
+    }
+  }
+  .tooltip-error{
+    display: inline-block;
+  }
+}
+.tooltip-error{
+  position: absolute;
+  display: none;
+  color: $color_red;
+  bottom: rem(26);
+  right: rem(-5);
+  &:hover{
+    .tooltip-text{
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  .tooltip-text{
+    padding: 5px;
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -70px;
+    opacity: 0;
+    transition: opacity 1s;
+    &:after{
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #555 transparent transparent transparent;
+    }
+
+  }
+}
+.requerid{
+  label{
+    &:after{
+      content: "\f069";
+      font-weight: $font_regular;
+      font-family: FontAwesome;
+      position: relative;
+      color: $color_red;
+      font-size: px(12);
+      right: rem(-10);
+    }
+  }
+}

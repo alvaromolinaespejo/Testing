@@ -14,7 +14,6 @@
     <script type="text/javascript" src="assets/js/chart/chart.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap-table/bootstrap-table.js"></script>
     <script type="text/javascript" src="assets/js/flatpickr/flatpickr.min.js"></script>
-    <script type="text/javascript" src="assets/js/bootstrap-validator-master/validator.min.js"></script>
     <script type="text/javascript" src="assets/js/app.js"></script>
 
 </head>
@@ -60,177 +59,30 @@
                     <div class="col-xs-12">
                         <div class="panel mod-light">
                             <div class="panel-heading">
-                                <h1 class="title-fida">Consulta de Datos de un Elemento</h1>
+                                <h1 class="title-fida">Creación de Elemento</h1>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12">
-                        <div class="panel mod-light">
-                            <div class="panel-heading">
-                                <h1 class="subtitle-fida">Datos Descriptivos del Elemento</h1>
-                            </div>
-                            <div class="panel-body">
+                            <div class="modal-body">
                                 <div class="row">
-                                    <div class="col-xs-3">
-                                        <div class="form-group">
-                                            <label for="example_01">Modelo:</label>
-                                            <input type="text" class="form-control" id="example_01" placeholder="KM4B0001">
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-3">
-                                        <div class="form-group">
-                                            <label for="example_01">Cód Modo Capacidad:</label>
-                                            <input type="text" class="form-control" id="example_01" placeholder="Text Input">
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-3">
-                                        <div class="form-group">
-                                            <label for="example_01">Fabricante:</label>
-                                            <select class="form-control" id="example_13">
-                                                <option>Example</option>
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-3">
-                                        <div class="form-group">
-                                            <label for="example_01">Nº de Serie:</label>
-                                            <input type="text" class="form-control" id="example_01" placeholder="Text Input">
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-3">
-                                        <div class="form-group">
-                                            <label for="example_01">Nº de Identificación:</label>
-                                            <input type="text" class="form-control" id="example_01" placeholder="Text Input">
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-3">
-                                        <div class="form-group">
-                                            <label for="example_01">Unidad de Medida:</label>
-                                            <select class="form-control" id="example_13">
-                                                <option>Example</option>
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-3">
-                                        <div class="form-group">
-                                            <label for="example_01">Capacidad:</label>
-                                            <input type="text" class="form-control" id="example_01" placeholder="Text Input">
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-3">
-                                        <div class="form-group">
-                                            <label for="example_01">Precisión:</label>
-                                            <input type="text" class="form-control" id="example_01" placeholder="Text Input">
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-3">
-                                        <div class="form-group">
-                                            <label for="example_01">Resolución:</label>
-                                            <input type="text" class="form-control" id="example_01" placeholder="Text Input">
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-3">
-                                        <div class="form-group">
-                                            <label for="example_01">Cod. Herramienta:</label>
-                                            <input type="text" class="form-control" id="example_01" placeholder="Text Input">
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-3">
-                                        <div class="form-group">
-                                            <label for="example_01">Propietario:</label>
-                                            <select class="form-control" id="example_13">
-                                                <option>Example</option>
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-4">
-                                        <div class="form-group">
-                                            <label for="example_01">Fecha de Recepción:</label>
-                                            <input id="asad" class="datepicker form-control" size="16" type="text" value="" readonly>
-                                            <span class="add-on"><i class="glyphicon glyphicon-th"></i></span>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-4">
-                                        <div class="form-group">
-                                            <label for="example_01">Fecha de Servicio:</label>
-                                            <input id="asad" class="datepicker form-control" size="16" type="text" value="" readonly>
-                                            <span class="add-on"><i class="glyphicon glyphicon-th"></i></span>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-4">
-                                        <div class="form-group">
-                                            <label for="example_01">Patrón/Elemento Especial:</label>
-                                            <select class="form-control" id="example_13">
-                                                <option>Example</option>
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                            </select>
+                                    <div class="col-xs-8">
+                                        <div class="form-group space-between">
+                                            <div class="radio-option">
+                                                <input type="radio" id="option-calibrable" name="radio-group">
+                                                <label for="option-calibrable" >Calibrable</label>
+                                            </div>
+                                            <div class="radio-option">
+                                                <input type="radio" id="option-inventoriable" name="radio-group">
+                                                <label for="option-inventoriable">Inventariable</label>
+                                            </div>
+                                            <div class="radio-option">
+                                                <input type="radio" id="option-model" name="radio-group">
+                                                <label for="option-model">Desde modelo:</label>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-xs-12">
-                                        <div class="form-group">
-                                            <label for="example_01">Condiciones de Recepción:</label>
-                                            <input type="text" class="form-control" id="example_01" placeholder="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12">
-                        <div class="panel mod-light">
-                            <div class="panel-heading">
-                                <h1 class="subtitle-fida">Custodio del Elemento</h1>
-                            </div>
-                            <div class="panel-body">
-                                <div class="row">
-                                    <div class="col-xs-4">
-                                        <div class="form-group">
-                                            <label for="example_01">Código de Usuario:</label>
-                                            <select class="form-control" id="example_13">
-                                                <option>Example</option>
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-8">
-                                        <div class="form-group">
-                                            <label for="example_01">Nombre de Usuario:</label>
-                                            <select class="form-control" id="example_13">
-                                                <option>Example</option>
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-4">
-                                        <div class="form-group">
-                                            <label for="example_01">Sección:</label>
-                                            <select class="form-control" id="example_13">
-                                                <option>Example</option>
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-8">
-                                        <div class="form-group">
-                                            <label for="example_01">Responsable:</label>
-                                            <select class="form-control" id="example_13">
+                                        <div id="param-model">
+                                            <label for="example_sit">Modelo:</label>
+                                            <select class="form-control">
                                                 <option>Example</option>
                                                 <option>1</option>
                                                 <option>2</option>
@@ -242,129 +94,616 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12">
-                        <div class="panel mod-light">
-                            <div class="panel-heading">
-                                <h1 class="subtitle-fida">Datos de Calibración</h1>
-                            </div>
-                            <div class="panel-body">
-                                <div class="row">
-                                    <div class="col-xs-7">
-                                        <div class="row">
-                                            <div class="col-xs-4">
-                                                <div class="form-group">
-                                                    <label for="example_01">Interv. Calib. Norma:</label>
-                                                    <input type="text" class="form-control" id="example_01" placeholder="KM4B0001">
-                                                </div>
+                    <div id="param-calibrable">
+                        <div class="col-xs-12">
+                            <div class="panel mod-light">
+                                <div class="panel-heading">
+                                    <h1 class="subtitle-fida">Calibrable</h1>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <div class="form-group">
+                                                <label for="example_sit">Tipo Metrología:</label>
+                                                <select class="form-control" id="example_21">
+                                                    <option>Example</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
                                             </div>
-                                            <div class="col-xs-4">
-                                                <div class="form-group">
-                                                    <label for="example_01">Horas Calib. Norma:</label>
-                                                    <input type="text" class="form-control" id="example_01" placeholder="KM4B0001">
-                                                </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <div class="form-group">
+                                                <label for="example_sit">Grupo:</label>
+                                                <select class="form-control" id="example_21">
+                                                    <option>Example</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
                                             </div>
-                                            <div class="col-xs-4">
-                                                <div class="form-group">
-                                                    <label for="example_01">Calibración In Situ:</label>
-                                                    <select class="form-control" id="example_13">
-                                                        <option>Example</option>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                    </select>
-                                                </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <div class="form-group">
+                                                <label for="example_sit">Familia:</label>
+                                                <select class="form-control" id="example_21">
+                                                    <option>Example</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
                                             </div>
-                                            <div class="col-xs-4">
-                                                <div class="form-group">
-                                                    <label for="example_01">Interv. Calib. Establ.:</label>
-                                                    <input type="text" class="form-control" id="example_01" placeholder="KM4B0001">
-                                                </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <div class="form-group">
+                                                <label for="example_sit">Subfamilia:</label>
+                                                <select class="form-control" id="example_21">
+                                                    <option>Example</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
                                             </div>
-                                            <div class="col-xs-4">
-                                                <div class="form-group">
-                                                    <label for="example_01">Horas Calib. Establ.:</label>
-                                                    <input type="text" class="form-control" id="example_01" placeholder="KM4B0001">
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-4">
-                                                <div class="form-group">
-                                                    <label for="example_01">Coste de Calibración:</label>
-                                                    <input type="text" class="form-control" id="example_01" placeholder="KM4B0001">
-                                                    <div class="box-symbol">€</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-4">
-                                                <div class="form-group">
-                                                    <label for="example_01">Fecha de Caducidad:</label>
-                                                    <input id="asad" class="datepicker form-control" size="16" type="text" value="" readonly>
-                                                    <span class="add-on"><i class="glyphicon glyphicon-th"></i></span>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-4">
-                                                <div class="form-group">
-                                                    <label for="example_01">Lab. de Calib.:</label>
-                                                    <select class="form-control" id="example_13">
-                                                        <option>Example</option>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-4">
-                                                <div class="form-group">
-                                                    <label for="example_01">Normativa de Referencia:</label>
-                                                    <input type="text" class="form-control" id="example_01" placeholder="KM4B0001">
-                                                </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <div class="form-group">
+                                                <label for="example_sit">Tipo de Subfamilia:</label>
+                                                <select class="form-control" id="example_21">
+                                                    <option>Example</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xs-5">
-                                        <div class="form-group">
-                                            <label for="example_textarea">Observaciones:</label>
-                                            <textarea class="form-control" id="example_textarea" placeholder="Textarea" style="height: 216px;"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="panel mod-light">
+                                <div class="panel-heading">
+                                    <h1 class="subtitle-fida">Datos Descriptivos del Elemento</h1>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <div class="form-group">
+                                                <label for="example_01">Modelo:</label>
+                                                <input type="text" class="form-control" id="example_01" placeholder="KM4B0001">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <div class="form-group">
+                                                <label for="example_01">Cód Modo Capacidad:</label>
+                                                <input type="text" class="form-control" id="example_01" placeholder="Text Input">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <div class="form-group">
+                                                <label for="example_01">Fabricante:</label>
+                                                <select class="form-control" id="example_13">
+                                                    <option>Example</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <div class="form-group">
+                                                <label for="example_01">Nº de Serie:</label>
+                                                <input type="text" class="form-control" id="example_01" placeholder="Text Input">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <div class="form-group">
+                                                <label for="example_01">Nº de Identificación:</label>
+                                                <input type="text" class="form-control" id="example_01" placeholder="Text Input">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <div class="form-group">
+                                                <label for="example_01">Unidad de Medida:</label>
+                                                <select class="form-control" id="example_13">
+                                                    <option>Example</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <div class="form-group">
+                                                <label for="example_01">Capacidad:</label>
+                                                <input type="text" class="form-control" id="example_01" placeholder="Text Input">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <div class="form-group">
+                                                <label for="example_01">Precisión:</label>
+                                                <input type="text" class="form-control" id="example_01" placeholder="Text Input">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <div class="form-group">
+                                                <label for="example_01">Resolución:</label>
+                                                <input type="text" class="form-control" id="example_01" placeholder="Text Input">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <div class="form-group">
+                                                <label for="example_01">Cod. Herramienta:</label>
+                                                <input type="text" class="form-control" id="example_01" placeholder="Text Input">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <div class="form-group">
+                                                <label for="example_01">Propietario:</label>
+                                                <select class="form-control" id="example_13">
+                                                    <option>Example</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <div class="form-group">
+                                                <label for="example_01">Fecha de Recepción:</label>
+                                                <input id="asad" class="datepicker form-control" size="16" type="text" value="" readonly>
+                                                <span class="add-on"><i class="glyphicon glyphicon-th"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <div class="form-group">
+                                                <label for="example_01">Fecha de Servicio:</label>
+                                                <input id="asad" class="datepicker form-control" size="16" type="text" value="" readonly>
+                                                <span class="add-on"><i class="glyphicon glyphicon-th"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <div class="form-group">
+                                                <label for="example_01">Patrón/Elemento Especial:</label>
+                                                <select class="form-control" id="example_13">
+                                                    <option>Example</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <label for="example_01">Condiciones de Recepción:</label>
+                                                <input type="text" class="form-control" id="example_01" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="panel mod-light">
+                                <div class="panel-heading">
+                                    <h1 class="subtitle-fida">Custodio del Elemento</h1>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <div class="form-group">
+                                                <label for="example_01">Código de Usuario:</label>
+                                                <select class="form-control" id="example_13">
+                                                    <option>Example</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <div class="form-group">
+                                                <label for="example_01">Nombre de Usuario:</label>
+                                                <select class="form-control" id="example_13">
+                                                    <option>Example</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <div class="form-group">
+                                                <label for="example_01">Sección:</label>
+                                                <select class="form-control" id="example_13">
+                                                    <option>Example</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <div class="form-group">
+                                                <label for="example_01">Responsable:</label>
+                                                <select class="form-control" id="example_13">
+                                                    <option>Example</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="panel mod-light">
+                                <div class="panel-heading">
+                                    <h1 class="subtitle-fida">Datos de Calibración</h1>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-xs-7">
+                                            <div class="row">
+                                                <div class="col-xs-4">
+                                                    <div class="form-group">
+                                                        <label for="example_01">Interv. Calib. Norma:</label>
+                                                        <input type="text" class="form-control" id="example_01" placeholder="KM4B0001">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="form-group">
+                                                        <label for="example_01">Horas Calib. Norma:</label>
+                                                        <input type="text" class="form-control" id="example_01" placeholder="KM4B0001">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="form-group">
+                                                        <label for="example_01">Calibración In Situ:</label>
+                                                        <select class="form-control" id="example_13">
+                                                            <option>Example</option>
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="form-group">
+                                                        <label for="example_01">Interv. Calib. Establ.:</label>
+                                                        <input type="text" class="form-control" id="example_01" placeholder="KM4B0001">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="form-group">
+                                                        <label for="example_01">Horas Calib. Establ.:</label>
+                                                        <input type="text" class="form-control" id="example_01" placeholder="KM4B0001">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="form-group">
+                                                        <label for="example_01">Coste de Calibración:</label>
+                                                        <input type="text" class="form-control" id="example_01" placeholder="KM4B0001">
+                                                        <div class="box-symbol">€</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="form-group">
+                                                        <label for="example_01">Fecha de Caducidad:</label>
+                                                        <input id="asad" class="datepicker form-control" size="16" type="text" value="" readonly>
+                                                        <span class="add-on"><i class="glyphicon glyphicon-th"></i></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="form-group">
+                                                        <label for="example_01">Lab. de Calib.:</label>
+                                                        <select class="form-control" id="example_13">
+                                                            <option>Example</option>
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="form-group">
+                                                        <label for="example_01">Normativa de Referencia:</label>
+                                                        <input type="text" class="form-control" id="example_01" placeholder="KM4B0001">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-5">
+                                            <div class="form-group">
+                                                <label for="example_textarea">Observaciones:</label>
+                                                <textarea class="form-control" id="example_textarea" placeholder="Textarea" style="height: 216px;"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="panel mod-light">
+                                <div class="panel-heading">
+                                    <h1 class="subtitle-fida">Última Calibración</h1>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <div class="form-group">
+                                                <label for="example_01">Fecha:</label>
+                                                <input id="asad" class="datepicker form-control" size="16" type="text" value="" readonly>
+                                                <span class="add-on"><i class="glyphicon glyphicon-th"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <div class="form-group">
+                                                <label for="example_01">Resultado:</label>
+                                                <input type="text" class="form-control" id="example_01" placeholder="Text Input">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <div class="form-group">
+                                                <label for="example_01">Técnico:</label>
+                                                <input type="text" class="form-control" id="example_01" placeholder="Text Input">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <div class="form-group">
+                                                <label for="example_01">Documento:</label>
+                                                <input type="text" class="form-control" id="example_01" placeholder="Text Input">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <div class="form-group">
+                                                <label for="example_01">Incertidumbre de Uso:</label>
+                                                <input type="text" class="form-control" id="example_01" placeholder="Text Input">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12">
-                        <div class="panel mod-light">
-                            <div class="panel-heading">
-                                <h1 class="subtitle-fida">Última Calibración</h1>
+                    <div id="param-inventoriable">
+                        <div class="col-xs-12">
+                            <div class="panel mod-light">
+                                <div class="panel-heading">
+                                    <h1 class="subtitle-fida">Inventariable</h1>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <div class="form-group">
+                                                <label for="example_sit">Laboratorio:</label>
+                                                <select class="form-control" id="example_21">
+                                                    <option>Example</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <div class="form-group">
+                                                <label for="example_sit">Usuario:</label>
+                                                <select class="form-control" id="example_21">
+                                                    <option>Example</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <div class="form-group">
+                                                <label for="example_sit">Grupo:</label>
+                                                <select class="form-control" id="example_21">
+                                                    <option>Example</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <div class="form-group">
+                                                <label for="example_sit">Tipo:</label>
+                                                <select class="form-control" id="example_21">
+                                                    <option>Example</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="panel-body">
-                                <div class="row">
-                                    <div class="col-xs-4">
-                                        <div class="form-group">
-                                            <label for="example_01">Fecha:</label>
-                                            <input id="asad" class="datepicker form-control" size="16" type="text" value="" readonly>
-                                            <span class="add-on"><i class="glyphicon glyphicon-th"></i></span>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="panel mod-light">
+                                <div class="panel-heading">
+                                    <h1 class="subtitle-fida">Custodio del Elemento</h1>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <div class="form-group">
+                                                <label for="example_01">Código de Usuario:</label>
+                                                <select class="form-control" id="example_13">
+                                                    <option>Example</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <div class="form-group">
+                                                <label for="example_01">Nombre de Usuario:</label>
+                                                <select class="form-control" id="example_13">
+                                                    <option>Example</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <div class="form-group">
+                                                <label for="example_01">Sección:</label>
+                                                <select class="form-control" id="example_13">
+                                                    <option>Example</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <div class="form-group">
+                                                <label for="example_01">Responsable:</label>
+                                                <select class="form-control" id="example_13">
+                                                    <option>Example</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-xs-4">
-                                        <div class="form-group">
-                                            <label for="example_01">Resultado:</label>
-                                            <input type="text" class="form-control" id="example_01" placeholder="Text Input">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="panel mod-light">
+                                <div class="panel-heading">
+                                    <h1 class="subtitle-fida">Datos de Calibración</h1>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-xs-7">
+                                            <div class="row">
+                                                <div class="col-xs-4">
+                                                    <div class="form-group">
+                                                        <label for="example_01">Interv. Calib. Norma:</label>
+                                                        <input type="text" class="form-control" id="example_01" placeholder="KM4B0001">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="form-group">
+                                                        <label for="example_01">Horas Calib. Norma:</label>
+                                                        <input type="text" class="form-control" id="example_01" placeholder="KM4B0001">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="form-group">
+                                                        <label for="example_01">Calibración In Situ:</label>
+                                                        <select class="form-control" id="example_13">
+                                                            <option>Example</option>
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="form-group">
+                                                        <label for="example_01">Interv. Calib. Establ.:</label>
+                                                        <input type="text" class="form-control" id="example_01" placeholder="KM4B0001">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="form-group">
+                                                        <label for="example_01">Horas Calib. Establ.:</label>
+                                                        <input type="text" class="form-control" id="example_01" placeholder="KM4B0001">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="form-group">
+                                                        <label for="example_01">Coste de Calibración:</label>
+                                                        <input type="text" class="form-control" id="example_01" placeholder="KM4B0001">
+                                                        <div class="box-symbol">€</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="form-group">
+                                                        <label for="example_01">Fecha de Caducidad:</label>
+                                                        <input id="asad" class="datepicker form-control" size="16" type="text" value="" readonly>
+                                                        <span class="add-on"><i class="glyphicon glyphicon-th"></i></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="form-group">
+                                                        <label for="example_01">Lab. de Calib.:</label>
+                                                        <select class="form-control" id="example_13">
+                                                            <option>Example</option>
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="form-group">
+                                                        <label for="example_01">Normativa de Referencia:</label>
+                                                        <input type="text" class="form-control" id="example_01" placeholder="KM4B0001">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-5">
+                                            <div class="form-group">
+                                                <label for="example_textarea">Observaciones:</label>
+                                                <textarea class="form-control" id="example_textarea" placeholder="Textarea" style="height: 216px;"></textarea>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-xs-4">
-                                        <div class="form-group">
-                                            <label for="example_01">Técnico:</label>
-                                            <input type="text" class="form-control" id="example_01" placeholder="Text Input">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="panel mod-light">
+                                <div class="panel-heading">
+                                    <h1 class="subtitle-fida">Última Calibración</h1>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <div class="form-group">
+                                                <label for="example_01">Fecha:</label>
+                                                <input id="asad" class="datepicker form-control" size="16" type="text" value="" readonly>
+                                                <span class="add-on"><i class="glyphicon glyphicon-th"></i></span>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-xs-4">
-                                        <div class="form-group">
-                                            <label for="example_01">Documento:</label>
-                                            <input type="text" class="form-control" id="example_01" placeholder="Text Input">
+                                        <div class="col-xs-4">
+                                            <div class="form-group">
+                                                <label for="example_01">Resultado:</label>
+                                                <input type="text" class="form-control" id="example_01" placeholder="Text Input">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-xs-4">
-                                        <div class="form-group">
-                                            <label for="example_01">Incertidumbre de Uso:</label>
-                                            <input type="text" class="form-control" id="example_01" placeholder="Text Input">
+                                        <div class="col-xs-4">
+                                            <div class="form-group">
+                                                <label for="example_01">Técnico:</label>
+                                                <input type="text" class="form-control" id="example_01" placeholder="Text Input">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <div class="form-group">
+                                                <label for="example_01">Documento:</label>
+                                                <input type="text" class="form-control" id="example_01" placeholder="Text Input">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <div class="form-group">
+                                                <label for="example_01">Incertidumbre de Uso:</label>
+                                                <input type="text" class="form-control" id="example_01" placeholder="Text Input">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -629,6 +968,59 @@
                 // Toggle the Slidebar with id 'id-2'
                 controller.toggle( 'menu-left' );
             } );
+
+            //Creación de elemento
+            $(document).ready(function ()
+            {
+                $("#param-inventoriable").hide();
+                $("#param-calibrable").hide();
+                $("#param-model").hide();
+
+                $("#option-calibrable").click(function()
+                {
+                    $("#param-calibrable:hidden").show('slow');
+                    $("#param-inventoriable").hide();
+                    $("#param-model").hide();
+                });
+                $("#option-calibrable").click(function()
+                {
+                    if($('option-calibrable').prop('checked')===false)
+                    {
+                        $('#param-calibrable').hide();
+                    }
+                });
+
+                $("#option-inventoriable").click(function()
+                {
+                    $("#param-inventoriable:hidden").show('slow');
+                    $("#param-calibrable").hide();
+                    $("#param-model").hide();
+                });
+                $("#option-inventoriable").click(function()
+                {
+                    if($('param-calibrable').prop('checked')===false)
+                    {
+                        $('#param-inventoriable').hide();
+                    }
+                });
+
+                $("#option-model").click(function()
+                {
+                    $("#param-model:hidden").show('slow');
+                    $("#param-calibrable").hide();
+                    $("#param-inventoriable").hide();
+                });
+                $("#option-model").click(function()
+                {
+                    if($('param-model').prop('checked')===false)
+                    {
+                        $('#param-model').hide();
+                    }
+                });
+
+            });
+
+
         } ) ( jQuery );
     </script>
 </body>
