@@ -9435,6 +9435,42 @@ body {
     color: #223466;
     font-weight: 600; }
 
+.header-search {
+  display: flex;
+  justify-content: space-between; }
+  .header-search a {
+    text-decoration: underline; }
+    .header-search a .subtitle-fida {
+      margin-top: 0.625rem; }
+      .header-search a .subtitle-fida:hover, .header-search a .subtitle-fida:focus {
+        color: #223466; }
+    .header-search a:after {
+      content: "" !important; }
+    .header-search a .sim-s {
+      display: none; }
+    .header-search a[aria-expanded="false"] .adv-s {
+      display: block; }
+    .header-search a[aria-expanded="false"] .sim-s {
+      display: none; }
+    .header-search a[aria-expanded="true"] .adv-s {
+      display: none; }
+    .header-search a[aria-expanded="true"] .sim-s {
+      display: block; }
+
+.body-search {
+  position: relative; }
+  .body-search .advanced-search {
+    position: absolute;
+    width: 100%;
+    margin: 0px -25px;
+    z-index: 555;
+    padding: 0 10px;
+    background: #ffffff;
+    top: -1.0625rem;
+    left: 1.5625rem; }
+    .body-search .advanced-search .btn-primary {
+      margin-top: 1.875rem; }
+
 #form-login .float-label-control {
   position: relative;
   margin-bottom: 2.5rem; }
@@ -9596,6 +9632,8 @@ span.add-on {
 .has-error select,
 .has-error textarea {
   border: #ff3d3d 1px solid !important; }
+.has-error.requerid label:after {
+  color: #ff3d3d; }
 .has-error .msg-error:after {
   content: "\f06a";
   font-family: FontAwesome;
@@ -9645,7 +9683,7 @@ span.add-on {
   font-weight: 400;
   font-family: FontAwesome;
   position: relative;
-  color: #ff3d3d;
+  color: #223466;
   font-size: 12px;
   right: -0.625rem; }
 
@@ -10232,6 +10270,25 @@ nav#header {
       content: "\e113"; }
     #dash-board [data-toggle="collapse"][aria-expanded="false"]:after {
       content: "\e114"; }
+
+.box-404 {
+  min-height: 78vh;
+  display: flex;
+  justify-content: space-between; }
+  .box-404 .text-404 {
+    flex: 1;
+    border: 13px solid #3c3c3c;
+    margin: 23px;
+    padding: 0.9375rem; }
+    .box-404 .text-404 .title-404 {
+      font-size: 160px;
+      text-align: center; }
+  .box-404 .img-404 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .box-404 .img-404 img {
+      border-radius: 0.25rem; }
 
 #footer-version {
   width: 100%;

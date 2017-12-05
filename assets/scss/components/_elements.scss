@@ -715,3 +715,57 @@ $sides: (top, bottom, left, right);
     }
   }
 }
+
+//Search
+.header-search{
+  display: flex;
+  justify-content: space-between;
+  a{
+    text-decoration: underline;
+    .subtitle-fida{
+      margin-top: rem(10);
+      &:hover,
+      &:focus{
+        color: $color_primary;
+      }
+    }
+    &:after{
+      content: ""!important;
+    }
+    .sim-s{
+      display: none;
+    }
+    &[aria-expanded="false"]{
+      .adv-s{
+        display: block;
+      }
+      .sim-s{
+        display: none;
+      }
+    }
+    &[aria-expanded="true"]{
+      .adv-s{
+        display: none;
+      }
+      .sim-s{
+        display: block;
+      }
+    }
+  }
+}
+.body-search{
+  position: relative;
+  .advanced-search{
+    position: absolute;
+    width: 100%;
+    margin: 0px -25px;
+    z-index: 555;
+    padding: 0 10px;
+    background: $color_white;
+    top: rem(-17);
+    left: rem(25);
+    .btn-primary{
+      margin-top: rem(30);
+    }
+  }
+}

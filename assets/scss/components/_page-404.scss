@@ -1,0 +1,26 @@
+.box-404{
+  min-height: 78vh;
+  display: flex;
+  justify-content: space-between;
+  .text-404{
+    flex: 1;
+    border: 13px solid $color_gray_dark-1;
+    margin: 23px;
+    padding: rem(15);
+    .title-404{
+      font-size: px(160);
+      text-align: center;
+    }
+    .info-404{
+
+    }
+  }
+  .img-404{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    img{
+      border-radius: rem(4);
+    }
+  }
+}

@@ -157,6 +157,13 @@ span.add-on{
   textarea{
     border: $color_red 1px solid!important;
   }
+  &.requerid{
+    label{
+      &:after{
+        color: $color_red;
+      }
+    }
+  }
   .msg-error{
     &:after{
       content: "\f06a";
@@ -218,7 +225,7 @@ span.add-on{
       font-weight: $font_regular;
       font-family: FontAwesome;
       position: relative;
-      color: $color_red;
+      color: $color_primary;
       font-size: px(12);
       right: rem(-10);
     }
