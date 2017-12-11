@@ -128,22 +128,25 @@
                                 <div class="panel mod-light">
                                     <div class="panel-body">
                                         <ul class="nav nav-pills nav-justified">
-                                            <li class="active"><a href="#example_tab_1" data-toggle="tab">Params</a></li>
-                                            <li><a href="#example_tab_2" data-toggle="tab">Buses</a></li>
+                                            <li class="tab-param active"><a href="#example_tab_1" data-toggle="tab">Params</a></li>
+                                            <li class="tab-buses"><a href="#example_tab_2" data-toggle="tab">Buses</a></li>
                                         </ul>
                                         <div class="tab-content">
                                             <div class="tab-pane active" id="example_tab_1">
                                                 <table id="example_table"
                                                        class="table table-striped table-bordered"
                                                        data-toggle="table"
+                                                       data-sort-name="code"
+                                                       data-click-to-select="true"
+                                                       data-sort-order="desc"
                                                        data-search="true"
                                                        data-show-refresh="true"
                                                        data-show-toggle="true"
                                                        data-show-columns="true"
-                                                       data-sort-name="code"
-                                                       data-sort-order="desc">
+                                                       data-pagination="true">
                                                     <thead>
                                                     <tr>
+                                                        <th data-field="state" data-checkbox="true"></th>
                                                         <th data-field="code" class="header headerSortDown" data-sortable="true">Code</th>
                                                         <th data-field="status" data-sortable="true">Status</th>
                                                         <th data-field="type">Type</th>
@@ -153,6 +156,7 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
+                                                        <td></td>
                                                         <td>MSN056.MON.81</td>
                                                         <td>Accepted</td>
                                                         <td></td>
@@ -160,6 +164,7 @@
                                                         <td>title</td>
                                                     </tr>
                                                     <tr>
+                                                        <td></td>
                                                         <td>MSN056.MON.82</td>
                                                         <td>Accepted</td>
                                                         <td></td>
@@ -167,13 +172,15 @@
                                                         <td>title</td>
                                                     </tr>
                                                     <tr>
+                                                        <td></td>
                                                         <td>MSN056.MRT.86</td>
                                                         <td>Accepted</td>
                                                         <td></td>
                                                         <td>10/27/2018 12:00 AM</td>
-                                                        <td>requeriment87</td>
+                                                        <td>requirement87</td>
                                                     </tr>
                                                     <tr>
+                                                        <td></td>
                                                         <td>MSN065.MRT.65</td>
                                                         <td>Accepted</td>
                                                         <td></td>
@@ -181,6 +188,7 @@
                                                         <td>title</td>
                                                     </tr>
                                                     <tr>
+                                                        <td></td>
                                                         <td>MSN065.ICD.83</td>
                                                         <td>Definition</td>
                                                         <td></td>
@@ -188,6 +196,7 @@
                                                         <td>title</td>
                                                     </tr>
                                                     <tr>
+                                                        <td></td>
                                                         <td>MSN065.ARC.68</td>
                                                         <td>Definition</td>
                                                         <td></td>
@@ -198,6 +207,77 @@
                                                 </table>
                                             </div>
                                             <div class="tab-pane" id="example_tab_2">
+                                                <table id="example_table2"
+                                                       class="table table-striped table-bordered"
+                                                       data-toggle="table"
+                                                       data-click-to-select="true"
+                                                       data-sort-order="desc"
+                                                       data-search="true"
+                                                       data-show-refresh="true"
+                                                       data-show-toggle="true"
+                                                       data-show-columns="true"
+                                                       data-pagination="true">
+                                                    <thead>
+                                                    <tr>
+                                                        <th data-field="state" data-checkbox="true"></th>
+                                                        <th data-field="code" class="header headerSortDown" data-sortable="true">Code</th>
+                                                        <th data-field="status" data-sortable="true">Status</th>
+                                                        <th data-field="type">Type</th>
+                                                        <th data-field="target-date" data-sortable="true">Target Date</th>
+                                                        <th data-field="title" data-sortable="true">Title</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td>MSN065.MRT.65</td>
+                                                        <td>Accepted</td>
+                                                        <td></td>
+                                                        <td>9/14/2017 1:330 PM</td>
+                                                        <td>title</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td>MSN065.ICD.83</td>
+                                                        <td>Definition</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>title</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td>MSN065.ARC.68</td>
+                                                        <td>Definition</td>
+                                                        <td></td>
+                                                        <td>9/14/2017 8:08 AM</td>
+                                                        <td>title</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td>MSN056.MON.81</td>
+                                                        <td>Accepted</td>
+                                                        <td></td>
+                                                        <td>10/30/2015 12:00 AM</td>
+                                                        <td>title</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td>MSN056.MON.82</td>
+                                                        <td>Accepted</td>
+                                                        <td></td>
+                                                        <td>10/30/2015 12:00 AM</td>
+                                                        <td>title</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td>MSN056.MRT.86</td>
+                                                        <td>Accepted</td>
+                                                        <td></td>
+                                                        <td>10/27/2018 12:00 AM</td>
+                                                        <td>requirement87</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
                                             </div>
                                         </div>
                                     </div>
@@ -209,14 +289,16 @@
                         <div class="row">
                             <div class="col-xs-12">
                                 <div class="panel mod-light">
-                                    <div class="panel-heading">
-                                        <h2 class="title-fida">Management</h2>
-                                    </div>
                                     <div class="panel-body">
-                                        <div class="form-group">
+                                        <div id="btns-param" class="form-group">
                                             <button type="button" class="btn btn-primary width-full m-t-5"data-toggle="modal" data-target="#myModal">New parameter</button>
                                             <button type="button" class="btn btn-primary width-full m-t-5">Export parameter</button>
                                             <button type="button" class="btn btn-primary width-full m-t-5" disabled>Modify parameter</button>
+                                        </div>
+                                        <div id="btns-buses" class="form-group" style="display: none;">
+                                            <button type="button" class="btn btn-primary width-full m-t-5"data-toggle="modal" data-target="#myModal">New Buses</button>
+                                            <button type="button" class="btn btn-primary width-full m-t-5">Export Buses</button>
+                                            <button type="button" class="btn btn-primary width-full m-t-5" disabled>Modify Buses</button>
                                         </div>
                                     </div>
                                 </div>
@@ -265,7 +347,7 @@
                             <ul class="list-group">
                                 <li class="btn-req">
                                     <a href="#">
-                                        <span>Requeriments</span>
+                                        <span>Requirements</span>
                                     </a>
                                 </li>
                                 <li class="btn-def">
@@ -504,6 +586,23 @@
                 controller.toggle( 'menu-left' );
             } );
         } ) ( jQuery );
+
+
+        // Tab btn Param/Buses
+
+        ( function ( $ ) {
+
+            $(".tab-param").click(function () {
+               $("#btns-buses").hide();
+                $("#btns-param").show();
+            });
+            $(".tab-buses").click(function () {
+                $("#btns-param").hide();
+                $("#btns-buses").show();
+            });
+
+        } ) ( jQuery );
+
     </script>
 </body>
 </html>

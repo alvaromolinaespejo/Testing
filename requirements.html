@@ -52,7 +52,7 @@
                         <ol class="breadcrumb breadcrumb-arrow">
                             <li><a href="#"><i class="fa fa-paper-plane" aria-hidden="true"></i>A400</a></li>
                             <li><a href="#">Dashboard</a></li>
-                            <li class="active"><span>Requeriments</span></li>
+                            <li class="active"><span>Requirements</span></li>
                         </ol>
                     </div>
                     <div class="col-xs-12 col-md-9">
@@ -124,29 +124,27 @@
                         <div class="row">
                             <div class="col-xs-12">
                                 <div class="panel mod-light">
-                                    <div class="panel-heading ">
-                                        <h2 class="title-fida">
-                                            Search results
-                                        </h2>
-                                    </div>
                                     <div class="panel-body">
                                         <ul class="nav nav-pills nav-justified">
-                                            <li class="active"><a href="#example_tab_1" data-toggle="tab">Requeriments</a></li>
-                                            <li class="disabled"><a href="#example_tab_2" data-toggle="tab">Zmods</a></li>
+                                            <li class="active"><a href="#example_tab_1" data-toggle="tab">Requirements</a></li>
+                                            <!--<li class="disabled"><a href="#example_tab_2" data-toggle="tab">Zmods</a></li>-->
                                         </ul>
                                         <div class="tab-content">
                                             <div class="tab-pane active" id="example_tab_1">
                                                 <table id="example_table"
                                                        class="table table-striped table-bordered"
                                                        data-toggle="table"
+                                                       data-sort-name="code"
+                                                       data-click-to-select="true"
+                                                       data-sort-order="desc"
                                                        data-search="true"
                                                        data-show-refresh="true"
                                                        data-show-toggle="true"
                                                        data-show-columns="true"
-                                                       data-sort-name="code"
-                                                       data-sort-order="desc">
+                                                       data-pagination="true">
                                                     <thead>
                                                         <tr>
+                                                            <th data-field="state" data-checkbox="true"></th>
                                                             <th data-field="code" class="header headerSortDown" data-sortable="true">Code</th>
                                                             <th data-field="status" data-sortable="true">Status</th>
                                                             <th data-field="type">Type</th>
@@ -156,6 +154,7 @@
                                                     </thead>
                                                     <tbody>
                                                         <tr>
+                                                            <td></td>
                                                             <td>MSN056.MON.81</td>
                                                             <td>Accepted</td>
                                                             <td></td>
@@ -163,6 +162,7 @@
                                                             <td>title</td>
                                                         </tr>
                                                         <tr>
+                                                            <td></td>
                                                             <td>MSN056.MON.82</td>
                                                             <td>Accepted</td>
                                                             <td></td>
@@ -170,13 +170,15 @@
                                                             <td>title</td>
                                                         </tr>
                                                         <tr>
+                                                            <td></td>
                                                             <td>MSN056.MRT.86</td>
                                                             <td>Accepted</td>
                                                             <td></td>
                                                             <td>10/27/2018 12:00 AM</td>
-                                                            <td>requeriment87</td>
+                                                            <td>requirement87</td>
                                                         </tr>
                                                         <tr>
+                                                            <td></td>
                                                             <td>MSN065.MRT.65</td>
                                                             <td>Accepted</td>
                                                             <td></td>
@@ -184,6 +186,7 @@
                                                             <td>title</td>
                                                         </tr>
                                                         <tr>
+                                                            <td></td>
                                                             <td>MSN065.ICD.83</td>
                                                             <td>Definition</td>
                                                             <td></td>
@@ -191,6 +194,7 @@
                                                             <td>title</td>
                                                         </tr>
                                                         <tr>
+                                                            <td></td>
                                                             <td>MSN065.ARC.68</td>
                                                             <td>Definition</td>
                                                             <td></td>
@@ -212,9 +216,6 @@
                         <div class="row">
                             <div class="col-xs-12">
                                 <div class="panel mod-light">
-                                    <div class="panel-heading">
-                                        <h2 class="title-fida">Main Title</h2>
-                                    </div>
                                     <div class="panel-body">
                                         <canvas id="doughnut-chart" width="250" height="250"></canvas>
                                     </div>
@@ -263,7 +264,7 @@
                             <ul class="list-group">
                                 <li>
                                     <a class="btn-req" data-toggle="collapse" data-parent="#collapseOne" href="#subcollapseOne">
-                                        <span>Requeriments</span>
+                                        <span>Requirements</span>
                                     </a>
                                     <div id="subcollapseOne" class="collapse">
                                         <ul class="list-group">
@@ -274,7 +275,7 @@
                                             </li>
                                             <li>
                                                 <a href="">
-                                                    <span>Requeriments</span>
+                                                    <span>Requirements</span>
                                                 </a>
                                             </li>
                                             <li>

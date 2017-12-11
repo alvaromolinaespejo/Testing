@@ -755,6 +755,9 @@ $sides: (top, bottom, left, right);
 }
 .body-search{
   position: relative;
+  .collapsing{
+    @include transition(1s);
+  }
   .advanced-search{
     position: absolute;
     width: 100%;

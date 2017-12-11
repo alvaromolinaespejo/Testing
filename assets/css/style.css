@@ -9459,6 +9459,11 @@ body {
 
 .body-search {
   position: relative; }
+  .body-search .collapsing {
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    transition: 1s; }
   .body-search .advanced-search {
     position: absolute;
     width: 100%;
@@ -9632,7 +9637,7 @@ span.add-on {
 .has-error select,
 .has-error textarea {
   border: #ff3d3d 1px solid !important; }
-.has-error.requerid label:after {
+.has-error.required label:after {
   color: #ff3d3d; }
 .has-error .msg-error:after {
   content: "\f06a";
@@ -9678,7 +9683,7 @@ span.add-on {
       border-style: solid;
       border-color: #555 transparent transparent transparent; }
 
-.requerid label:after {
+.required label:after {
   content: "\f069";
   font-weight: 400;
   font-family: FontAwesome;
@@ -10203,7 +10208,7 @@ nav#header {
     #dash-board .box-dashboard .header-dashboard {
       background-size: cover;
       min-height: 8.75rem; }
-      #dash-board .box-dashboard .header-dashboard.requeriments {
+      #dash-board .box-dashboard .header-dashboard.requirements {
         background: url("../images/db-req.png"); }
       #dash-board .box-dashboard .header-dashboard.definition {
         background: url("../images/db-def.png"); }

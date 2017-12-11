@@ -157,7 +157,7 @@ span.add-on{
   textarea{
     border: $color_red 1px solid!important;
   }
-  &.requerid{
+  &.required{
     label{
       &:after{
         color: $color_red;
@@ -218,7 +218,7 @@ span.add-on{
 
   }
 }
-.requerid{
+.required{
   label{
     &:after{
       content: "\f069";
