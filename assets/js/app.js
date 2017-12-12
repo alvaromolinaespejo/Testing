@@ -83,9 +83,11 @@ $(document).ready(function() {
     });
 
     $(".datepicker").flatpickr({
+        dateFormat: "d-m-Y"
     });
 
     $(".datepicker-range").flatpickr({
+        dateFormat: "d-m-Y",
         mode: "range"
     });
 
