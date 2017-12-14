@@ -78,7 +78,6 @@
                                                data-toolbar="#toolbar">
                                             <thead>
                                                 <tr>
-                                                    <th data-field="state" data-checkbox="true"></th>
                                                     <th data-field="id" class="header headerSortDown" data-sortable="true">ID</th>
                                                     <th data-field="name" data-sortable="true">Name</th>
                                                     <th data-field="issue">Isue</th>
@@ -87,147 +86,126 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td></td>
                                                     <td>44</td>
                                                     <td>FTMR010</td>
                                                     <td>S</td>
                                                     <td>Remarks</td>
                                                 </tr>
                                                 <tr>
-                                                    <td></td>
                                                     <td>41</td>
                                                     <td>FTMR005</td>
                                                     <td>B</td>
                                                     <td>REMARKS for ftmr0005 issue B</td>
                                                 </tr>
                                                 <tr>
-                                                    <td></td>
                                                     <td>42</td>
                                                     <td>FTMR006</td>
                                                     <td>C</td>
                                                     <td>Remarks for FTMR006 Issue C</td>
                                                 </tr>
                                                 <tr>
-                                                    <td></td>
                                                     <td>42</td>
                                                     <td>FTMR006</td>
                                                     <td>C</td>
                                                     <td>Remarks for FTMR006 Issue C</td>
                                                 </tr>
                                                 <tr>
-                                                    <td></td>
                                                     <td>43</td>
                                                     <td>FTMR009</td>
                                                     <td>F</td>
                                                     <td>Remarks for issue F</td>
                                                 </tr>
                                                 <tr>
-                                                    <td></td>
                                                     <td>44</td>
                                                     <td>FTMR010</td>
                                                     <td>S</td>
                                                     <td>Remarks</td>
                                                 </tr>
                                                 <tr>
-                                                    <td></td>
                                                     <td>42</td>
                                                     <td>FTMR006</td>
                                                     <td>C</td>
                                                     <td>Remarks for FTMR006 Issue C</td>
                                                 </tr>
                                                 <tr>
-                                                    <td></td>
                                                     <td>42</td>
                                                     <td>FTMR006</td>
                                                     <td>C</td>
                                                     <td>Remarks for FTMR006 Issue C</td>
                                                 </tr>
                                                 <tr>
-                                                    <td></td>
                                                     <td>43</td>
                                                     <td>FTMR009</td>
                                                     <td>F</td>
                                                     <td>Remarks for issue F</td>
                                                 </tr>
                                                 <tr>
-                                                    <td></td>
                                                     <td>44</td>
                                                     <td>FTMR010</td>
                                                     <td>S</td>
                                                     <td>Remarks</td>
                                                 </tr>
                                                 <tr>
-                                                    <td></td>
                                                     <td>43</td>
                                                     <td>FTMR009</td>
                                                     <td>F</td>
                                                     <td>Remarks for issue F</td>
                                                 </tr>
                                                 <tr>
-                                                    <td></td>
                                                     <td>44</td>
                                                     <td>FTMR010</td>
                                                     <td>S</td>
                                                     <td>Remarks</td>
                                                 </tr>
                                                 <tr>
-                                                    <td></td>
                                                     <td>42</td>
                                                     <td>FTMR006</td>
                                                     <td>C</td>
                                                     <td>Remarks for FTMR006 Issue C</td>
                                                 </tr>
                                                 <tr>
-                                                    <td></td>
                                                     <td>42</td>
                                                     <td>FTMR006</td>
                                                     <td>C</td>
                                                     <td>Remarks for FTMR006 Issue C</td>
                                                 </tr>
                                                 <tr>
-                                                    <td></td>
                                                     <td>41</td>
                                                     <td>FTMR005</td>
                                                     <td>B</td>
                                                     <td>REMARKS for ftmr0005 issue B</td>
                                                 </tr>
                                                 <tr>
-                                                    <td></td>
                                                     <td>4</td>
                                                     <td>FTMR003</td>
                                                     <td>IssueA</td>
                                                     <td>Remarks for FTMR003 IssueA</td>
                                                 </tr>
                                                 <tr>
-                                                    <td></td>
                                                     <td>41</td>
                                                     <td>FTMR005</td>
                                                     <td>B</td>
                                                     <td>REMARKS for ftmr0005 issue B</td>
                                                 </tr>
                                                 <tr>
-                                                    <td></td>
                                                     <td>4</td>
                                                     <td>FTMR003</td>
                                                     <td>IssueA</td>
                                                     <td>Remarks for FTMR003 IssueA</td>
                                                 </tr>
                                                 <tr>
-                                                    <td></td>
                                                     <td>42</td>
                                                     <td>FTMR006</td>
                                                     <td>C</td>
                                                     <td>Remarks for FTMR006 Issue C</td>
                                                 </tr>
                                                 <tr>
-                                                    <td></td>
                                                     <td>42</td>
                                                     <td>FTMR006</td>
                                                     <td>C</td>
                                                     <td>Remarks for FTMR006 Issue C</td>
                                                 </tr>
                                                 <tr>
-                                                    <td></td>
                                                     <td>43</td>
                                                     <td>FTMR009</td>
                                                     <td>F</td>
@@ -480,6 +458,18 @@
                 }
             });
         });
+
+        //Selección de una sola fila
+
+        var $table = $('#example_table');
+
+        $(function () {
+            $table.on('click-row.bs.table', function (e, row, $element) {
+                $('.success').removeClass('success');
+                $($element).addClass('success');
+            });
+        });
+
 
     </script>
 </body>
