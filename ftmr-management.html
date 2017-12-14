@@ -13,6 +13,7 @@
     <script type="text/javascript" src="assets/js/Sliderbars/slidebars.min.js"></script>
     <script type="text/javascript" src="assets/js/chart/chart.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap-table/bootstrap-table.js"></script>
+    <script type="text/javascript" src="assets/js/context-menu/context-menu.js"></script>
     <script type="text/javascript" src="assets/js/flatpickr/flatpickr.min.js"></script>
 	<script type="text/javascript" src="assets/js/app.js"></script>
 
@@ -62,85 +63,200 @@
                         <div class="row">
                             <div class="col-xs-12">
                                 <div class="panel mod-light">
-                                    <div class="panel-heading">
-                                        <h2 class="title-fida">Search</h2>
-                                    </div>
-                                    <div class="panel-body">
-                                        <div class="row">
-                                            <div class="col-xs-12">
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control" placeholder="Search for...">
-                                                <span class="input-group-btn">
-                                                    <button class="btn btn-primary" type="button">Search</button>
-                                                </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <div class="panel mod-light">
-                                    <div class="panel-heading ">
-                                        <h2 class="title-fida">
-                                            Search results
-                                        </h2>
-                                    </div>
                                     <div class="panel-body">
                                         <table id="example_table"
                                                class="table table-striped table-bordered"
                                                data-toggle="table"
-                                               data-sort-name="id"
-                                               data-sort-order="desc">
+                                               data-sort-name="code"
+                                               data-click-to-select="true"
+                                               data-sort-order="desc"
+                                               data-search="true"
+                                               data-show-refresh="true"
+                                               data-show-toggle="true"
+                                               data-show-columns="true"
+                                               data-pagination="true"
+                                               data-toolbar="#toolbar">
                                             <thead>
                                                 <tr>
+                                                    <th data-field="state" data-checkbox="true"></th>
                                                     <th data-field="id" class="header headerSortDown" data-sortable="true">ID</th>
                                                     <th data-field="name" data-sortable="true">Name</th>
                                                     <th data-field="issue">Isue</th>
                                                     <th data-field="remarks" data-sortable="true">Remarks</th>
-                                                    <th data-field="Path" data-sortable="true">Path</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
+                                                    <td></td>
                                                     <td>44</td>
                                                     <td>FTMR010</td>
                                                     <td>S</td>
                                                     <td>Remarks</td>
-                                                    <td></td>
                                                 </tr>
                                                 <tr>
+                                                    <td></td>
                                                     <td>41</td>
                                                     <td>FTMR005</td>
                                                     <td>B</td>
                                                     <td>REMARKS for ftmr0005 issue B</td>
-                                                    <td></td>
                                                 </tr>
                                                 <tr>
-                                                    <td>4</td>
-                                                    <td>FTMR003</td>
-                                                    <td>IssueA</td>
-                                                    <td>Remarks for FTMR003 IssueA</td>
                                                     <td></td>
-                                                </tr>
-                                                <tr>
                                                     <td>42</td>
                                                     <td>FTMR006</td>
                                                     <td>C</td>
                                                     <td>Remarks for FTMR006 Issue C</td>
-                                                    <td></td>
                                                 </tr>
                                                 <tr>
+                                                    <td></td>
+                                                    <td>42</td>
+                                                    <td>FTMR006</td>
+                                                    <td>C</td>
+                                                    <td>Remarks for FTMR006 Issue C</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
                                                     <td>43</td>
                                                     <td>FTMR009</td>
                                                     <td>F</td>
                                                     <td>Remarks for issue F</td>
+                                                </tr>
+                                                <tr>
                                                     <td></td>
+                                                    <td>44</td>
+                                                    <td>FTMR010</td>
+                                                    <td>S</td>
+                                                    <td>Remarks</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>42</td>
+                                                    <td>FTMR006</td>
+                                                    <td>C</td>
+                                                    <td>Remarks for FTMR006 Issue C</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>42</td>
+                                                    <td>FTMR006</td>
+                                                    <td>C</td>
+                                                    <td>Remarks for FTMR006 Issue C</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>43</td>
+                                                    <td>FTMR009</td>
+                                                    <td>F</td>
+                                                    <td>Remarks for issue F</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>44</td>
+                                                    <td>FTMR010</td>
+                                                    <td>S</td>
+                                                    <td>Remarks</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>43</td>
+                                                    <td>FTMR009</td>
+                                                    <td>F</td>
+                                                    <td>Remarks for issue F</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>44</td>
+                                                    <td>FTMR010</td>
+                                                    <td>S</td>
+                                                    <td>Remarks</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>42</td>
+                                                    <td>FTMR006</td>
+                                                    <td>C</td>
+                                                    <td>Remarks for FTMR006 Issue C</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>42</td>
+                                                    <td>FTMR006</td>
+                                                    <td>C</td>
+                                                    <td>Remarks for FTMR006 Issue C</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>41</td>
+                                                    <td>FTMR005</td>
+                                                    <td>B</td>
+                                                    <td>REMARKS for ftmr0005 issue B</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>4</td>
+                                                    <td>FTMR003</td>
+                                                    <td>IssueA</td>
+                                                    <td>Remarks for FTMR003 IssueA</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>41</td>
+                                                    <td>FTMR005</td>
+                                                    <td>B</td>
+                                                    <td>REMARKS for ftmr0005 issue B</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>4</td>
+                                                    <td>FTMR003</td>
+                                                    <td>IssueA</td>
+                                                    <td>Remarks for FTMR003 IssueA</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>42</td>
+                                                    <td>FTMR006</td>
+                                                    <td>C</td>
+                                                    <td>Remarks for FTMR006 Issue C</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>42</td>
+                                                    <td>FTMR006</td>
+                                                    <td>C</td>
+                                                    <td>Remarks for FTMR006 Issue C</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>43</td>
+                                                    <td>FTMR009</td>
+                                                    <td>F</td>
+                                                    <td>Remarks for issue F</td>
                                                 </tr>
                                             </tbody>
                                         </table>
+
+                                        <div id="context-menu">
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a tabindex="-1">Edit</a></li>
+                                                <li><a tabindex="-1">Another action</a></li>
+                                                <li><a tabindex="-1">Something else here</a></li>
+                                                <li class="divider"></li>
+                                                <li><a tabindex="-1">Separated link</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div id="toolbar" class="form-group">
+                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#param-list" rel="tooltip" data-placement="top" title="Edit">
+                                                <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                                            </button>
+                                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#create-param" rel="tooltip" data-placement="top" title="Create">
+                                                <span class="glyphicon glyphicon-file" aria-hidden="true"></span>
+                                            </button>
+                                            <button type="button" class="btn btn-warning" rel="tooltip" data-placement="top" title="Delete">
+                                                <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -176,6 +292,51 @@
         </footer>
     </div>
 
+
+    <!-- Modal-->
+    <div class="components">
+        <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+            <div class="modal-dialog modal-lg mod-light" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="modalLabel">Modal</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="example_title">Code:</label>
+                                    <input type="text" class="form-control" id="example_1" placeholder="Text Input">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="example_title">Description:</label>
+                                    <input type="text" class="form-control" id="example_12" placeholder="Text Input">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="example_status">Type:</label>
+                                    <select class="form-control" id="example_status1">
+                                        <option>Definition</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div off-canvas="menu-left left push">
         <div class="row">
@@ -288,6 +449,7 @@
     </div>
 
     <script>
+
         ( function ( $ ) {
             // Initialize Slidebars
             var controller = new slidebars();
@@ -302,7 +464,23 @@
                 // Toggle the Slidebar with id 'id-2'
                 controller.toggle( 'menu-left' );
             } );
+
         } ) ( jQuery );
+
+        //Menu contextual para Bootstrap Table
+
+        $(function () {
+            $('#example_table').contextmenu({
+                target: '#context-menu',
+                scopes: 'tbody > tr',
+                onItem: function (row, e) {
+                    var name = $(row.children('*')[1]).text();
+                    var action = $(e.target).text();
+                    alert('You right clicked on ' + name + '\'s row and selected menu item "' + action  + '".');
+                }
+            });
+        });
+
     </script>
 </body>
 </html>

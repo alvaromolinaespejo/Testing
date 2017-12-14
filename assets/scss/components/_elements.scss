@@ -156,22 +156,6 @@ section{
 }
 
 
-// Margin and Padding
-
-$spaceamounts: (0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75, 100);
-$sides: (top, bottom, left, right);
-
-@each $space in $spaceamounts {
-  @each $side in $sides {
-    .m-#{str-slice($side, 0, 1)}-#{$space} {
-      margin-#{$side}: #{$space}px !important;
-    }
-
-    .p-#{str-slice($side, 0, 1)}-#{$space} {
-      padding-#{$side}: #{$space}px !important;
-    }
-  }
-}
 
 .bg-light{
   background: $color_background_light;
@@ -209,6 +193,7 @@ $sides: (top, bottom, left, right);
     font-size: px(14);
     text-transform: uppercase;
     line-height: normal;
+    margin-bottom: rem(5);
   }
   label{
     font-weight: $font_semibold;
@@ -439,6 +424,32 @@ $sides: (top, bottom, left, right);
         position: relative;
         top:rem(1);
         right: rem(-7);
+      }
+    }
+  }
+
+  /* ATTACHMENTS
+  --------------------------------------------------------- */
+  .box-attachments{
+    display: flex;
+    flex-wrap: wrap;
+    a{
+      border: rem(1) solid $color_primary;
+      padding: rem(5) rem(10);
+      margin: rem(5);
+      color: $color_primary;
+      transition: 0.35s;
+      display: flex;
+      align-items: center;
+      font-size: px(12);
+      i{
+        margin-right: rem(15);
+        font-size: px(20);
+      }
+      &:hover,
+      &:focus{
+        background: $color_primary;
+        color: $color_white;
       }
     }
   }
@@ -770,5 +781,44 @@ $sides: (top, bottom, left, right);
     .btn-primary{
       margin-top: rem(30);
     }
+  }
+}
+
+
+
+//Pendiente
+#btn-notes{
+  background: coral;
+  position: absolute;
+  right: 15px;
+  padding: 15px;
+  top: 0;
+  z-index: 15;
+  &:hover,
+  &:focus{
+    background: teal;
+  }
+}
+.block-notes{
+  display: inline-block;
+}
+.block-notes{
+  background: lightgray;
+  overflow: hidden;
+  height: 450px;
+  width: 0;
+  //white-space: nowrap;
+  @include transition( width 1s ease-in-out, padding-left 1s ease-in-out, padding-right 1s ease-in-out);
+  position: absolute;
+  top: 0;
+  right: 15px;
+  padding: 15px 0;
+  z-index: 10;
+  &.show-notes{
+    width: 75%;
+  }
+  .col-notes{
+    white-space: normal;
+    margin: 15px;
   }
 }

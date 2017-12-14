@@ -5811,7 +5811,7 @@ button.close {
   src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-.fa {
+.fa, .attachment-word i, .attachment-excel i, .attachment-archive i, .attachment-code i, .attachment-image i, .attachment-pdf i, .attachment-text i, .attachment-powerpoint i {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -5868,9 +5868,9 @@ button.close {
 .fa-pull-right {
   float: right; }
 
-.fa.fa-pull-left {
+.fa.fa-pull-left, .attachment-word i.fa-pull-left, .attachment-excel i.fa-pull-left, .attachment-archive i.fa-pull-left, .attachment-code i.fa-pull-left, .attachment-image i.fa-pull-left, .attachment-pdf i.fa-pull-left, .attachment-text i.fa-pull-left, .attachment-powerpoint i.fa-pull-left {
   margin-right: .3em; }
-.fa.fa-pull-right {
+.fa.fa-pull-right, .attachment-word i.fa-pull-right, .attachment-excel i.fa-pull-right, .attachment-archive i.fa-pull-right, .attachment-code i.fa-pull-right, .attachment-image i.fa-pull-right, .attachment-pdf i.fa-pull-right, .attachment-text i.fa-pull-right, .attachment-powerpoint i.fa-pull-right {
   margin-left: .3em; }
 
 /* Deprecated as of 4.4.0 */
@@ -5880,9 +5880,9 @@ button.close {
 .pull-left {
   float: left; }
 
-.fa.pull-left {
+.fa.pull-left, .attachment-word i.pull-left, .attachment-excel i.pull-left, .attachment-archive i.pull-left, .attachment-code i.pull-left, .attachment-image i.pull-left, .attachment-pdf i.pull-left, .attachment-text i.pull-left, .attachment-powerpoint i.pull-left {
   margin-right: .3em; }
-.fa.pull-right {
+.fa.pull-right, .attachment-word i.pull-right, .attachment-excel i.pull-right, .attachment-archive i.pull-right, .attachment-code i.pull-right, .attachment-image i.pull-right, .attachment-pdf i.pull-right, .attachment-text i.pull-right, .attachment-powerpoint i.pull-right {
   margin-left: .3em; }
 
 .fa-spin {
@@ -6655,7 +6655,7 @@ button.close {
 .fa-cutlery:before {
   content: ""; }
 
-.fa-file-text-o:before {
+.fa-file-text-o:before, .attachment-text i:before {
   content: ""; }
 
 .fa-building-o:before {
@@ -7246,25 +7246,27 @@ button.close {
 .fa-database:before {
   content: ""; }
 
-.fa-file-pdf-o:before {
+.fa-file-pdf-o:before, .attachment-pdf i:before {
   content: ""; }
 
-.fa-file-word-o:before {
+.fa-file-word-o:before, .attachment-word i:before {
   content: ""; }
 
-.fa-file-excel-o:before {
+.fa-file-excel-o:before, .attachment-excel i:before {
   content: ""; }
 
-.fa-file-powerpoint-o:before {
+.fa-file-powerpoint-o:before, .attachment-powerpoint i:before {
   content: ""; }
 
 .fa-file-photo-o:before,
 .fa-file-picture-o:before,
-.fa-file-image-o:before {
+.fa-file-image-o:before,
+.attachment-image i:before {
   content: ""; }
 
 .fa-file-zip-o:before,
-.fa-file-archive-o:before {
+.fa-file-archive-o:before,
+.attachment-archive i:before {
   content: ""; }
 
 .fa-file-sound-o:before,
@@ -7275,7 +7277,7 @@ button.close {
 .fa-file-video-o:before {
   content: ""; }
 
-.fa-file-code-o:before {
+.fa-file-code-o:before, .attachment-code i:before {
   content: ""; }
 
 .fa-vine:before {
@@ -8527,191 +8529,6 @@ html, body {
   display: flex;
   justify-content: space-between; }
 
-body {
-  color: #3c3c3c;
-  font: 10px "Montserrat", arial, sans-serif;
-  font-weight: 400; }
-  @media (min-width: 768px) {
-    body {
-      font-size: 1rem; } }
-
-.title-fida {
-  color: #223466; }
-
-.btn-cc {
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-  touch-action: manipulation;
-  cursor: pointer;
-  background-image: none;
-  border: 1px solid transparent;
-  white-space: nowrap;
-  padding: 0.625rem;
-  font-size: 14px;
-  line-height: 1.428571429;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  border-radius: 0.375rem;
-  text-transform: uppercase;
-  font-weight: 500;
-  margin-bottom: 0.625rem;
-  width: 100%; }
-
-.btn-login {
-  border-radius: 1.5rem;
-  background: #223466;
-  color: #ffffff;
-  letter-spacing: 0.0625rem;
-  width: auto;
-  padding: 0.625rem 2.8125rem;
-  font-size: 18px; }
-  .btn-login:focus, .btn-login:hover {
-    background: #1874ac;
-    color: #ffffff; }
-
-.btn {
-  letter-spacing: 0.0625rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  transition: 0.3s;
-  min-height: 2.625rem; }
-  .btn.file-upload-button {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    position: relative;
-    top: -0.0625rem; }
-
-.btn-success {
-  background: teal;
-  border-color: teal; }
-
-.btn-warning {
-  background: coral; }
-
-.panel-body.mod-dark {
-  background: #223466; }
-  .panel-body.mod-dark .button-group {
-    display: flex;
-    justify-content: space-between; }
-    .panel-body.mod-dark .button-group.elem-eq {
-      justify-content: center; }
-      .panel-body.mod-dark .button-group.elem-eq .btn {
-        margin: 0 0.625rem; }
-    .panel-body.mod-dark .button-group .btn {
-      min-height: auto;
-      display: flex;
-      align-items: center;
-      border: 1px solid rgba(255, 255, 255, 0.5); }
-    .panel-body.mod-dark .button-group label span {
-      color: #ffffff; }
-
-[canvas="container"] {
-  height: -webkit-calc( 100% - 65px );
-  height: -moz-calc( 100% - 65px );
-  height: calc( 100% - 65px ); }
-
-.logo-fida img {
-  height: 11.875rem; }
-
-.title-dark {
-  text-transform: uppercase;
-  font-size: 22px;
-  font-weight: 700;
-  color: #597a96; }
-
-.title-light {
-  text-transform: uppercase;
-  font-size: 22px;
-  font-weight: 700;
-  color: #12aaeb; }
-
-.text-fida {
-  font-size: 14px;
-  color: #92acb6; }
-
-.subtitle-dark {
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 700;
-  color: #597a96; }
-
-.subtitle-light {
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 700;
-  color: #12aaeb; }
-
-.checkbox label {
-  font-size: 14px;
-  font-weight: 600; }
-  .checkbox label.label-dark {
-    color: #bfccd5; }
-  .checkbox label.label-light {
-    color: #597a96; }
-
-.background-blue {
-  background: #1b456d; }
-
-.background-white {
-  background: #ffffff; }
-
-.box-dark {
-  background: #2f5c8c;
-  padding: 1.875rem;
-  border-radius: 0.625rem;
-  -webkit-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.4);
-  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.4); }
-
-.box-light {
-  background: #ffffff;
-  padding: 1.875rem;
-  border-radius: 0.625rem;
-  -webkit-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.4);
-  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.4); }
-
-.header-dark {
-  background: #28588b;
-  padding: 1.25rem; }
-
-.body-dark {
-  background: #204d7d;
-  padding: 0.9375rem 1.25rem; }
-
-.footer-dark {
-  background: #204d7d;
-  min-height: 1.25rem;
-  padding-top: 0.625rem;
-  padding-bottom: 0.625rem;
-  margin-top: 0.1875rem;
-  margin-bottom: 1.875rem;
-  width: 100%; }
-
-.btn-primary {
-  background: #129fdd;
-  color: #ffffff;
-  border: 0; }
-  text
-  .btn-primary:focus, .btn-primary:hover {
-    background: #1b456d; }
-
-.btn-green {
-  background: #129fdd;
-  color: #94bf9f;
-  letter-spacing: 0.0625rem; }
-
-.shadow-inset {
-  -webkit-box-shadow: inset 0 5px 10px -5px #000000;
-  -moz-box-shadow: inset 0 5px 10px -5px #000000;
-  box-shadow: inset 0 5px 10px -5px #000000; }
-
 .m-t-0 {
   margin-top: 0px !important; }
 
@@ -9024,6 +8841,191 @@ body {
 .p-r-100 {
   padding-right: 100px !important; }
 
+body {
+  color: #3c3c3c;
+  font: 10px "Montserrat", arial, sans-serif;
+  font-weight: 400; }
+  @media (min-width: 768px) {
+    body {
+      font-size: 1rem; } }
+
+.title-fida {
+  color: #223466; }
+
+.btn-cc {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 0.625rem;
+  font-size: 14px;
+  line-height: 1.428571429;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 0.375rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 0.625rem;
+  width: 100%; }
+
+.btn-login {
+  border-radius: 1.5rem;
+  background: #223466;
+  color: #ffffff;
+  letter-spacing: 0.0625rem;
+  width: auto;
+  padding: 0.625rem 2.8125rem;
+  font-size: 18px; }
+  .btn-login:focus, .btn-login:hover {
+    background: #1874ac;
+    color: #ffffff; }
+
+.btn {
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  min-height: 2.625rem; }
+  .btn.file-upload-button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    position: relative;
+    top: -0.0625rem; }
+
+.btn-success {
+  background: teal;
+  border-color: teal; }
+
+.btn-warning {
+  background: coral; }
+
+.panel-body.mod-dark {
+  background: #223466; }
+  .panel-body.mod-dark .button-group {
+    display: flex;
+    justify-content: space-between; }
+    .panel-body.mod-dark .button-group.elem-eq {
+      justify-content: center; }
+      .panel-body.mod-dark .button-group.elem-eq .btn {
+        margin: 0 0.625rem; }
+    .panel-body.mod-dark .button-group .btn {
+      min-height: auto;
+      display: flex;
+      align-items: center;
+      border: 1px solid rgba(255, 255, 255, 0.5); }
+    .panel-body.mod-dark .button-group label span {
+      color: #ffffff; }
+
+[canvas="container"] {
+  height: -webkit-calc( 100% - 65px );
+  height: -moz-calc( 100% - 65px );
+  height: calc( 100% - 65px ); }
+
+.logo-fida img {
+  height: 11.875rem; }
+
+.title-dark {
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 700;
+  color: #597a96; }
+
+.title-light {
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 700;
+  color: #12aaeb; }
+
+.text-fida {
+  font-size: 14px;
+  color: #92acb6; }
+
+.subtitle-dark {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  color: #597a96; }
+
+.subtitle-light {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  color: #12aaeb; }
+
+.checkbox label {
+  font-size: 14px;
+  font-weight: 600; }
+  .checkbox label.label-dark {
+    color: #bfccd5; }
+  .checkbox label.label-light {
+    color: #597a96; }
+
+.background-blue {
+  background: #1b456d; }
+
+.background-white {
+  background: #ffffff; }
+
+.box-dark {
+  background: #2f5c8c;
+  padding: 1.875rem;
+  border-radius: 0.625rem;
+  -webkit-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.4); }
+
+.box-light {
+  background: #ffffff;
+  padding: 1.875rem;
+  border-radius: 0.625rem;
+  -webkit-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.4); }
+
+.header-dark {
+  background: #28588b;
+  padding: 1.25rem; }
+
+.body-dark {
+  background: #204d7d;
+  padding: 0.9375rem 1.25rem; }
+
+.footer-dark {
+  background: #204d7d;
+  min-height: 1.25rem;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  margin-top: 0.1875rem;
+  margin-bottom: 1.875rem;
+  width: 100%; }
+
+.btn-primary {
+  background: #129fdd;
+  color: #ffffff;
+  border: 0; }
+  text
+  .btn-primary:focus, .btn-primary:hover {
+    background: #1b456d; }
+
+.btn-green {
+  background: #129fdd;
+  color: #94bf9f;
+  letter-spacing: 0.0625rem; }
+
+.shadow-inset {
+  -webkit-box-shadow: inset 0 5px 10px -5px #000000;
+  -moz-box-shadow: inset 0 5px 10px -5px #000000;
+  box-shadow: inset 0 5px 10px -5px #000000; }
+
 .bg-light {
   background: #e5e5e5; }
 
@@ -9050,6 +9052,8 @@ body {
   ---------------------------------------------------------- */
   /* TAGS
   --------------------------------------------------------- */
+  /* ATTACHMENTS
+  --------------------------------------------------------- */
   /* PAGINATION
   --------------------------------------------------------- */
   /* COLLAPSE
@@ -9063,7 +9067,8 @@ body {
     font-weight: 600;
     font-size: 14px;
     text-transform: uppercase;
-    line-height: normal; }
+    line-height: normal;
+    margin-bottom: 0.3125rem; }
   .components label {
     font-weight: 600;
     font-size: 12px;
@@ -9249,6 +9254,24 @@ body {
         position: relative;
         top: 0.0625rem;
         right: -0.4375rem; }
+  .components .box-attachments {
+    display: flex;
+    flex-wrap: wrap; }
+    .components .box-attachments a {
+      border: 0.0625rem solid #223466;
+      padding: 0.3125rem 0.625rem;
+      margin: 0.3125rem;
+      color: #223466;
+      transition: 0.35s;
+      display: flex;
+      align-items: center;
+      font-size: 12px; }
+      .components .box-attachments a i {
+        margin-right: 0.9375rem;
+        font-size: 20px; }
+      .components .box-attachments a:hover, .components .box-attachments a:focus {
+        background: #223466;
+        color: #ffffff; }
   .components .pagination li a {
     border: none;
     text-transform: uppercase;
@@ -9475,6 +9498,39 @@ body {
     left: 1.5625rem; }
     .body-search .advanced-search .btn-primary {
       margin-top: 1.875rem; }
+
+#btn-notes {
+  background: coral;
+  position: absolute;
+  right: 15px;
+  padding: 15px;
+  top: 0;
+  z-index: 15; }
+  #btn-notes:hover, #btn-notes:focus {
+    background: teal; }
+
+.block-notes {
+  display: inline-block; }
+
+.block-notes {
+  background: lightgray;
+  overflow: hidden;
+  height: 450px;
+  width: 0;
+  -webkit-transition: width 1s ease-in-out, padding-left 1s ease-in-out, padding-right 1s ease-in-out;
+  -moz-transition: width 1s ease-in-out, padding-left 1s ease-in-out, padding-right 1s ease-in-out;
+  -ms-transition: width 1s ease-in-out, padding-left 1s ease-in-out, padding-right 1s ease-in-out;
+  transition: width 1s ease-in-out, padding-left 1s ease-in-out, padding-right 1s ease-in-out;
+  position: absolute;
+  top: 0;
+  right: 15px;
+  padding: 15px 0;
+  z-index: 10; }
+  .block-notes.show-notes {
+    width: 75%; }
+  .block-notes .col-notes {
+    white-space: normal;
+    margin: 15px; }
 
 #form-login .float-label-control {
   position: relative;
