@@ -9337,7 +9337,8 @@ body {
         border-bottom-right-radius: 0; }
     .components .mod-light textarea {
       resize: vertical; }
-    .components .mod-light .panel-body {
+    .components .mod-light .panel-body,
+    .components .mod-light .modal-body {
       padding: 0.9375rem 1.5625rem; }
     .components .mod-light .panel-heading {
       background: transparent;

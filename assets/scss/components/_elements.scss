@@ -1,11 +1,7 @@
 // Elements
 
-
-//html{
-//  overflow-y: scroll;
-//  height: auto;
-//}
 // > Section
+
 [canvas="container"]{
   height: -webkit-calc( 100% - 65px );
   height: -moz-calc( 100% - 65px );
@@ -15,9 +11,6 @@
   //overflow: scroll;
 }
 
-section{
-}
-
 // > Logo FIDA
 
 .logo-fida{
@@ -25,6 +18,7 @@ section{
     height: rem(190);
   }
 }
+
 // > Text
 
 .title-dark{
@@ -532,7 +526,8 @@ section{
     textarea{
       resize: vertical;
     }
-    .panel-body{
+    .panel-body,
+    .modal-body{
       padding: rem(15) rem(25);
     }
     .panel-heading{
@@ -727,7 +722,8 @@ section{
   }
 }
 
-//Search
+// > Search
+
 .header-search{
   display: flex;
   justify-content: space-between;
@@ -786,7 +782,8 @@ section{
 
 
 
-//Pendiente
+// > Notes
+
 .box-notes{
   display: flex;
   float: right;
